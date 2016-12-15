@@ -688,7 +688,7 @@
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl22.Location = new System.Drawing.Point(155, 490);
+            this.labelControl22.Location = new System.Drawing.Point(11, 490);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(62, 14);
             this.labelControl22.TabIndex = 42;
@@ -1929,7 +1929,7 @@
             // 
             this.tpObservacion.Controls.Add(this.iGlosacpventa);
             this.tpObservacion.Name = "tpObservacion";
-            this.tpObservacion.Size = new System.Drawing.Size(1069, 516);
+            this.tpObservacion.Size = new System.Drawing.Size(1069, 520);
             this.tpObservacion.Text = "Observación";
             // 
             // iGlosacpventa
@@ -1938,7 +1938,7 @@
             this.iGlosacpventa.Location = new System.Drawing.Point(0, 0);
             this.iGlosacpventa.MenuManager = this.bmMantenimiento;
             this.iGlosacpventa.Name = "iGlosacpventa";
-            this.iGlosacpventa.Size = new System.Drawing.Size(1069, 516);
+            this.iGlosacpventa.Size = new System.Drawing.Size(1069, 520);
             this.iGlosacpventa.TabIndex = 16;
             // 
             // tpReferencias
@@ -1948,7 +1948,7 @@
             this.tpReferencias.Controls.Add(this.labelControl34);
             this.tpReferencias.Controls.Add(this.iListadoguiaremref);
             this.tpReferencias.Name = "tpReferencias";
-            this.tpReferencias.Size = new System.Drawing.Size(1069, 516);
+            this.tpReferencias.Size = new System.Drawing.Size(1069, 520);
             this.tpReferencias.Text = "Referencias";
             // 
             // labelControl35
@@ -1990,7 +1990,7 @@
             this.tpOtros.Controls.Add(this.labelControl1);
             this.tpOtros.Controls.Add(this.pkIdEntidad);
             this.tpOtros.Name = "tpOtros";
-            this.tpOtros.Size = new System.Drawing.Size(1069, 516);
+            this.tpOtros.Size = new System.Drawing.Size(1069, 520);
             this.tpOtros.Text = "Otros";
             // 
             // labelControl1
