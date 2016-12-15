@@ -219,7 +219,8 @@ namespace WinFormsApp
                         PersonaMnt.Idpersona = IdEntidadMnt;
                         pkIdEntidad.EditValue = IdEntidadMnt;
 
-                        GuardarSocioDeNegocio(IdEntidadMnt);
+                        //Crea conflicto en crear socio
+                        //GuardarSocioDeNegocio(IdEntidadMnt);
 
                         break;
                     case TipoMantenimiento.Modificar:
