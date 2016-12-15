@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
@@ -63,7 +62,7 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
             this.gcCalcularItem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.riCalcularItem = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
-            this.bmMantenimiento = new DevExpress.XtraBars.BarManager(this.components);
+            this.bmMantenimiento = new DevExpress.XtraBars.BarManager();
             this.BarMnt = new DevExpress.XtraBars.Bar();
             this.btnGrabar = new DevExpress.XtraBars.BarButtonItem();
             this.btnGrabarCerrar = new DevExpress.XtraBars.BarButtonItem();
@@ -215,7 +214,7 @@
             this.tpOtros = new DevExpress.XtraTab.XtraTabPage();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.pkIdEntidad = new DevExpress.XtraEditors.TextEdit();
-            this.bmItems = new DevExpress.XtraBars.BarManager(this.components);
+            this.bmItems = new DevExpress.XtraBars.BarManager();
             this.BarMntItems = new DevExpress.XtraBars.Bar();
             this.btnAddItem = new DevExpress.XtraBars.BarButtonItem();
             this.btnEditItem = new DevExpress.XtraBars.BarButtonItem();
@@ -688,7 +687,7 @@
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl22.Location = new System.Drawing.Point(11, 490);
+            this.labelControl22.Location = new System.Drawing.Point(155, 490);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(62, 14);
             this.labelControl22.TabIndex = 42;
