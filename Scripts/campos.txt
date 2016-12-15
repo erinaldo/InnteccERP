@@ -1,0 +1,9 @@
+totalbruto
+totalgravado
+totalinafecto
+totalexonerado
+totalimpuesto
+importetotal
+porcentajepercepcion
+importetotalpercepcion
+totaldocumento

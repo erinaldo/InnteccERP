@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ConvertNulls="false" ReportInfo.Created="02/09/2015 09:45:38" ReportInfo.Modified="11/16/2015 12:39:36" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <TableDataSource Name="en" ReferenceName="en" DataType="System.Int32" Enabled="true">
+      <Column Name="identradaalmacen" DataType="System.Int32"/>
+      <Column Name="idsucursal" DataType="System.Int32"/>
+      <Column Name="codigosucursal" DataType="System.String"/>
+      <Column Name="nombresucursal" DataType="System.String"/>
+      <Column Name="idalmacen" DataType="System.Int32"/>
+      <Column Name="codigoalmacen" DataType="System.String"/>
+      <Column Name="nombrealmacen" DataType="System.String"/>
+      <Column Name="direccionalmacen" DataType="System.String"/>
+      <Column Name="idtipocp" DataType="System.Int32"/>
+      <Column Name="codigotipocp" DataType="System.String"/>
+      <Column Name="idtipoformato" DataType="System.Int32"/>
+      <Column Name="maxnumeroitems" DataType="System.Int32"/>
+      <Column Name="nombretipoformato" DataType="System.String"/>
+      <Column Name="abreviaturatipoformato" DataType="System.String"/>
+      <Column Name="idcptooperacion" DataType="System.Int32"/>
+      <Column Name="codigocptooperacion" DataType="System.String"/>
+      <Column Name="nombrecptooperacion" DataType="System.String"/>
+      <Column Name="idtipodocmov" DataType="System.Int32"/>
+      <Column Name="codigotipodocmov" DataType="System.String"/>
+      <Column Name="nombretipodocmov" DataType="System.String"/>
+      <Column Name="serieentradaalmacen" DataType="System.String"/>
+      <Column Name="numeroentradaalmacen" DataType="System.String"/>
+      <Column Name="idempleado" DataType="System.Int32"/>
+      <Column Name="nombreresponsable" DataType="System.String"/>
+      <Column Name="idsocionegocio" DataType="System.Int32"/>
+      <Column Name="razonsocial" DataType="System.String"/>
+      <Column Name="nombretipodocentidad" DataType="System.String"/>
+      <Column Name="abreviaturadocentidad" DataType="System.String"/>
+      <Column Name="nrodocentidadprincipal" DataType="System.String"/>
+      <Column Name="direccionfiscal" DataType="System.String"/>
+      <Column Name="fechaentrada" DataType="System.DateTime"/>
+      <Column Name="anulado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="fechaanulado" DataType="System.DateTime"/>
+      <Column Name="tipocambio" DataType="System.Decimal"/>
+      <Column Name="idtipomoneda" DataType="System.Int32"/>
+      <Column Name="codigotipomoneda" DataType="System.String"/>
+      <Column Name="nombretipomoneda" DataType="System.String"/>
+      <Column Name="simbolomoneda" DataType="System.String"/>
+      <Column Name="idimpuesto" DataType="System.Int32"/>
+      <Column Name="abreviaturaigv" DataType="System.String"/>
+      <Column Name="nombreimpuesto" DataType="System.String"/>
+      <Column Name="porcentajeimpuesto" DataType="System.Decimal"/>
+      <Column Name="totalimpuesto" DataType="System.Decimal"/>
+      <Column Name="totaldocumento" DataType="System.Decimal"/>
+      <Column Name="glosa" DataType="System.String"/>
+      <Column Name="totalexonerado" DataType="System.Decimal"/>
+      <Column Name="fechaverificacion" DataType="System.DateTime"/>
+      <Column Name="idresponsableverifica" DataType="System.Int32"/>
+      <Column Name="idalmacendestino" DataType="System.Int32"/>
+      <Column Name="listadodocreferencia" DataType="System.String"/>
+      <Column Name="iddocumentocompra" DataType="System.Int32"/>
+      <Column Name="nombredoccompra" DataType="System.String"/>
+      <Column Name="seriecpcompra" DataType="System.String"/>
+      <Column Name="numerocpcompra" DataType="System.String"/>
+      <Column Name="iddocumentoingreso" DataType="System.Int32"/>
+      <Column Name="nombredocingreso" DataType="System.String"/>
+      <Column Name="serieguiaremision" DataType="System.String"/>
+      <Column Name="numeroguiaremision" DataType="System.String"/>
+      <Column Name="nombreverificador" DataType="System.String"/>
+      <Column Name="totalgravado" DataType="System.Decimal"/>
+      <Column Name="importetotalpercepcion" DataType="System.Decimal"/>
+      <Column Name="cantidadentrada" DataType="System.Decimal"/>
+    </TableDataSource>
+    <Parameter Name="FechaInicio" DataType="System.String"/>
+    <Parameter Name="FechaFinal" DataType="System.String"/>
+    <Total Name="TotalDocumento" Expression="[en.totaldocumento]" Evaluator="Data1" PrintOn="GroupFooter1" EvaluateCondition="[en.anulado] == false"/>
+    <Total Name="TotalCantidad" Expression="[en.cantidadentrada]" Evaluator="Data1" PrintOn="GroupFooter1" EvaluateCondition="[en.anulado] == false"/>
+    <Total Name="TotalPagina" Expression="[en.totaldocumento]" Evaluator="Data1" PrintOn="PageFooter1" EvaluateCondition="[en.anulado] == false"/>
+    <Total Name="TotalReporte" Expression="[en.totaldocumento]" Evaluator="Data1" PrintOn="ReportSummary1" ResetAfterPrint="false" EvaluateCondition="[en.anulado] == false"/>
+    <Total Name="TotaCantidadPagina" Expression="[en.cantidadentrada]" Evaluator="Data1" PrintOn="PageFooter1" EvaluateCondition="[en.anulado] == false"/>
+    <Total Name="TotalCantidadReporte" Expression="[en.cantidadentrada]" Evaluator="Data1" PrintOn="ReportSummary1" ResetAfterPrint="false" EvaluateCondition="[en.anulado] == false"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Guides="-18.9">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="56.7">
+      <TextObject Name="Text2" Left="9.45" Top="9.45" Width="217.35" Height="18.9" Text="[en.nombresucursal]" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text20" Left="614.25" Top="9.45" Width="94.5" Height="18.9" Text="[Date]" Format="Date" Format.Format="d" HorzAlign="Right" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text19" Left="254.2" Top="18.9" Width="209.8" Height="18.9" Text="ENTRADAS DE ALMACEN RESUMIDO" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text24" Top="37.8" Width="217.35" Height="18.9" Text="Desde: [FechaInicio] Hasta: [FechaFinal]" VertAlign="Center" Font="Tahoma, 8pt" TextFill.Color="192, 0, 192"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="718.2" Height="28.35">
+      <ShapeObject Name="Shape1" Width="708.75" Height="28.35"/>
+      <TextObject Name="Text5" Left="108.95" Top="4" Width="56.7" Height="18.9" Text="Fecha" VertAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text7" Left="170.1" Top="4" Width="349.65" Height="18.9" Text="Responsable" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text25" Top="4" Width="75.6" Height="18.9" Text="Número" VertAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text29" Left="623.7" Top="4" Width="75.6" Height="18.9" Text="Total Cant." HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text31" Left="544.1" Top="4" Width="75.6" Height="18.9" Text="Total Doc." HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+    </PageHeaderBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="93.05" Width="718.2" Height="18.9" Condition="[en.razonsocial]" SortOrder="None">
+      <TextObject Name="Text3" Width="708.75" Height="18.9" Fill.Color="Gainsboro" Text="[en.razonsocial]" VertAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <DataBand Name="Data1" Top="115.95" Width="718.2" Height="18.9" DataSource="en">
+        <TextObject Name="Text1" Width="75.6" Height="18.9" Text="[en.serieentradaalmacen]-[en.numeroentradaalmacen]" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text4" Left="108.95" Width="56.7" Height="18.9" Text="[en.fechaentrada]" Format="Date" Format.Format="d" Font="Arial, 7pt"/>
+        <TextObject Name="Text6" Left="169.1" Width="349.65" Height="18.9" CanBreak="false" Text="[en.nombreresponsable]" WordWrap="false" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text27" Left="623.7" Width="75.6" Height="18.9" CanBreak="false" Text="[en.cantidadentrada]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text30" Left="75.6" Width="30.35" Height="18.9" Text="[IIf([en.anulado],&quot;Anu.&quot;,&quot;&quot;)]" Font="Tahoma, 7pt" TextFill.Color="Red"/>
+        <TextObject Name="Text32" Left="548.1" Width="75.6" Height="18.9" CanBreak="false" Text="[en.totaldocumento]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text8" Left="519.75" Width="28.35" Height="18.9" Text="[en.simbolomoneda]" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt"/>
+        <Sort>
+          <Sort Expression="[en.razonsocial]"/>
+          <Sort Expression="[en.serieentradaalmacen]"/>
+          <Sort Expression="[en.numeroentradaalmacen]"/>
+        </Sort>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="138.85" Width="718.2" Height="18.9">
+        <LineObject Name="Line1" Width="708.75" Diagonal="true"/>
+        <TextObject Name="Text9" Left="548.1" Width="75.6" Height="18.9" Text="[TotalDocumento]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text10" Left="623.7" Width="75.6" Height="18.9" Text="[TotalCantidad]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text35" Width="548.1" Height="18.9" Text="Total [en.razonsocial]:" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      </GroupFooterBand>
+    </GroupHeaderBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="161.75" Width="718.2"/>
+    <PageFooterBand Name="PageFooter1" Top="165.75" Width="718.2" Height="75.6">
+      <TextObject Name="Text11" Left="548.1" Top="3.45" Width="75.6" Height="18.9" Text="[TotalPagina]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text12" Left="548.1" Top="22.35" Width="75.6" Height="18.9" Text="[TotalReporte]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text33" Left="453.6" Top="3.45" Width="94.5" Height="18.9" Text="Total Pagina:" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text34" Left="453.6" Top="22.35" Width="94.5" Height="18.9" Text="Total Reporte:" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text13" Left="623.7" Top="3.45" Width="75.6" Height="18.9" Text="[TotaCantidadPagina]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text14" Left="623.7" Top="22.35" Width="75.6" Height="18.9" Text="[TotalCantidadReporte]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator="," Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <LineObject Name="Line2" Width="708.75"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ArrayOfArrayOfString>
+    <ArrayOfString>
+      <string>E:\Dot Net\CorpTeg\InnteccErp\InnteccErpSource\Udp\ChatServerUDP\ChatServer\Server.cs</string>
+      <string>E:\Dot Net\CorpTeg\InnteccErp\InnteccErpSource\Udp\ChatServerUDP\ChatServer\Server.cs</string>
+    </ArrayOfString>
+  </ArrayOfArrayOfString>
+</ArrayOfArrayOfArrayOfString>

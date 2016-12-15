@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE9DDE81-4E42-4297-BE05-254776EF371D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ActionService</RootNamespace>
+    <AssemblyName>ActionService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen\AlmacenService.cs" />
+    <Compile Include="Almacen\AlmacenServiceCustomize.cs" />
+    <Compile Include="Almacen\EntradaalmacendetitemcpcompradetService.cs" />
+    <Compile Include="Almacen\EntradaalmacendetService.cs" />
+    <Compile Include="Almacen\EntradaalmacendetServiceCustomize.cs" />
+    <Compile Include="Almacen\EntradaalmacenobsService.cs" />
+    <Compile Include="Almacen\EntradaalmacenService.cs" />
+    <Compile Include="Almacen\EntradaalmacenServiceCustomize.cs" />
+    <Compile Include="Almacen\EntradaalmacenubicacionService.cs" />
+    <Compile Include="Almacen\EstadoarticuloingresoService.cs" />
+    <Compile Include="Almacen\EstadoreclamoService.cs" />
+    <Compile Include="Almacen\GuiaremisiondetimpcpventadetService.cs" />
+    <Compile Include="Almacen\GuiaremisiondetService.cs" />
+    <Compile Include="Almacen\GuiaremisionService.cs" />
+    <Compile Include="Almacen\GuiaremisionServiceCustomize.cs" />
+    <Compile Include="Almacen\InventarioinicialService.cs" />
+    <Compile Include="Almacen\InventarioService.cs" />
+    <Compile Include="Almacen\InventariostockdetserieService.cs" />
+    <Compile Include="Almacen\InventariostockService.cs" />
+    <Compile Include="Almacen\InventarioubicacionService.cs" />
+    <Compile Include="Almacen\SalidaalmacendetService.cs" />
+    <Compile Include="Almacen\SalidaalmacenService.cs" />
+    <Compile Include="Almacen\SalidaalmacenServiceCustomize.cs" />
+    <Compile Include="Almacen\SalidaalmacenubicacionService.cs" />
+    <Compile Include="Almacen\UbicacionService.cs" />
+    <Compile Include="Almacen\VwAlmacenService.cs" />
+    <Compile Include="Almacen\VwCpcompradetimpentradaalmacenService.cs" />
+    <Compile Include="Almacen\VwCpventaimpsalidaalmacenService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacendetimpguiaremisionService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacendetService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacendetverificacioncantidadService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacenobsService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacenService.cs" />
+    <Compile Include="Almacen\VwEntradaalmacenubicacionService.cs" />
+    <Compile Include="Almacen\VwGuiaremisiondetimpcpventadetService.cs" />
+    <Compile Include="Almacen\VwGuiaremisiondetService.cs" />
+    <Compile Include="Almacen\VwGuiaremisionimpsalidaalmacenService.cs" />
+    <Compile Include="Almacen\VwGuiaremisionService.cs" />
+    <Compile Include="Almacen\VwInventarioinicialService.cs" />
+    <Compile Include="Almacen\VwInventarioService.cs" />
+    <Compile Include="Almacen\VwInventariostockdetserieService.cs" />
+    <Compile Include="Almacen\VwInventariostockService.cs" />
+    <Compile Include="Almacen\VwInventarioubicacionService.cs" />
+    <Compile Include="Almacen\VwNotacreditocliimpentradaalmacenService.cs" />
+    <Compile Include="Almacen\VwOrdencompraimpentradaalmacenService.cs" />
+    <Compile Include="Almacen\VwRendicioncajachicaimpsalidaalmacenService.cs" />
+    <Compile Include="Almacen\VwSalidaalmacendetimpentradaalmacenService.cs" />
+    <Compile Include="Almacen\VwSalidaalmacendetService.cs" />
+    <Compile Include="Almacen\VwSalidaalmacendetverificacioncantidadService.cs" />
+    <Compile Include="Almacen\VwSalidaalmacenService.cs" />
+    <Compile Include="Almacen\VwSalidaalmacenubicacionService.cs" />
+    <Compile Include="Almacen\VwStockService.cs" />
+    <Compile Include="Almacen\VwUbicacionService.cs" />
+    <Compile Include="Caja\CierrecajadetService.cs" />
+    <Compile Include="Caja\CierrecajaService.cs" />
+    <Compile Include="Caja\CierrecajaServiceCustomize.cs" />
+    <Compile Include="Caja\VwCierrecajadetService.cs" />
+    <Compile Include="Caja\VwCierrecajaimpresionService.cs" />
+    <Compile Include="Caja\VwCierrecajaService.cs" />
+    <Compile Include="Caja\VwReciboresumenService.cs" />
+    <Compile Include="Clinica\CategoriaitemService.cs" />
+    <Compile Include="Clinica\EstadocitaService.cs" />
+    <Compile Include="Clinica\HistoriaarchivoService.cs" />
+    <Compile Include="Clinica\HistoriaclinicaanalisisService.cs" />
+    <Compile Include="Clinica\HistoriaclinicacitaService.cs" />
+    <Compile Include="Clinica\HistoriaclinicaService.cs" />
+    <Compile Include="Clinica\HistoriadetitemService.cs" />
+    <Compile Include="Clinica\HistoriadetService.cs" />
+    <Compile Include="Clinica\HistoriaService.cs" />
+    <Compile Include="Clinica\ItemhistoriaService.cs" />
+    <Compile Include="Clinica\MotivocitaService.cs" />
+    <Compile Include="Clinica\PlantillahistoriadetService.cs" />
+    <Compile Include="Clinica\PlantillahistoriaService.cs" />
+    <Compile Include="Clinica\ProgramacioncitadethistorialService.cs" />
+    <Compile Include="Clinica\ProgramacioncitadetService.cs" />
+    <Compile Include="Clinica\ProgramacioncitaService.cs" />
+    <Compile Include="Clinica\TipoanalisisService.cs" />
+    <Compile Include="Clinica\TipoarchivoService.cs" />
+    <Compile Include="Clinica\TipociclomenstrualService.cs" />
+    <Compile Include="Clinica\TipohistoriaService.cs" />
+    <Compile Include="Clinica\VwHistoriaarchivoService.cs" />
+    <Compile Include="Clinica\VwHistoriaclinicaanalisisService.cs" />
+    <Compile Include="Clinica\VwHistoriaclinicacitaService.cs" />
+    <Compile Include="Clinica\VwHistoriaclinicaService.cs" />
+    <Compile Include="Clinica\VwHistoriadetitemService.cs" />
+    <Compile Include="Clinica\VwHistoriadetService.cs" />
+    <Compile Include="Clinica\VwHistoriaService.cs" />
+    <Compile Include="Clinica\VwItemhistoriaService.cs" />
+    <Compile Include="Clinica\VwPlantillahistoriadetService.cs" />
+    <Compile Include="Clinica\VwPlantillahistoriaService.cs" />
+    <Compile Include="Clinica\VwProgramacioncitadethistorialService.cs" />
+    <Compile Include="Clinica\VwProgramacioncitadetService.cs" />
+    <Compile Include="Clinica\VwProgramacioncitaService.cs" />
+    <Compile Include="Compras\CotizacionprvdetService.cs" />
+    <Compile Include="Compras\CotizacionprvService.cs" />
+    <Compile Include="Compras\CotizacionprvServiceCustomize.cs" />
+    <Compile Include="Compras\CpcompradetService.cs" />
+    <Compile Include="Compras\CpcompraService.cs" />
+    <Compile Include="Compras\CpcompraServiceCustomize.cs" />
+    <Compile Include="Compras\CpcompredetserieService.cs" />
+    <Compile Include="Compras\CuadrocomparativoarticuloService.cs" />
+    <Compile Include="Compras\CuadrocomparativoprvService.cs" />
+    <Compile Include="Compras\CuadrocomparativoprvServiceCustomize.cs" />
+    <Compile Include="Compras\CuadrocomparativoService.cs" />
+    <Compile Include="Compras\EstadopagoService.cs" />
+    <Compile Include="Compras\EstadoreqService.cs" />
+    <Compile Include="Compras\NotacreditodetService.cs" />
+    <Compile Include="Compras\NotacreditoService.cs" />
+    <Compile Include="Compras\NotacreditoServiceCustomize.cs" />
+    <Compile Include="Compras\NotadebitodetService.cs" />
+    <Compile Include="Compras\NotadebitoService.cs" />
+    <Compile Include="Compras\NotadebitoServiceCustomize.cs" />
+    <Compile Include="Compras\OrdencompraCustomize.cs" />
+    <Compile Include="Compras\OrdencompradetService.cs" />
+    <Compile Include="Compras\OrdencompradetServiceCustomize.cs" />
+    <Compile Include="Compras\OrdencompraService.cs" />
+    <Compile Include="Compras\OrdenserviciodetService.cs" />
+    <Compile Include="Compras\OrdenservicioService.cs" />
+    <Compile Include="Compras\OrdenservicioServiceCustomize.cs" />
+    <Compile Include="Compras\RequerimientodetService.cs" />
+    <Compile Include="Compras\RequerimientoServiceCustomize.cs" />
+    <Compile Include="Compras\RequerimientoService.cs" />
+    <Compile Include="Compras\TiporegistroordenService.cs" />
+    <Compile Include="Compras\VwCotizacionprvdetService.cs" />
+    <Compile Include="Compras\VwCotizacionprvService.cs" />
+    <Compile Include="Compras\VwCpcompradetguiaremisionimpService.cs" />
+    <Compile Include="Compras\VwCpcompradetService.cs" />
+    <Compile Include="Compras\VwCpcompraimpncService.cs" />
+    <Compile Include="Compras\VwCpcompraimpndService.cs" />
+    <Compile Include="Compras\VwCpcompraService.cs" />
+    <Compile Include="Compras\VwCpcompredetserieService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoaaprobarService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoarticuloimpocService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoarticuloimposService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoarticuloService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativomodeloautorizacionService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoprvService.cs" />
+    <Compile Include="Compras\VwCuadrocomparativoService.cs" />
+    <Compile Include="Compras\VwNotacreditodetService.cs" />
+    <Compile Include="Compras\VwNotacreditoService.cs" />
+    <Compile Include="Compras\VwNotadebitodetService.cs" />
+    <Compile Include="Compras\VwNotadebitoService.cs" />
+    <Compile Include="Compras\VwOrdencompradetcpcompraimpService.cs" />
+    <Compile Include="Compras\VwOrdencompradetingresoimpService.cs" />
+    <Compile Include="Compras\VwOrdencompradetService.cs" />
+    <Compile Include="Compras\VwOrdencompraimpresionService.cs" />
+    <Compile Include="Compras\VwOrdencompraService.cs" />
+    <Compile Include="Compras\VwOrdenserviciodetcpcompraimpService.cs" />
+    <Compile Include="Compras\VwOrdenserviciodetService.cs" />
+    <Compile Include="Compras\VwOrdenservicioimpresionService.cs" />
+    <Compile Include="Compras\VwOrdenservicioService.cs" />
+    <Compile Include="Compras\VwRequerimientodetcotizaprvimpService.cs" />
+    <Compile Include="Compras\VwRequerimientodetimpguiaremisionService.cs" />
+    <Compile Include="Compras\VwRequerimientodetordcompraimpService.cs" />
+    <Compile Include="Compras\VwRequerimientodetordservicioimpService.cs" />
+    <Compile Include="Compras\VwRequerimientodetService.cs" />
+    <Compile Include="Compras\VwRequerimientoimpresionService.cs" />
+    <Compile Include="Compras\VwRequerimientosaaprobarService.cs" />
+    <Compile Include="Compras\VwRequerimientoService.cs" />
+    <Compile Include="Finanzas\ArticulocompuestoService.cs" />
+    <Compile Include="Finanzas\RecibocajaegresodetService.cs" />
+    <Compile Include="Finanzas\RecibocajaegresoimprevistoService.cs" />
+    <Compile Include="Finanzas\RecibocajaegresoService.cs" />
+    <Compile Include="Finanzas\RecibocajaegresoServiceCustomize.cs" />
+    <Compile Include="Finanzas\RecibocajaingresodetService.cs" />
+    <Compile Include="Finanzas\RecibocajaingresoimprevistoService.cs" />
+    <Compile Include="Finanzas\RecibocajaingresoService.cs" />
+    <Compile Include="Finanzas\RecibocajaingresoServiceCustomize.cs" />
+    <Compile Include="Finanzas\RendicioncajachicadetService.cs" />
+    <Compile Include="Finanzas\RendicioncajachicaService.cs" />
+    <Compile Include="Finanzas\RendicioncajachicaServiceCustomize.cs" />
+    <Compile Include="Finanzas\TiporecibocajaService.cs" />
+    <Compile Include="Finanzas\VwArticulocompuestoService.cs" />
+    <Compile Include="Finanzas\VwCtacteclienteService.cs" />
+    <Compile Include="Finanzas\VwCtacteproveedorService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaegresodetService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaegresoimprevistoService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaegresoService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaingresodetService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaingresoimprevistoService.cs" />
+    <Compile Include="Finanzas\VwRecibocajaingresoService.cs" />
+    <Compile Include="Finanzas\VwRendicioncajachicadetService.cs" />
+    <Compile Include="Finanzas\VwRendicioncajachicaService.cs" />
+    <Compile Include="Inntecc\AccesoformService.cs" />
+    <Compile Include="Inntecc\AccesoformServiceCustomize.cs" />
+    <Compile Include="Inntecc\AreacentrocostroService.cs" />
+    <Compile Include="Inntecc\AreaService.cs" />
+    <Compile Include="Inntecc\AreaServiceCustomize.cs" />
+    <Compile Include="Inntecc\ArticuloclasificacionService.cs" />
+    <Compile Include="Inntecc\ArticuloclasificacionServiceCustomize.cs" />
+    <Compile Include="Inntecc\ArticulodetalleunidadService.cs" />
+    <Compile Include="Inntecc\ArticuloimagenService.cs" />
+    <Compile Include="Inntecc\ArticuloseriedetService.cs" />
+    <Compile Include="Inntecc\ArticuloService.cs" />
+    <Compile Include="Inntecc\ArticuloServiceCustomize.cs" />
+    <Compile Include="Inntecc\ArticuloubicacionService.cs" />
+    <Compile Include="Inntecc\AutorizaciontipocondicionService.cs" />
+    <Compile Include="Inntecc\CategoriasocionegocioService.cs" />
+    <Compile Include="Inntecc\CentrodecostoService.cs" />
+    <Compile Include="Inntecc\CentrodecostoServiceCustomize.cs" />
+    <Compile Include="Inntecc\CptooperacionService.cs" />
+    <Compile Include="Inntecc\CptooperacionServiceCustomize.cs" />
+    <Compile Include="Inntecc\CuentacontableService.cs" />
+    <Compile Include="Inntecc\DepartamentoService.cs" />
+    <Compile Include="Inntecc\DiaferiadoService.cs" />
+    <Compile Include="Inntecc\DistritoService.cs" />
+    <Compile Include="Inntecc\DocumentoaprobacionService.cs" />
+    <Compile Include="Inntecc\DocumentoaprobacionServiceCustomize.cs" />
+    <Compile Include="Inntecc\EjercicioService.cs" />
+    <Compile Include="Inntecc\ElementogastoService.cs" />
+    <Compile Include="Inntecc\EmpleadoanexoService.cs" />
+    <Compile Include="Inntecc\EmpleadoareaproyectoService.cs" />
+    <Compile Include="Inntecc\EmpleadoareaService.cs" />
+    <Compile Include="Inntecc\EmpleadoService.cs" />
+    <Compile Include="Inntecc\EmpresaService.cs" />
+    <Compile Include="Inntecc\EntidadfinancieraService.cs" />
+    <Compile Include="Inntecc\EstadoarticuloService.cs" />
+    <Compile Include="Inntecc\EstadocivilService.cs" />
+    <Compile Include="Inntecc\EstadosocionegocioService.cs" />
+    <Compile Include="Inntecc\EtapaautorizaciondetalleService.cs" />
+    <Compile Include="Inntecc\EtapaautorizacionService.cs" />
+    <Compile Include="Inntecc\GrupoeconomicoService.cs" />
+    <Compile Include="Inntecc\GrupousuarioitemService.cs" />
+    <Compile Include="Inntecc\GrupousuarioService.cs" />
+    <Compile Include="Inntecc\ImpuestoiscService.cs" />
+    <Compile Include="Inntecc\ImpuestoService.cs" />
+    <Compile Include="Inntecc\ListaprecioServiceCustomize.cs" />
+    <Compile Include="Inntecc\ModeloautorizacioncondicionService.cs" />
+    <Compile Include="Inntecc\ModeloautorizacionetapaService.cs" />
+    <Compile Include="Inntecc\ModeloautorizacionService.cs" />
+    <Compile Include="Inntecc\PaisService.cs" />
+    <Compile Include="Inntecc\PeriodoServiceCustomize.cs" />
+    <Compile Include="Inntecc\PrioridadServiceCustomize.cs" />
+    <Compile Include="Inntecc\ProyectoServiceCustomize.cs" />
+    <Compile Include="Inntecc\ReporteService.cs" />
+    <Compile Include="Inntecc\RubronegocioService.cs" />
+    <Compile Include="Inntecc\SeriearticuloService.cs" />
+    <Compile Include="Inntecc\SeriearticuloServiceCustomize.cs" />
+    <Compile Include="Inntecc\SocionegociogarantiaService.cs" />
+    <Compile Include="Inntecc\SocionegociomarcaService.cs" />
+    <Compile Include="Inntecc\SocionegocioServiceCustomize.cs" />
+    <Compile Include="Inntecc\TipoafectacionigvService.cs" />
+    <Compile Include="Inntecc\TipoarticuloService.cs" />
+    <Compile Include="Inntecc\TipocambioService.cs" />
+    <Compile Include="Inntecc\TipocontratoempleadoService.cs" />
+    <Compile Include="Inntecc\TipodocmovService.cs" />
+    <Compile Include="Inntecc\TipogarantiaService.cs" />
+    <Compile Include="Inntecc\TipogestionarticuloService.cs" />
+    <Compile Include="Inntecc\TipolistatipocondicionService.cs" />
+    <Compile Include="Inntecc\TipomediopagoServiceCustomize.cs" />
+    <Compile Include="Inntecc\TiporatioService.cs" />
+    <Compile Include="Inntecc\TiposnpService.cs" />
+    <Compile Include="Inntecc\UnidadmedidaServiceCustomize.cs" />
+    <Compile Include="Inntecc\ValorpordefectoService.cs" />
+    <Compile Include="Inntecc\ValorpordefectoServiceCustomize.cs" />
+    <Compile Include="Inntecc\VwAccesoformService.cs" />
+    <Compile Include="Inntecc\VwAccesoopcionService.cs" />
+    <Compile Include="Inntecc\VwAreaService.cs" />
+    <Compile Include="Inntecc\VwArticuloclasificacionService.cs" />
+    <Compile Include="Inntecc\VwArticulodetalleunidadService.cs" />
+    <Compile Include="Inntecc\VwArticuloinventarioService.cs" />
+    <Compile Include="Inntecc\VwArticuloseriedetService.cs" />
+    <Compile Include="Inntecc\VwArticuloService.cs" />
+    <Compile Include="Inntecc\VwArticuloubicacionService.cs" />
+    <Compile Include="Inntecc\VwArticulounidadService.cs" />
+    <Compile Include="Inntecc\VwCentrodecostoService.cs" />
+    <Compile Include="Inntecc\VwCptooperacionService.cs" />
+    <Compile Include="Inntecc\VwDocumentoaprobacionService.cs" />
+    <Compile Include="Inntecc\VwEmpleadoareaproyectoService.cs" />
+    <Compile Include="Inntecc\VwEmpleadoareaService.cs" />
+    <Compile Include="Inntecc\VwEmpleadoService.cs" />
+    <Compile Include="Inntecc\VwEtapaautorizaciondetalleService.cs" />
+    <Compile Include="Inntecc\VwEtapaautorizacionService.cs" />
+    <Compile Include="Inntecc\VwGrupousuarioitemService.cs" />
+    <Compile Include="Inntecc\VwListaprecioService.cs" />
+    <Compile Include="Inntecc\VwModeloautorizacioncondicionService.cs" />
+    <Compile Include="Inntecc\VwModeloautorizacionetapaService.cs" />
+    <Compile Include="Inntecc\VwModeloautorizacioninfoService.cs" />
+    <Compile Include="Inntecc\VwModeloautorizacioninfoServiceCustomize.cs" />
+    <Compile Include="Inntecc\VwModeloautorizacionService.cs" />
+    <Compile Include="Inntecc\VwPaginaitemService.cs" />
+    <Compile Include="Inntecc\VwPeriodoService.cs" />
+    <Compile Include="Inntecc\VwPersonacontactoService.cs" />
+    <Compile Include="Inntecc\VwProyectoService.cs" />
+    <Compile Include="Inntecc\VwReporteusuarioService.cs" />
+    <Compile Include="Inntecc\VwSocionegentidadfinancieraService.cs" />
+    <Compile Include="Inntecc\VwSocionegociodireccionService.cs" />
+    <Compile Include="Inntecc\VwSocionegociogarantiaService.cs" />
+    <Compile Include="Inntecc\VwSocionegociolimitecreditoService.cs" />
+    <Compile Include="Inntecc\VwSocionegociomarcaService.cs" />
+    <Compile Include="Inntecc\VwSocionegocioproyectoService.cs" />
+    <Compile Include="Inntecc\VwSocionegocioService.cs" />
+    <Compile Include="Inntecc\VwTipocambioService.cs" />
+    <Compile Include="Inntecc\VwTipolistatipocondicionService.cs" />
+    <Compile Include="Inntecc\VwUsuarioService.cs" />
+    <Compile Include="Inntecc\ZonaService.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="Inntecc\ListaprecioService.cs" />
+    <Compile Include="Inntecc\MarcaService.cs" />
+    <Compile Include="Inntecc\PeriodoService.cs" />
+    <Compile Include="Inntecc\PersonacontactoService.cs" />
+    <Compile Include="Inntecc\PersonaService.cs" />
+    <Compile Include="Inntecc\PrioridadService.cs" />
+    <Compile Include="Inntecc\ProyectoService.cs" />
+    <Compile Include="Inntecc\SocionegentidadfinancieraService.cs" />
+    <Compile Include="Inntecc\SocionegociocontactoService.cs" />
+    <Compile Include="Inntecc\SocionegociodireccionService.cs" />
+    <Compile Include="Inntecc\SocionegociolimitecreditoService.cs" />
+    <Compile Include="Inntecc\SocionegocioproyectoService.cs" />
+    <Compile Include="Inntecc\SocionegocioService.cs" />
+    <Compile Include="Inntecc\TipocondicionService.cs" />
+    <Compile Include="Inntecc\TipolistaService.cs" />
+    <Compile Include="Inntecc\TipomediopagoService.cs" />
+    <Compile Include="Inntecc\TipomonedaService.cs" />
+    <Compile Include="Inntecc\TipooperacionService.cs" />
+    <Compile Include="Inntecc\TiposcontactoService.cs" />
+    <Compile Include="Inntecc\TiposocioService.cs" />
+    <Compile Include="Inntecc\UnidadmedidaService.cs" />
+    <Compile Include="Inntecc\VwSucursalService.cs" />
+    <Compile Include="Logistica\LogStocksService.cs" />
+    <Compile Include="Maquinaria\ClasificacionequipoService.cs" />
+    <Compile Include="Maquinaria\EquipoService.cs" />
+    <Compile Include="Maquinaria\EquipoServiceCustomize.cs" />
+    <Compile Include="Maquinaria\MantenimientoimagenService.cs" />
+    <Compile Include="Maquinaria\MantenimientoService.cs" />
+    <Compile Include="Maquinaria\MantenimientoServiceCustomize.cs" />
+    <Compile Include="Maquinaria\MarcaequipoService.cs" />
+    <Compile Include="Maquinaria\ModeloequipoService.cs" />
+    <Compile Include="Maquinaria\OrdentrabajoService.cs" />
+    <Compile Include="Maquinaria\TipoalquilerService.cs" />
+    <Compile Include="Maquinaria\TipoegresovalorizacionService.cs" />
+    <Compile Include="Maquinaria\ValorizaciondanioelementoService.cs" />
+    <Compile Include="Maquinaria\ValorizaciondanioelementoServiceCustomize.cs" />
+    <Compile Include="Maquinaria\ValorizaciondanioService.cs" />
+    <Compile Include="Maquinaria\ValorizaciondetService.cs" />
+    <Compile Include="Maquinaria\ValorizacionegresoproveedorService.cs" />
+    <Compile Include="Maquinaria\ValorizacionegresoService.cs" />
+    <Compile Include="Maquinaria\ValorizacionelementoService.cs" />
+    <Compile Include="Maquinaria\ValorizacionproveedordetService.cs" />
+    <Compile Include="Maquinaria\ValorizacionproveedorService.cs" />
+    <Compile Include="Maquinaria\ValorizacionproveedorServiceCustomize.cs" />
+    <Compile Include="Maquinaria\ValorizacionService.cs" />
+    <Compile Include="Maquinaria\ValorizacionServiceCustomize.cs" />
+    <Compile Include="Maquinaria\VwEquipoService.cs" />
+    <Compile Include="Maquinaria\VwMantenimientoService.cs" />
+    <Compile Include="Maquinaria\VwModeloequipoService.cs" />
+    <Compile Include="Maquinaria\VwOrdendeserviciodetvalorizaimpService.cs" />
+    <Compile Include="Maquinaria\VwOrdentrabajoService.cs" />
+    <Compile Include="Maquinaria\VwResumenelementodanioService.cs" />
+    <Compile Include="Maquinaria\VwValorizaciondanioelementoService.cs" />
+    <Compile Include="Maquinaria\VwValorizaciondanioService.cs" />
+    <Compile Include="Maquinaria\VwValorizaciondetService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionegresoproveedorService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionegresoService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionelementoService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionproveedordetService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionproveedorService.cs" />
+    <Compile Include="Maquinaria\VwValorizacionService.cs" />
+    <Compile Include="Movil\ClaseService.cs" />
+    <Compile Include="Movil\PlanService.cs" />
+    <Compile Include="Movil\TipoService.cs" />
+    <Compile Include="Movil\TipotopeService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Inntecc\ProvinciaService.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="Inntecc\SucursalService.cs" />
+    <Compile Include="Inntecc\SucursalServiceCustomize.cs" />
+    <Compile Include="Inntecc\TipocppagoService.cs" />
+    <Compile Include="Inntecc\TipocpService.cs" />
+    <Compile Include="Inntecc\TipocpServiceCustomize.cs" />
+    <Compile Include="Inntecc\TipodocentidadService.cs" />
+    <Compile Include="Inntecc\TipoformatoService.cs" />
+    <Compile Include="Inntecc\UsuarioService.cs" />
+    <Compile Include="Inntecc\UsuarioServiceCustomize.cs" />
+    <Compile Include="Inntecc\VwPersonaService.cs" />
+    <Compile Include="Inntecc\VwTipocpService.cs" />
+    <Compile Include="Inntecc\VwUbigeoService.cs" />
+    <Compile Include="Ventas\ArticulolistaprecioService.cs" />
+    <Compile Include="Ventas\ComisioncobrodetService.cs" />
+    <Compile Include="Ventas\ComisioncobroService.cs" />
+    <Compile Include="Ventas\ComisioncobroServiceCustomize.cs" />
+    <Compile Include="Ventas\CotizacionclientedetService.cs" />
+    <Compile Include="Ventas\CotizacionclienteService.cs" />
+    <Compile Include="Ventas\CotizacionclienteServiceCustomize.cs" />
+    <Compile Include="Ventas\CpventadetserieService.cs" />
+    <Compile Include="Ventas\CpventadetService.cs" />
+    <Compile Include="Ventas\CpventaService.cs" />
+    <Compile Include="Ventas\CpventaServiceCustomize.cs" />
+    <Compile Include="Ventas\DetraccionclienteService.cs" />
+    <Compile Include="Ventas\GuiaremisionmotivoService.cs" />
+    <Compile Include="Ventas\NotacreditoclidetService.cs" />
+    <Compile Include="Ventas\NotacreditocliService.cs" />
+    <Compile Include="Ventas\NotacreditocliServiceCustomize.cs" />
+    <Compile Include="Ventas\NotadebitoclidetService.cs" />
+    <Compile Include="Ventas\NotadebitocliService.cs" />
+    <Compile Include="Ventas\NotadebitocliServiceCustomize.cs" />
+    <Compile Include="Ventas\OrdendeventadetService.cs" />
+    <Compile Include="Ventas\OrdendeventaService.cs" />
+    <Compile Include="Ventas\OrdendeventaServiceCustomize.cs" />
+    <Compile Include="Ventas\TipocomisioncobroService.cs" />
+    <Compile Include="Ventas\VwArticulolistaprecioService.cs" />
+    <Compile Include="Ventas\VwArticulostocklistaService.cs" />
+    <Compile Include="Ventas\VwArticulostocklistaServiceCustomize.cs" />
+    <Compile Include="Ventas\VwComisioncobroService.cs" />
+    <Compile Include="Ventas\VwCotizacionclientedetovimpService.cs" />
+    <Compile Include="Ventas\VwCotizacionclientedetService.cs" />
+    <Compile Include="Ventas\VwCotizacionclienteService.cs" />
+    <Compile Include="Ventas\VwCpventadetserieService.cs" />
+    <Compile Include="Ventas\VwCpventadetService.cs" />
+    <Compile Include="Ventas\VwCpventaimpncService.cs" />
+    <Compile Include="Ventas\VwCpventaimpndService.cs" />
+    <Compile Include="Ventas\VwCpventaService.cs" />
+    <Compile Include="Ventas\VwDetraccionclienteService.cs" />
+    <Compile Include="Ventas\VwNotacreditoclidetService.cs" />
+    <Compile Include="Ventas\VwNotacreditoclireciboingresoimpService.cs" />
+    <Compile Include="Ventas\VwNotacreditocliService.cs" />
+    <Compile Include="Ventas\VwNotadebitoclidetService.cs" />
+    <Compile Include="Ventas\VwNotadebitocliService.cs" />
+    <Compile Include="Ventas\VwOrdendeventadetcpventaimpService.cs" />
+    <Compile Include="Ventas\VwOrdendeventadetimpguiaremisionService.cs" />
+    <Compile Include="Ventas\VwOrdendeventadetService.cs" />
+    <Compile Include="Ventas\VwOrdendeventadetvalorizaimpService.cs" />
+    <Compile Include="Ventas\VwOrdendeventaService.cs" />
+    <Compile Include="Ventas\VwOrdendeventavalorizacpventaimpService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
+      <Project>{B6300AAD-5C54-45B9-9C8D-73E1E2B1ADD7}</Project>
+      <Name>BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataObjects\DataObjects.csproj">
+      <Project>{52c70deb-e638-4841-afaa-8e660275903c}</Project>
+      <Name>DataObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52C70DEB-E638-4841-AFAA-8E660275903C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataObjects</RootNamespace>
+    <AssemblyName>DataObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net40\Mono.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.2.2.7\lib\net40\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.0.50\lib\net40\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.0.50\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.4.0.50\lib\net40\ServiceStack.OrmLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.PostgreSQL, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.PostgreSQL.4.0.50\lib\net40\ServiceStack.OrmLite.PostgreSQL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.50\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implemented\Almacen\AlmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\EntradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\EntradaalmacendetDao.cs" />
+    <Compile Include="Implemented\Almacen\EntradaalmacendetitemcpcompradetDao.cs" />
+    <Compile Include="Implemented\Almacen\EntradaalmacenobsDao.cs" />
+    <Compile Include="Implemented\Almacen\EntradaalmacenubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\EstadoarticuloingresoDao.cs" />
+    <Compile Include="Implemented\Almacen\EstadoreclamoDao.cs" />
+    <Compile Include="Implemented\Almacen\GuiaremisionDao.cs" />
+    <Compile Include="Implemented\Almacen\GuiaremisiondetDao.cs" />
+    <Compile Include="Implemented\Almacen\GuiaremisiondetimpcpventadetDao.cs" />
+    <Compile Include="Implemented\Almacen\InventarioDao.cs" />
+    <Compile Include="Implemented\Almacen\InventarioinicialDao.cs" />
+    <Compile Include="Implemented\Almacen\InventariostockDao.cs" />
+    <Compile Include="Implemented\Almacen\InventariostockdetserieDao.cs" />
+    <Compile Include="Implemented\Almacen\InventarioubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\SalidaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\SalidaalmacendetDao.cs" />
+    <Compile Include="Implemented\Almacen\SalidaalmacenubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\UbicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwAlmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwCpcompradetimpentradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwCpventaimpsalidaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacendetDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacendetimpguiaremisionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacendetverificacioncantidadDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacenobsDao.cs" />
+    <Compile Include="Implemented\Almacen\VwEntradaalmacenubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwGuiaremisionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwGuiaremisiondetDao.cs" />
+    <Compile Include="Implemented\Almacen\VwGuiaremisiondetimpcpventadetDao.cs" />
+    <Compile Include="Implemented\Almacen\VwGuiaremisionimpsalidaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwInventarioDao.cs" />
+    <Compile Include="Implemented\Almacen\VwInventarioinicialDao.cs" />
+    <Compile Include="Implemented\Almacen\VwInventariostockDao.cs" />
+    <Compile Include="Implemented\Almacen\VwInventariostockdetserieDao.cs" />
+    <Compile Include="Implemented\Almacen\VwInventarioubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwNotacreditocliimpentradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwOrdencompraimpentradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwRendicioncajachicaimpsalidaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwSalidaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwSalidaalmacendetDao.cs" />
+    <Compile Include="Implemented\Almacen\VwSalidaalmacendetimpentradaalmacenDao.cs" />
+    <Compile Include="Implemented\Almacen\VwSalidaalmacendetverificacioncantidadDao.cs" />
+    <Compile Include="Implemented\Almacen\VwSalidaalmacenubicacionDao.cs" />
+    <Compile Include="Implemented\Almacen\VwStockDao.cs" />
+    <Compile Include="Implemented\Almacen\VwUbicacionDao.cs" />
+    <Compile Include="Implemented\Caja\CierrecajaDao.cs" />
+    <Compile Include="Implemented\Caja\CierrecajadetDao.cs" />
+    <Compile Include="Implemented\Caja\VwCierrecajaDao.cs" />
+    <Compile Include="Implemented\Caja\VwCierrecajadetDao.cs" />
+    <Compile Include="Implemented\Caja\VwCierrecajaimpresionDao.cs" />
+    <Compile Include="Implemented\Caja\VwReciboresumenDao.cs" />
+    <Compile Include="Implemented\Clinica\CategoriaitemDao.cs" />
+    <Compile Include="Implemented\Clinica\EstadocitaDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriaarchivoDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriaclinicaanalisisDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriaclinicacitaDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriaclinicaDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriadetDao.cs" />
+    <Compile Include="Implemented\Clinica\HistoriadetitemDao.cs" />
+    <Compile Include="Implemented\Clinica\ItemhistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\MotivocitaDao.cs" />
+    <Compile Include="Implemented\Clinica\PlantillahistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\PlantillahistoriadetDao.cs" />
+    <Compile Include="Implemented\Clinica\ProgramacioncitaDao.cs" />
+    <Compile Include="Implemented\Clinica\ProgramacioncitadetDao.cs" />
+    <Compile Include="Implemented\Clinica\ProgramacioncitadethistorialDao.cs" />
+    <Compile Include="Implemented\Clinica\TipoanalisisDao.cs" />
+    <Compile Include="Implemented\Clinica\TipoarchivoDao.cs" />
+    <Compile Include="Implemented\Clinica\TipociclomenstrualDao.cs" />
+    <Compile Include="Implemented\Clinica\TipohistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriaarchivoDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriaclinicaanalisisDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriaclinicacitaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriaclinicaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriadetDao.cs" />
+    <Compile Include="Implemented\Clinica\VwHistoriadetitemDao.cs" />
+    <Compile Include="Implemented\Clinica\VwItemhistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwPlantillahistoriaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwPlantillahistoriadetDao.cs" />
+    <Compile Include="Implemented\Clinica\VwProgramacioncitaDao.cs" />
+    <Compile Include="Implemented\Clinica\VwProgramacioncitadetDao.cs" />
+    <Compile Include="Implemented\Clinica\VwProgramacioncitadethistorialDao.cs" />
+    <Compile Include="Implemented\Compras\CotizacionprvDao.cs" />
+    <Compile Include="Implemented\Compras\CotizacionprvdetDao.cs" />
+    <Compile Include="Implemented\Compras\CpcompraDao.cs" />
+    <Compile Include="Implemented\Compras\CpcompradetDao.cs" />
+    <Compile Include="Implemented\Compras\CpcompredetserieDao.cs" />
+    <Compile Include="Implemented\Compras\CuadrocomparativoarticuloDao.cs" />
+    <Compile Include="Implemented\Compras\CuadrocomparativoDao.cs" />
+    <Compile Include="Implemented\Compras\CuadrocomparativoprvDao.cs" />
+    <Compile Include="Implemented\Compras\EstadopagoDao.cs" />
+    <Compile Include="Implemented\Compras\EstadoreqDao.cs" />
+    <Compile Include="Implemented\Compras\NotacreditoDao.cs" />
+    <Compile Include="Implemented\Compras\NotacreditodetDao.cs" />
+    <Compile Include="Implemented\Compras\NotadebitoDao.cs" />
+    <Compile Include="Implemented\Compras\NotadebitodetDao.cs" />
+    <Compile Include="Implemented\Compras\OrdencompraDao.cs" />
+    <Compile Include="Implemented\Compras\OrdencompradetDao.cs" />
+    <Compile Include="Implemented\Compras\OrdenservicioDao.cs" />
+    <Compile Include="Implemented\Compras\OrdenserviciodetDao.cs" />
+    <Compile Include="Implemented\Compras\RequerimientoDao.cs" />
+    <Compile Include="Implemented\Compras\RequerimientodetDao.cs" />
+    <Compile Include="Implemented\Compras\TiporegistroordenDao.cs" />
+    <Compile Include="Implemented\Compras\VwCotizacionprvDao.cs" />
+    <Compile Include="Implemented\Compras\VwCotizacionprvdetDao.cs" />
+    <Compile Include="Implemented\Compras\VwCpcompraDao.cs" />
+    <Compile Include="Implemented\Compras\VwCpcompradetDao.cs" />
+    <Compile Include="Implemented\Compras\VwCpcompradetguiaremisionimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwCpcompraimpncDao.cs" />
+    <Compile Include="Implemented\Compras\VwCpcompredetserieDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoaaprobarDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoarticuloDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoarticuloimpocDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoarticuloimposDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativomodeloautorizacionDao.cs" />
+    <Compile Include="Implemented\Compras\VwCuadrocomparativoprvDao.cs" />
+    <Compile Include="Implemented\Compras\VwNotacreditoDao.cs" />
+    <Compile Include="Implemented\Compras\VwNotacreditodetDao.cs" />
+    <Compile Include="Implemented\Compras\VwNotadebitoDao.cs" />
+    <Compile Include="Implemented\Compras\VwNotadebitodetDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdencompraDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdencompradetDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdencompradetingresoimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdencompraimpresionDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdenservicioDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdenserviciodetcpcompraimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdenserviciodetDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdenservicioimpresionDao.cs" />
+    <Compile Include="Implemented\Compras\VwProyectoDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientoDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientodetcotizaprvimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientodetDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientodetimpguiaremisionDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientodetordcompraimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientodetordservicioimpDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientoimpresionDao.cs" />
+    <Compile Include="Implemented\Compras\VwRequerimientosaaprobarDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaegresoDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaegresodetDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaegresoimprevistoDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaingresoDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaingresodetDao.cs" />
+    <Compile Include="Implemented\Finanzas\RecibocajaingresoimprevistoDao.cs" />
+    <Compile Include="Implemented\Finanzas\RendicioncajachicaDao.cs" />
+    <Compile Include="Implemented\Finanzas\RendicioncajachicadetDao.cs" />
+    <Compile Include="Implemented\Finanzas\TiporecibocajaDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwCtacteproveedorDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaegresoDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaegresodetDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaegresoimprevistoDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaingresoDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaingresodetDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRecibocajaingresoimprevistoDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRendicioncajachicaDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwRendicioncajachicadetDao.cs" />
+    <Compile Include="Implemented\Inntecc\AccesoformDao.cs" />
+    <Compile Include="Dao\Core\Dao.cs" />
+    <Compile Include="DaoFactories.cs" />
+    <Compile Include="Implemented\Inntecc\AreacentrocostroDao.cs" />
+    <Compile Include="Implemented\Inntecc\AreaDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticuloclasificacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticulocompuestoDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticulodetalleunidadDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticuloimagenDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticuloseriedetDao.cs" />
+    <Compile Include="Implemented\Inntecc\ArticuloubicacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\AutorizaciontipocondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\CategoriasocionegocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\CentrodecostoDao.cs" />
+    <Compile Include="Implemented\Inntecc\CptooperacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\CuentacontableDao.cs" />
+    <Compile Include="Implemented\Inntecc\DepartamentoDao.cs" />
+    <Compile Include="Implemented\Inntecc\DiaferiadoDao.cs" />
+    <Compile Include="Implemented\Inntecc\DistritoDao.cs" />
+    <Compile Include="Implemented\Inntecc\DocumentoaprobacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\EjercicioDao.cs" />
+    <Compile Include="Implemented\Inntecc\ElementogastoDao.cs" />
+    <Compile Include="Implemented\Inntecc\EmpleadoanexoDao.cs" />
+    <Compile Include="Implemented\Inntecc\EmpleadoareaDao.cs" />
+    <Compile Include="Implemented\Inntecc\EmpleadoareaproyectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\EmpleadoDao.cs" />
+    <Compile Include="Implemented\Inntecc\EmpresaDao.cs" />
+    <Compile Include="Implemented\Inntecc\EntidadfinancieraDao.cs" />
+    <Compile Include="Implemented\Inntecc\EstadoarticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\EstadocivilDao.cs" />
+    <Compile Include="Implemented\Inntecc\EstadosocionegocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\EtapaautorizacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\EtapaautorizaciondetalleDao.cs" />
+    <Compile Include="Implemented\Inntecc\GrupoeconomicoDao.cs" />
+    <Compile Include="Implemented\Inntecc\GrupousuarioDao.cs" />
+    <Compile Include="Implemented\Inntecc\GrupousuarioitemDao.cs" />
+    <Compile Include="Implemented\Inntecc\ImpuestoDao.cs" />
+    <Compile Include="Implemented\Inntecc\ImpuestoiscDao.cs" />
+    <Compile Include="Implemented\Inntecc\ListaprecioDao.cs" />
+    <Compile Include="Implemented\Inntecc\LogStocksDao.cs" />
+    <Compile Include="Implemented\Inntecc\MarcaDao.cs" />
+    <Compile Include="Implemented\Inntecc\ModeloautorizacioncondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\ModeloautorizacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\ModeloautorizacionetapaDao.cs" />
+    <Compile Include="Implemented\Inntecc\PaisDao.cs" />
+    <Compile Include="Implemented\Inntecc\PeriodoDao.cs" />
+    <Compile Include="Implemented\Inntecc\PersonacontactoDao.cs" />
+    <Compile Include="Implemented\Inntecc\PrioridadDao.cs" />
+    <Compile Include="Implemented\Inntecc\ProvinciaDao.cs" />
+    <Compile Include="Implemented\Inntecc\ProyectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\ReporteDao.cs" />
+    <Compile Include="Implemented\Inntecc\RubronegocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\SeriearticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegentidadfinancieraDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegociocontactoDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegociodireccionDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegociogarantiaDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegociolimitecreditoDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegociomarcaDao.cs" />
+    <Compile Include="Implemented\Inntecc\SocionegocioproyectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipoafectacionigvDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipoarticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipocambioDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipocondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipocontratoempleadoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipocpDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipocppagoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipodocentidadDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipodocmovDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipoformatoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipogarantiaDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipogestionarticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipolistaDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipolistatipocondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipomediopagoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipomonedaDao.cs" />
+    <Compile Include="Implemented\Inntecc\TipooperacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\TiporatioDao.cs" />
+    <Compile Include="Implemented\Inntecc\TiposcontactoDao.cs" />
+    <Compile Include="Implemented\Inntecc\TiposnpDao.cs" />
+    <Compile Include="Implemented\Inntecc\TiposocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\UnidadmedidaDao.cs" />
+    <Compile Include="Implemented\Inntecc\ValorpordefectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwAccesoformDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwAccesoopcionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwAreaDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticuloclasificacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticulocompuestoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticuloDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticuloinventarioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticuloseriedetDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticulounidadDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwCentrodecostoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwCpcompraimpndDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwCptooperacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwDocumentoaprobacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwEmpleadoareaDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwEmpleadoareaproyectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwEmpleadoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwEtapaautorizacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwEtapaautorizaciondetalleDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwGrupousuarioitemDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwModeloautorizacioncondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwModeloautorizacionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwModeloautorizacionetapaDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwModeloautorizacioninfoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwPaginaitemDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwPeriodoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwPersonacontactoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwReporteusuarioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwResumenelementodanioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegentidadfinancieraDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegocioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegociodireccionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegociogarantiaDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegociolimitecreditoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegociomarcaDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSocionegocioproyectoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwSucursalDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwTipocambioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwTipocpDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwTipolistatipocondicionDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwUbigeoDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwUsuarioDao.cs" />
+    <Compile Include="Implemented\Inntecc\ZonaDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ClasificacionequipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\EquipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\MantenimientoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\MantenimientoimagenDao.cs" />
+    <Compile Include="Implemented\Maquinaria\MarcaequipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ModeloequipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\OrdentrabajoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\TipoalquilerDao.cs" />
+    <Compile Include="Implemented\Maquinaria\TipoegresovalorizacionDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizaciondanioDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizaciondanioelementoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizaciondetDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionegresoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionegresoproveedorDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionelementoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionproveedorDao.cs" />
+    <Compile Include="Implemented\Maquinaria\ValorizacionproveedordetDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwEquipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwMantenimientoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwModeloequipoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwOrdendeserviciodetvalorizaimpDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwOrdentrabajoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizaciondanioDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizaciondanioelementoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizaciondetDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionegresoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionegresoproveedorDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionelementoDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionproveedorDao.cs" />
+    <Compile Include="Implemented\Maquinaria\VwValorizacionproveedordetDao.cs" />
+    <Compile Include="Implemented\Movil\ClaseDao.cs" />
+    <Compile Include="Implemented\Movil\PlanDao.cs" />
+    <Compile Include="Implemented\Movil\TipoDao.cs" />
+    <Compile Include="Implemented\Movil\TipotopeDao.cs" />
+    <Compile Include="Implemented\Ventas\ArticulolistaprecioDao.cs" />
+    <Compile Include="Implemented\Ventas\ComisioncobroDao.cs" />
+    <Compile Include="Implemented\Ventas\ComisioncobrodetDao.cs" />
+    <Compile Include="Implemented\Ventas\CotizacionclienteDao.cs" />
+    <Compile Include="Implemented\Ventas\CotizacionclientedetDao.cs" />
+    <Compile Include="Implemented\Ventas\CpventaDao.cs" />
+    <Compile Include="Implemented\Ventas\CpventadetDao.cs" />
+    <Compile Include="Implemented\Ventas\CpventadetserieDao.cs" />
+    <Compile Include="Implemented\Ventas\DetraccionclienteDao.cs" />
+    <Compile Include="Implemented\Ventas\GuiaremisionmotivoDao.cs" />
+    <Compile Include="Implemented\Ventas\NotacreditocliDao.cs" />
+    <Compile Include="Implemented\Ventas\NotacreditoclidetDao.cs" />
+    <Compile Include="Implemented\Ventas\NotadebitocliDao.cs" />
+    <Compile Include="Implemented\Ventas\NotadebitoclidetDao.cs" />
+    <Compile Include="Implemented\Ventas\OrdendeventaDao.cs" />
+    <Compile Include="Implemented\Ventas\OrdendeventadetalleDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwListaprecioDao.cs" />
+    <Compile Include="Implemented\Compras\VwOrdencompradetcpcompraimpDao.cs" />
+    <Compile Include="Implemented\Ventas\TipocomisioncobroDao.cs" />
+    <Compile Include="Implemented\Ventas\VwArticulolistaprecioDao.cs" />
+    <Compile Include="Implemented\Ventas\VwArticulostocklistaDao.cs" />
+    <Compile Include="Implemented\Ventas\VwComisioncobroDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCotizacionclienteDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCotizacionclientedetDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCotizacionclientedetovimpDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCpventaDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCpventadetDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCpventadetserieDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCpventaimpncDao.cs" />
+    <Compile Include="Implemented\Ventas\VwCpventaimpndDao.cs" />
+    <Compile Include="Implemented\Ventas\VwDetraccionclienteDao.cs" />
+    <Compile Include="Implemented\Ventas\VwNotacreditocliDao.cs" />
+    <Compile Include="Implemented\Ventas\VwNotacreditoclidetDao.cs" />
+    <Compile Include="Implemented\Ventas\VwNotacreditoclireciboingresoimpDao.cs" />
+    <Compile Include="Implemented\Ventas\VwNotadebitocliDao.cs" />
+    <Compile Include="Implemented\Ventas\VwNotadebitoclidetDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventaDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventadetcpventaimpDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventadetDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventadetimpguiaremisionDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventadetvalorizaimpDao.cs" />
+    <Compile Include="Implemented\Ventas\VwOrdendeventavalorizacpventaimpDao.cs" />
+    <Compile Include="Interface\Almacen\IAlmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IEntradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IEntradaalmacendetDao.cs" />
+    <Compile Include="Interface\Almacen\IEntradaalmacendetitemcpcompradetDao.cs" />
+    <Compile Include="Interface\Almacen\IEntradaalmacenobsDao.cs" />
+    <Compile Include="Interface\Almacen\IEntradaalmacenubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IEstadoarticuloingresoDao.cs" />
+    <Compile Include="Interface\Almacen\IEstadoreclamoDao.cs" />
+    <Compile Include="Interface\Almacen\IGuiaremisionDao.cs" />
+    <Compile Include="Interface\Almacen\IGuiaremisiondetDao.cs" />
+    <Compile Include="Interface\Almacen\IGuiaremisiondetimpcpventadetDao.cs" />
+    <Compile Include="Interface\Almacen\IInventarioDao.cs" />
+    <Compile Include="Interface\Almacen\IInventarioinicialDao.cs" />
+    <Compile Include="Interface\Almacen\IInventariostockDao.cs" />
+    <Compile Include="Interface\Almacen\IInventariostockdetserieDao.cs" />
+    <Compile Include="Interface\Almacen\IInventarioubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\ISalidaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\ISalidaalmacendetDao.cs" />
+    <Compile Include="Interface\Almacen\ISalidaalmacenubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IUbicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwAlmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwCpcompradetimpentradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwCpventaimpsalidaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacendetDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacendetimpguiaremisionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacendetverificacioncantidadDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacenobsDao.cs" />
+    <Compile Include="Interface\Almacen\IVwEntradaalmacenubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwGuiaremisionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwGuiaremisiondetDao.cs" />
+    <Compile Include="Interface\Almacen\IVwGuiaremisiondetimpcpventadetDao.cs" />
+    <Compile Include="Interface\Almacen\IVwGuiaremisionimpsalidaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwInventarioDao.cs" />
+    <Compile Include="Interface\Almacen\IVwInventarioinicialDao.cs" />
+    <Compile Include="Interface\Almacen\IVwInventariostockDao.cs" />
+    <Compile Include="Interface\Almacen\IVwInventariostockdetserieDao.cs" />
+    <Compile Include="Interface\Almacen\IVwInventarioubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwNotacreditocliimpentradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwOrdencompraimpentradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwRendicioncajachicaimpsalidaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwSalidaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwSalidaalmacendetDao.cs" />
+    <Compile Include="Interface\Almacen\IVwSalidaalmacendetimpentradaalmacenDao.cs" />
+    <Compile Include="Interface\Almacen\IVwSalidaalmacendetverificacioncantidadDao.cs" />
+    <Compile Include="Interface\Almacen\IVwSalidaalmacenubicacionDao.cs" />
+    <Compile Include="Interface\Almacen\IVwStockDao.cs" />
+    <Compile Include="Interface\Almacen\IVwUbicacionDao.cs" />
+    <Compile Include="Interface\Caja\ICierrecajaDao.cs" />
+    <Compile Include="Interface\Caja\ICierrecajadetDao.cs" />
+    <Compile Include="Interface\Caja\IVwCierrecajaDao.cs" />
+    <Compile Include="Interface\Caja\IVwCierrecajadetDao.cs" />
+    <Compile Include="Interface\Caja\IVwCierrecajaimpresionDao.cs" />
+    <Compile Include="Interface\Caja\IVwReciboresumenDao.cs" />
+    <Compile Include="Interface\Clinica\ICategoriaitemDao.cs" />
+    <Compile Include="Interface\Clinica\IEstadocitaDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriaarchivoDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriaclinicaanalisisDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriaclinicacitaDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriaclinicaDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriadetDao.cs" />
+    <Compile Include="Interface\Clinica\IHistoriadetitemDao.cs" />
+    <Compile Include="Interface\Clinica\IItemhistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IMotivocitaDao.cs" />
+    <Compile Include="Interface\Clinica\IPlantillahistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IPlantillahistoriadetDao.cs" />
+    <Compile Include="Interface\Clinica\IProgramacioncitaDao.cs" />
+    <Compile Include="Interface\Clinica\IProgramacioncitadetDao.cs" />
+    <Compile Include="Interface\Clinica\IProgramacioncitadethistorialDao.cs" />
+    <Compile Include="Interface\Clinica\ITipoanalisisDao.cs" />
+    <Compile Include="Interface\Clinica\ITipoarchivoDao.cs" />
+    <Compile Include="Interface\Clinica\ITipociclomenstrualDao.cs" />
+    <Compile Include="Interface\Clinica\ITipohistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriaarchivoDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriaclinicaanalisisDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriaclinicacitaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriaclinicaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriadetDao.cs" />
+    <Compile Include="Interface\Clinica\IVwHistoriadetitemDao.cs" />
+    <Compile Include="Interface\Clinica\IVwItemhistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwPlantillahistoriaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwPlantillahistoriadetDao.cs" />
+    <Compile Include="Interface\Clinica\IVwProgramacioncitaDao.cs" />
+    <Compile Include="Interface\Clinica\IVwProgramacioncitadetDao.cs" />
+    <Compile Include="Interface\Clinica\IVwProgramacioncitadethistorialDao.cs" />
+    <Compile Include="Interface\Compras\ICotizacionprvDao.cs" />
+    <Compile Include="Interface\Compras\ICotizacionprvdetDao.cs" />
+    <Compile Include="Interface\Compras\ICpcompraDao.cs" />
+    <Compile Include="Interface\Compras\ICpcompradetDao.cs" />
+    <Compile Include="Interface\Compras\ICpcompredetserieDao.cs" />
+    <Compile Include="Interface\Compras\ICuadrocomparativoarticuloDao.cs" />
+    <Compile Include="Interface\Compras\ICuadrocomparativoDao.cs" />
+    <Compile Include="Interface\Compras\ICuadrocomparativoprvDao.cs" />
+    <Compile Include="Interface\Compras\IEstadopagoDao.cs" />
+    <Compile Include="Interface\Compras\IEstadoreqDao.cs" />
+    <Compile Include="Interface\Compras\INotacreditoDao.cs" />
+    <Compile Include="Interface\Compras\INotacreditodetDao.cs" />
+    <Compile Include="Interface\Compras\INotadebitoDao.cs" />
+    <Compile Include="Interface\Compras\INotadebitodetDao.cs" />
+    <Compile Include="Interface\Compras\IOrdencompraDao.cs" />
+    <Compile Include="Interface\Compras\IOrdencompradetDao.cs" />
+    <Compile Include="Interface\Compras\IOrdenservicioDao.cs" />
+    <Compile Include="Interface\Compras\IOrdenserviciodetDao.cs" />
+    <Compile Include="Interface\Compras\IRequerimientoDao.cs" />
+    <Compile Include="Interface\Compras\IRequerimientodetDao.cs" />
+    <Compile Include="Interface\Compras\ITiporegistroordenDao.cs" />
+    <Compile Include="Interface\Compras\IVwCotizacionprvDao.cs" />
+    <Compile Include="Interface\Compras\IVwCotizacionprvdetDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompraDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompradetDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompradetguiaremisionimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompraimpncDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompraimpndDao.cs" />
+    <Compile Include="Interface\Compras\IVwCpcompredetserieDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoaaprobarDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoarticuloDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoarticuloimpocDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoarticuloimposDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativomodeloautorizacionDao.cs" />
+    <Compile Include="Interface\Compras\IVwCuadrocomparativoprvDao.cs" />
+    <Compile Include="Interface\Compras\IVwNotacreditoDao.cs" />
+    <Compile Include="Interface\Compras\IVwNotacreditodetDao.cs" />
+    <Compile Include="Interface\Compras\IVwNotadebitoDao.cs" />
+    <Compile Include="Interface\Compras\IVwNotadebitodetDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdencompraDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdencompradetcpcompraimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdencompradetDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdencompradetingresoimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdencompraimpresionDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdenservicioDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdenserviciodetcpcompraimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdenserviciodetDao.cs" />
+    <Compile Include="Interface\Compras\IVwOrdenservicioimpresionDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientoDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientodetcotizaprvimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientodetimpguiaremisionDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientodetordcompraimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientodetordservicioimpDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientoimpresionDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientosaaprobarDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticulodetalleunidadDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwArticuloubicacionDao.cs" />
+    <Compile Include="Implemented\Finanzas\VwCtacteclienteDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaegresoDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaegresodetDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaegresoimprevistoDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaingresoDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaingresodetDao.cs" />
+    <Compile Include="Interface\Finanzas\IRecibocajaingresoimprevistoDao.cs" />
+    <Compile Include="Interface\Finanzas\IRendicioncajachicaDao.cs" />
+    <Compile Include="Interface\Finanzas\IRendicioncajachicadetDao.cs" />
+    <Compile Include="Interface\Finanzas\ITiporecibocajaDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwCtacteclienteDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwCtacteproveedorDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaegresoDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaegresodetDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaegresoimprevistoDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaingresoDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaingresodetDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRecibocajaingresoimprevistoDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRendicioncajachicaDao.cs" />
+    <Compile Include="Interface\Finanzas\IVwRendicioncajachicadetDao.cs" />
+    <Compile Include="Interface\Inntecc\IAccesoformDao.cs" />
+    <Compile Include="Interface\Inntecc\IAreacentrocostroDao.cs" />
+    <Compile Include="Interface\Inntecc\IAreaDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticuloclasificacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticulocompuestoDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticulodetalleunidadDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticuloimagenDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticuloseriedetDao.cs" />
+    <Compile Include="Interface\Inntecc\IArticuloubicacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IAutorizaciontipocondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\ICategoriasocionegocioDao.cs" />
+    <Compile Include="Interface\Inntecc\ICentrodecostoDao.cs" />
+    <Compile Include="Interface\Inntecc\ICptooperacionDao.cs" />
+    <Compile Include="Interface\Inntecc\ICuentacontableDao.cs" />
+    <Compile Include="Interface\Inntecc\IDepartamentoDao.cs" />
+    <Compile Include="Interface\Inntecc\IDiaferiadoDao.cs" />
+    <Compile Include="Interface\Inntecc\IDistritoDao.cs" />
+    <Compile Include="Interface\Inntecc\IDocumentoaprobacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IEjercicioDao.cs" />
+    <Compile Include="Interface\Inntecc\IElementogastoDao.cs" />
+    <Compile Include="Interface\Inntecc\IEmpleadoanexoDao.cs" />
+    <Compile Include="Interface\Inntecc\IEmpleadoareaDao.cs" />
+    <Compile Include="Interface\Inntecc\IEmpleadoareaproyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IEmpleadoDao.cs" />
+    <Compile Include="Interface\Inntecc\IEmpresaDao.cs" />
+    <Compile Include="Interface\Inntecc\IEntidadfinancieraDao.cs" />
+    <Compile Include="Interface\Inntecc\IEstadoarticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\IEstadocivilDao.cs" />
+    <Compile Include="Interface\Inntecc\IEstadosocionegocioDao.cs" />
+    <Compile Include="Interface\Inntecc\IEtapaautorizacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IEtapaautorizaciondetalleDao.cs" />
+    <Compile Include="Interface\Inntecc\IGrupoeconomicoDao.cs" />
+    <Compile Include="Interface\Inntecc\IGrupousuarioDao.cs" />
+    <Compile Include="Interface\Inntecc\IGrupousuarioitemDao.cs" />
+    <Compile Include="Interface\Inntecc\IImpuestoDao.cs" />
+    <Compile Include="Interface\Inntecc\IImpuestoiscDao.cs" />
+    <Compile Include="Interface\Inntecc\IListaprecioDao.cs" />
+    <Compile Include="Interface\Inntecc\ILogStocksDao.cs" />
+    <Compile Include="Interface\Inntecc\IMarcaDao.cs" />
+    <Compile Include="Interface\Inntecc\IModeloautorizacioncondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\IModeloautorizacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IModeloautorizacionetapaDao.cs" />
+    <Compile Include="Interface\Inntecc\IPaisDao.cs" />
+    <Compile Include="Interface\Inntecc\IPeriodoDao.cs" />
+    <Compile Include="Interface\Inntecc\IPersonacontactoDao.cs" />
+    <Compile Include="Interface\Inntecc\IPersonaDao.cs" />
+    <Compile Include="Interface\Inntecc\IPrioridadDao.cs" />
+    <Compile Include="Interface\Inntecc\IProvinciaDao.cs" />
+    <Compile Include="Interface\Inntecc\IProyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IReporteDao.cs" />
+    <Compile Include="Interface\Inntecc\IRubronegocioDao.cs" />
+    <Compile Include="Interface\Inntecc\ISeriearticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegentidadfinancieraDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegociocontactoDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegocioDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegociodireccionDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegociogarantiaDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegociolimitecreditoDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegociomarcaDao.cs" />
+    <Compile Include="Interface\Inntecc\ISocionegocioproyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipoarticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipocambioDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipocondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipocontratoempleadoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipocpDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipocppagoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipodocentidadDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipoformatoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipogarantiaDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipogestionarticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipolistaDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipolistatipocondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipomediopagoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipomonedaDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipooperacionDao.cs" />
+    <Compile Include="Interface\Inntecc\ITiporatioDao.cs" />
+    <Compile Include="Interface\Inntecc\ITiposcontactoDao.cs" />
+    <Compile Include="Interface\Inntecc\ITiposnpDao.cs" />
+    <Compile Include="Interface\Inntecc\ITiposocioDao.cs" />
+    <Compile Include="Interface\Inntecc\IUnidadmedidaDao.cs" />
+    <Compile Include="Interface\Inntecc\IUsuarioDao.cs" />
+    <Compile Include="Interface\Inntecc\IValorpordefectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwAccesoformDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwAccesoopcionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwAreaDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticuloclasificacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticulocompuestoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticuloDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticulodetalleunidadDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticuloinventarioDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticuloseriedetDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticuloubicacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwArticulounidadDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwCentrodecostoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwCptooperacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwDocumentoaprobacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwEmpleadoareaDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwEmpleadoareaproyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwEmpleadoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwEtapaautorizacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwEtapaautorizaciondetalleDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwGrupousuarioitemDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwListaprecioDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwModeloautorizacioncondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwModeloautorizacionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwModeloautorizacionetapaDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwModeloautorizacioninfoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwPaginaitemDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwPeriodoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwPersonacontactoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwPersonaDao.cs" />
+    <Compile Include="Implemented\Inntecc\PersonaDao.cs" />
+    <Compile Include="Implemented\Inntecc\UsuarioDao.cs" />
+    <Compile Include="Implemented\Inntecc\VwPersonaDao.cs" />
+    <Compile Include="IDaoFactory.cs" />
+    <Compile Include="Interface\Inntecc\ISucursalDao.cs" />
+    <Compile Include="DaoFactory.cs" />
+    <Compile Include="Interface\Inntecc\IVwProyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwReporteusuarioDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegentidadfinancieraDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegociodireccionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegociogarantiaDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegociolimitecreditoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegociomarcaDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegocioproyectoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSucursalDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwTipocambioDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwTipocpDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwTipolistatipocondicionDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwUbigeoDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwSocionegocioDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipodocmovDao.cs" />
+    <Compile Include="Interface\Compras\IVwRequerimientodetDao.cs" />
+    <Compile Include="Interface\Inntecc\IVwUsuarioDao.cs" />
+    <Compile Include="Interface\Inntecc\ITipoafectacionigvDao.cs" />
+    <Compile Include="Interface\Inntecc\IZonaDao.cs" />
+    <Compile Include="Interface\Maquinaria\IClasificacionequipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IEquipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IMantenimientoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IMantenimientoimagenDao.cs" />
+    <Compile Include="Interface\Maquinaria\IMarcaequipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IModeloequipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IOrdentrabajoDao.cs" />
+    <Compile Include="Interface\Maquinaria\ITipoalquilerDao.cs" />
+    <Compile Include="Interface\Maquinaria\ITipoegresovalorizacionDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizaciondanioDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizaciondanioelementoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizaciondetDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionegresoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionegresoproveedorDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionelementoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionproveedorDao.cs" />
+    <Compile Include="Interface\Maquinaria\IValorizacionproveedordetDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwEquipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwMantenimientoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwModeloequipoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwOrdendeserviciodetvalorizaimpDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwOrdentrabajoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwResumenelementodanioDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizaciondanioDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizaciondanioelementoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizaciondetDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionegresoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionegresoproveedorDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionelementoDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionproveedorDao.cs" />
+    <Compile Include="Interface\Maquinaria\IVwValorizacionproveedordetDao.cs" />
+    <Compile Include="Interface\Movil\IClaseDao.cs" />
+    <Compile Include="Interface\Movil\IPlanDao.cs" />
+    <Compile Include="Interface\Movil\ITipoDao.cs" />
+    <Compile Include="Interface\Movil\ITipotopeDao.cs" />
+    <Compile Include="Interface\Ventas\IArticulolistaprecioDao.cs" />
+    <Compile Include="Interface\Ventas\IComisioncobroDao.cs" />
+    <Compile Include="Interface\Ventas\IComisioncobrodetDao.cs" />
+    <Compile Include="Interface\Ventas\ICotizacionclienteDao.cs" />
+    <Compile Include="Interface\Ventas\ICotizacionclientedetDao.cs" />
+    <Compile Include="Interface\Ventas\ICpventaDao.cs" />
+    <Compile Include="Interface\Ventas\ICpventadetDao.cs" />
+    <Compile Include="Interface\Ventas\ICpventadetserieDao.cs" />
+    <Compile Include="Interface\Ventas\IDetraccionclienteDao.cs" />
+    <Compile Include="Interface\Ventas\IGuiaremisionmotivoDao.cs" />
+    <Compile Include="Interface\Ventas\INotacreditocliDao.cs" />
+    <Compile Include="Interface\Ventas\INotacreditoclidetDao.cs" />
+    <Compile Include="Interface\Ventas\INotadebitocliDao.cs" />
+    <Compile Include="Interface\Ventas\INotadebitoclidetDao.cs" />
+    <Compile Include="Interface\Ventas\IOrdendeventaDao.cs" />
+    <Compile Include="Interface\Ventas\IOrdendeventadetDao.cs" />
+    <Compile Include="Interface\Ventas\ITipocomisioncobroDao.cs" />
+    <Compile Include="Interface\Ventas\IVwArticulolistaprecioDao.cs" />
+    <Compile Include="Interface\Ventas\IVwArticulostocklistaDao.cs" />
+    <Compile Include="Interface\Ventas\IVwComisioncobroDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCotizacionclienteDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCotizacionclientedetDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCotizacionclientedetovimpDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCpventaDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCpventadetDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCpventadetserieDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCpventaimpncDao.cs" />
+    <Compile Include="Interface\Ventas\IVwCpventaimpndDao.cs" />
+    <Compile Include="Interface\Ventas\IVwDetraccionclienteDao.cs" />
+    <Compile Include="Interface\Ventas\IVwNotacreditocliDao.cs" />
+    <Compile Include="Interface\Ventas\IVwNotacreditoclidetDao.cs" />
+    <Compile Include="Interface\Ventas\IVwNotacreditoclireciboingresoimpDao.cs" />
+    <Compile Include="Interface\Ventas\IVwNotadebitocliDao.cs" />
+    <Compile Include="Interface\Ventas\IVwNotadebitoclidetDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventaDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventadetalleDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventadetcpventaimpDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventadetimpguiaremisionDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventadetvalorizaimpDao.cs" />
+    <Compile Include="Interface\Ventas\IVwOrdendeventavalorizacpventaimpDao.cs" />
+    <Compile Include="OrmLiteHelper.cs" />
+    <Compile Include="ServiceStackHelper.cs" />
+    <Compile Include="Implemented\Inntecc\SucursalDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dao\Core\IDao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessObjects\BusinessObjects.csproj">
+      <Project>{B6300AAD-5C54-45B9-9C8D-73E1E2B1ADD7}</Project>
+      <Name>BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{46e50042-3d0c-4dc6-bcc3-db174d98cfa1}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

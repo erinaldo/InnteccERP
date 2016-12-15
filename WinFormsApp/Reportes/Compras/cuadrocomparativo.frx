@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ConvertNulls="false" ReportInfo.Name="Cuadro Comparativo" ReportInfo.Author="Carlos" ReportInfo.Version="1.0" ReportInfo.Created="03/27/2015 15:19:26" ReportInfo.Modified="04/22/2015 15:42:32" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <TableDataSource Name="cc" ReferenceName="cc" DataType="System.Int32" Enabled="true">
+      <Column Name="idcuadrocomparativo" DataType="System.Int32"/>
+      <Column Name="serienumerocc" DataType="System.String"/>
+      <Column Name="fechaemisioncc" DataType="System.DateTime"/>
+      <Column Name="serienumerocotizacion" DataType="System.String"/>
+      <Column Name="fechacotizacion" DataType="System.DateTime"/>
+      <Column Name="idproyecto" DataType="System.Int32"/>
+      <Column Name="codigoproyecto" DataType="System.String"/>
+      <Column Name="nombreproyecto" DataType="System.String"/>
+      <Column Name="ccanulado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="observacioncc" DataType="System.String"/>
+      <Column Name="idcotizacionprvdet" DataType="System.Int32"/>
+      <Column Name="numeroitem" DataType="System.Int32"/>
+      <Column Name="idarticulo" DataType="System.Int32"/>
+      <Column Name="codigoarticulo" DataType="System.String"/>
+      <Column Name="nombrearticulo" DataType="System.String"/>
+      <Column Name="itemespecificacion" DataType="System.String"/>
+      <Column Name="abrunidadmedida" DataType="System.String"/>
+      <Column Name="nombremarca" DataType="System.String"/>
+      <Column Name="cantidad" DataType="System.Decimal"/>
+      <Column Name="ruc1" DataType="System.String"/>
+      <Column Name="nombreprv1" DataType="System.String"/>
+      <Column Name="ciudadprv1" DataType="System.String"/>
+      <Column Name="telefonoprv1" DataType="System.String"/>
+      <Column Name="celularprv1" DataType="System.String"/>
+      <Column Name="preciounitarionetoprv1" DataType="System.Decimal"/>
+      <Column Name="justificacionprv1" DataType="System.String"/>
+      <Column Name="buenapro1" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ruc2" DataType="System.String"/>
+      <Column Name="nombreprv2" DataType="System.String"/>
+      <Column Name="ciudadprv2" DataType="System.String"/>
+      <Column Name="telefonoprv2" DataType="System.String"/>
+      <Column Name="celularprv2" DataType="System.String"/>
+      <Column Name="preciounitarionetoprv2" DataType="System.Decimal"/>
+      <Column Name="justificacionprv2" DataType="System.String"/>
+      <Column Name="buenapro2" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ruc3" DataType="System.String"/>
+      <Column Name="nombreprv3" DataType="System.String"/>
+      <Column Name="ciudadprv3" DataType="System.String"/>
+      <Column Name="telefonoprv3" DataType="System.String"/>
+      <Column Name="celularprv3" DataType="System.String"/>
+      <Column Name="preciounitarionetoprv3" DataType="System.Decimal"/>
+      <Column Name="justificacionprv3" DataType="System.String"/>
+      <Column Name="buenapro3" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ruc4" DataType="System.String"/>
+      <Column Name="nombreprv4" DataType="System.String"/>
+      <Column Name="ciudadprv4" DataType="System.String"/>
+      <Column Name="telefonoprv4" DataType="System.String"/>
+      <Column Name="celularprv4" DataType="System.String"/>
+      <Column Name="preciounitarionetoprv4" DataType="System.Decimal"/>
+      <Column Name="justificacionprv4" DataType="System.String"/>
+      <Column Name="buenapro4" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="ruc5" DataType="System.String"/>
+      <Column Name="nombreprv5" DataType="System.String"/>
+      <Column Name="ciudadprv5" DataType="System.String"/>
+      <Column Name="telefonoprv5" DataType="System.String"/>
+      <Column Name="celularprv5" DataType="System.String"/>
+      <Column Name="preciounitarionetoprv5" DataType="System.Decimal"/>
+      <Column Name="justificacionprv5" DataType="System.String"/>
+      <Column Name="buenapro5" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="TotalPrv1" DataType="System.Decimal" PropName="Column" Calculated="true" Expression="Round([cc.cantidad]*[cc.preciounitarionetoprv1],2)"/>
+      <Column Name="TotalPrv2" DataType="System.Decimal" PropName="Column" Calculated="true" Expression="Round([cc.cantidad]*[cc.preciounitarionetoprv2],2)"/>
+      <Column Name="Column" Alias="TotalPrv3" DataType="System.Decimal" Calculated="true" Expression="Round([cc.cantidad]*[cc.preciounitarionetoprv3],2)"/>
+      <Column Name="Column1" Alias="TotalPrv4" DataType="System.Decimal" Calculated="true" Expression="Round([cc.cantidad]*[cc.preciounitarionetoprv4],2)"/>
+      <Column Name="Column2" Alias="TotalPrv5" DataType="System.Decimal" Calculated="true" Expression="Round([cc.cantidad]*[cc.preciounitarionetoprv5],2)"/>
+    </TableDataSource>
+    <BusinessObjectDataSource Name="emp" ReferenceName="emp" DataType="System.Collections.Generic.List`1[[BusinessObjects.Entities.VwSucursal, BusinessObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Idsucursal" DataType="System.Int32"/>
+      <Column Name="Codigosucursal" DataType="System.String"/>
+      <Column Name="Nombresucursal" DataType="System.String"/>
+      <Column Name="Direccionsucursal" DataType="System.String"/>
+      <Column Name="Iddistrito" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Nombreubigeo" DataType="System.String"/>
+      <Column Name="Iddepartamento" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigodepartamento" DataType="System.String"/>
+      <Column Name="Nombredepartamento" DataType="System.String"/>
+      <Column Name="Idprovincia" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigoprovincia" DataType="System.String"/>
+      <Column Name="Nombreprovincia" DataType="System.String"/>
+      <Column Name="Codigodistrito" DataType="System.String"/>
+      <Column Name="Nombredistrito" DataType="System.String"/>
+      <Column Name="Idempresa" DataType="System.Int32"/>
+      <Column Name="Ruc" DataType="System.String"/>
+      <Column Name="Razonsocialempresa" DataType="System.String"/>
+      <Column Name="Direccionfiscal" DataType="System.String"/>
+      <Column Name="Paginaweb" DataType="System.String"/>
+      <Column Name="Telefono" DataType="System.String"/>
+      <Column Name="Logo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="Idalmacendefecto" DataType="System.Int32"/>
+      <Column Name="Codigoalmacen" DataType="System.String"/>
+      <Column Name="Nombrealmacen" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <Total Name="TotalProyectoPrv1" Expression="[cc.TotalPrv1]" Evaluator="Data1" PrintOn="GroupFooter1"/>
+    <Total Name="TotalProyectoPrv2" Expression="[cc.TotalPrv2]" Evaluator="Data1" PrintOn="GroupFooter1"/>
+    <Total Name="TotalProyectoPrv3" Expression="[cc.TotalPrv3]" Evaluator="Data1" PrintOn="GroupFooter1"/>
+    <Total Name="TotalProyectoPrv4" Expression="[cc.TotalPrv4]" Evaluator="Data1" PrintOn="GroupFooter1"/>
+    <Total Name="TotalProyectoPrv5" Expression="[cc.TotalPrv5]" Evaluator="Data1" PrintOn="GroupFooter1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" RawPaperSize="9">
+    <PageHeaderBand Name="PageHeader1" Width="1047.06" Height="93.5">
+      <TextObject Name="Text53" Left="150.2" Top="74.6" Width="85.05" Height="18.9" Text="[cc.serienumerocc]" VertAlign="Center" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text54" Left="237.25" Top="74.6" Width="85.05" Height="18.9" Text="[cc.fechaemisioncc]" Format="Date" Format.Format="d" VertAlign="Center" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text55" Left="462.05" Top="74.6" Width="85.05" Height="18.9" Text="[cc.serienumerocotizacion]" VertAlign="Center" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text57" Top="74.6" Width="141.75" Height="18.9" Text="N° Cuadro comparativo" VertAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text58" Left="321.3" Top="74.6" Width="132.3" Height="18.9" Text="N° Solicitud cotización" VertAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text56" Left="548.1" Top="74.6" Width="66.15" Height="18.9" Text="[cc.fechacotizacion]" Format="Date" Format.Format="d" VertAlign="Center" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text60" Left="926.1" Top="9.45" Width="94.5" Height="18.9" Text="[Page]" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text61" Left="926.1" Top="28.35" Width="94.5" Height="18.9" Text="[Date]" Format="Date" Format.Format="d" VertAlign="Center" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text62" Left="258.93" Top="47.25" Width="529.2" Height="18.9" Text="CUADRO COMPARATIVO DE COTIZACIONES N° [cc.serienumerocc]" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 11pt, style=Bold" TextFill.Color="Navy"/>
+      <TextObject Name="Text70" Left="-9450" Top="-9450" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text71" Left="-9384.85" Top="-9450" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <LineObject Name="Line22" Left="37.8" Top="-9.45" Diagonal="true"/>
+      <PictureObject Name="Picture1" Left="28.35" Top="9.45" Width="53.25" Height="37.6" DataColumn="emp.Logo"/>
+      <TextObject Name="Text81" Left="75.6" Top="9.45" Width="163.6" Height="18.9" Text="[emp.Razonsocialempresa]" HorzAlign="Center" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text82" Left="75.6" Top="24.35" Width="163.6" Height="18.9" Text="RUC: [emp.Ruc]" HorzAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text83" Left="75.6" Top="37.8" Width="163.6" Height="18.9" Text="Web: [emp.Paginaweb]" HorzAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+    </PageHeaderBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="97.5" Width="1047.06" Height="165.54" Condition="[cc.idproyecto]">
+      <ShapeObject Name="Shape3" Top="116.4" Width="1044.6" Height="49.14"/>
+      <ShapeObject Name="Shape1" Top="26.35" Width="1044.4" Height="91.95"/>
+      <ShapeObject Name="Shape2" Width="1044.5" Height="25.35"/>
+      <TextObject Name="Text3" Left="66.15" Top="3.45" Width="75.6" Height="18.9" Text="[cc.codigoproyecto]" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text4" Left="141.75" Top="3.45" Width="378" Height="18.9" Text="[cc.nombreproyecto]" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text5" Left="387.45" Top="30.8" Width="124.35" Height="28.35" Text="[cc.nombreprv1]" Font="Arial, 7pt"/>
+      <TextObject Name="Text6" Left="317.3" Top="30.8" Width="66.15" Height="18.9" Text="Razón Social" Font="Arial, 7pt"/>
+      <TextObject Name="Text7" Left="387.45" Top="60.15" Width="124.35" Height="18.9" Text="[cc.ruc1]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text8" Left="389.45" Top="78.05" Width="124.35" Height="18.9" Text="[cc.ciudadprv1]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text9" Left="317.3" Top="60.15" Width="66.15" Height="18.9" Text="N° RUC" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text11" Left="317.3" Top="78.05" Width="66.15" Height="18.9" Text="Ciudad" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text13" Left="519.75" Top="60.15" Width="124.35" Height="18.9" Text="[cc.ruc2]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text14" Left="521.75" Top="78.05" Width="124.35" Height="18.9" Text="[cc.ciudadprv2]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text12" Left="519.75" Top="30.8" Width="124.35" Height="28.35" Text="[cc.nombreprv2]" Font="Arial, 7pt"/>
+      <TextObject Name="Text15" Left="652.05" Top="30.8" Width="124.35" Height="28.35" Text="[cc.nombreprv3]" Font="Arial, 7pt"/>
+      <TextObject Name="Text16" Left="652.05" Top="60.15" Width="124.35" Height="18.9" Text="[cc.ruc3]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text17" Left="654.05" Top="78.05" Width="124.35" Height="18.9" Text="[cc.ciudadprv3]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text18" Left="784.35" Top="30.8" Width="124.35" Height="28.35" Text="[cc.nombreprv4]" Font="Arial, 7pt"/>
+      <TextObject Name="Text19" Left="784.35" Top="60.15" Width="124.35" Height="18.9" Text="[cc.ruc4]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text20" Left="785.35" Top="78.05" Width="124.35" Height="18.9" Text="[cc.ciudadprv4]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text21" Left="916.65" Top="30.8" Width="124.35" Height="28.35" Text="[cc.nombreprv5]" Font="Arial, 7pt"/>
+      <TextObject Name="Text22" Left="916.65" Top="60.15" Width="124.35" Height="18.9" Text="[cc.ruc5]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text23" Left="916.65" Top="78.05" Width="124.35" Height="18.9" Text="[cc.ciudadprv5]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text27" Left="388.45" Top="95.95" Width="124.35" Height="18.9" Text="[cc.telefonoprv4]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text28" Left="317.3" Top="95.95" Width="66.15" Height="18.9" Text="Teléfono" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text29" Left="520.75" Top="95.95" Width="124.35" Height="18.9" Text="[cc.telefonoprv2]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text30" Left="652.05" Top="95.95" Width="124.35" Height="18.9" Text="[cc.telefonoprv3]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text31" Left="784.35" Top="95.95" Width="124.35" Height="18.9" Text="[cc.telefonoprv4]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text32" Left="916.65" Top="95.95" Width="124.35" Height="18.9" Text="[cc.telefonoprv5]" VertAlign="Bottom" Font="Arial, 7pt"/>
+      <TextObject Name="Text63" Top="3.45" Width="66.15" Height="18.9" Text="PROYECTO" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text59" Left="47.25" Top="56.7" Width="179.55" Height="18.9" Text="RELACIÓN DE PROVEEDORES" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <LineObject Name="Line1" Left="315.85" Top="28.35" Height="88.05" Diagonal="true"/>
+      <LineObject Name="Line2" Left="383" Top="26.35" Height="138.5" Diagonal="true"/>
+      <LineObject Name="Line3" Left="515.75" Top="26.35" Height="90.5" Diagonal="true"/>
+      <LineObject Name="Line4" Left="647.6" Top="26.35" Height="90.5" Diagonal="true"/>
+      <LineObject Name="Line5" Left="779.9" Top="26.35" Height="90.5" Diagonal="true"/>
+      <LineObject Name="Line6" Left="912.65" Top="26.35" Height="90.5" Diagonal="true"/>
+      <LineObject Name="Line7" Top="142.3" Width="1042.7" Diagonal="true"/>
+      <LineObject Name="Line9" Left="315.85" Top="141.75" Height="21.9" Diagonal="true"/>
+      <TextObject Name="Text64" Left="325.4" Top="143.75" Width="55.5" Height="18.9" Text="Cantidad" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <LineObject Name="Line10" Left="28.35" Top="141.75" Height="21.9" Diagonal="true"/>
+      <TextObject Name="Text65" Left="1" Top="143.75" Width="36.95" Height="18.9" Text="Item" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text66" Left="56.7" Top="143.75" Width="197.25" Height="18.9" Text="Descripción" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text67" Left="75.6" Top="119.85" Width="197.25" Height="18.9" Text="A R T I C U L O S" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 9pt, style=Bold"/>
+      <LineObject Name="Line11" Left="450.6" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line12" Left="515.75" Top="140.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line13" Left="582.9" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line14" Left="648.05" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line15" Left="715.2" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line16" Left="780.35" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line17" Left="847.5" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line18" Left="912.65" Top="141.75" Height="21.9" Diagonal="true"/>
+      <LineObject Name="Line19" Left="977.35" Top="141.75" Height="21.9" Diagonal="true"/>
+      <TextObject Name="Text68" Left="390.45" Top="143.75" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text69" Left="455.6" Top="143.75" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text72" Left="522.2" Top="143.75" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text73" Left="587.35" Top="143.75" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text74" Left="654.5" Top="143.75" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text75" Left="719.65" Top="143.75" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text76" Left="786.8" Top="143.75" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text77" Left="851.95" Top="143.75" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text78" Left="919.1" Top="143.75" Width="55.5" Height="18.9" Text="Unitario" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text79" Left="984.25" Top="143.75" Width="55.5" Height="18.9" Text="Total" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <GroupHeaderBand Name="GroupHeader2" Top="267.04" Width="1047.06" Condition="[cc.idarticulo]">
+        <DataBand Name="Data1" Top="271.04" Width="1047.06" Height="40.8" DataSource="cc">
+          <TextObject Name="Text1" Left="1" Width="27.8" Height="18.9" Text="[cc.numeroitem]" HorzAlign="Right" Font="Arial, 7pt"/>
+          <TextObject Name="Text10" Left="29.35" Width="264.6" Height="18.9" Text="[cc.nombrearticulo]" Font="Arial, 7pt"/>
+          <TextObject Name="Text24" Left="311.85" Width="66.15" Height="18.9" Text="[cc.cantidad]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text2" Left="387.45" Width="58.95" Height="18.9" Text="[cc.preciounitarionetoprv1]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text25" Left="415.8" Width="94.5" Height="18.9" Text="[cc.TotalPrv1]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text33" Left="521.75" Width="58.95" Height="18.9" Text="[cc.preciounitarionetoprv2]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text34" Left="550.1" Width="94.5" Height="18.9" Text="[cc.TotalPrv2]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text35" Left="654.05" Width="58.95" Height="18.9" Text="[cc.preciounitarionetoprv3]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text36" Left="681.4" Width="94.5" Height="18.9" Text="[cc.TotalPrv3]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text37" Left="785.35" Width="58.95" Height="18.9" Text="[cc.preciounitarionetoprv4]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text38" Left="812.7" Width="94.5" Height="18.9" Text="[cc.TotalPrv4]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text39" Left="916.65" Width="58.95" Height="18.9" Text="[cc.preciounitarionetoprv5]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text40" Left="945" Width="94.5" Height="18.9" Text="[cc.TotalPrv5]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+          <TextObject Name="Text41" Left="387.45" Top="18.9" Width="103.95" Height="18.9" Text="[cc.justificacionprv1]" Font="Tahoma, 6pt" TextFill.Color="Navy"/>
+          <CheckBoxObject Name="CheckBox1" Left="491.4" Top="18.9" Width="15.12" Height="15.12" CheckColor="Green" DataColumn="cc.buenapro1"/>
+          <TextObject Name="Text43" Left="519.75" Top="18.9" Width="103.95" Height="18.9" Text="[cc.justificacionprv2]" Font="Tahoma, 6pt" TextFill.Color="Navy"/>
+          <CheckBoxObject Name="CheckBox2" Left="623.7" Top="18.9" Width="15.12" Height="15.12" CheckColor="Green" DataColumn="cc.buenapro2"/>
+          <TextObject Name="Text44" Left="652.05" Top="18.9" Width="103.95" Height="18.9" Text="[cc.justificacionprv3]" Font="Tahoma, 6pt" TextFill.Color="Navy"/>
+          <CheckBoxObject Name="CheckBox3" Left="756" Top="18.9" Width="15.12" Height="15.12" CheckColor="Green" DataColumn="cc.buenapro3"/>
+          <TextObject Name="Text45" Left="784.35" Top="18.9" Width="103.95" Height="18.9" Text="[cc.justificacionprv4]" Font="Tahoma, 6pt" TextFill.Color="Navy"/>
+          <CheckBoxObject Name="CheckBox4" Left="888.3" Top="18.9" Width="15.12" Height="15.12" CheckColor="Green" DataColumn="cc.buenapro4"/>
+          <TextObject Name="Text46" Left="916.65" Top="18.9" Width="103.95" Height="18.9" Text="[cc.justificacionprv5]" Font="Tahoma, 6pt" TextFill.Color="Navy"/>
+          <CheckBoxObject Name="CheckBox5" Left="1020.6" Top="18.9" Width="15.12" Height="15.12" CheckColor="Green" DataColumn="cc.buenapro5"/>
+          <LineObject Name="Line20" Left="28.35" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line21" Height="40.8" Diagonal="true"/>
+          <LineObject Name="Line23" Left="383" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line24" Left="515.75" Top="-1" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line25" Left="648.05" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line26" Left="780.35" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line27" Left="912.65" Height="40.8" Border.Style="Dash" Diagonal="true"/>
+          <LineObject Name="Line28" Left="1042.6" Height="40.8" Diagonal="true"/>
+        </DataBand>
+        <GroupFooterBand Name="GroupFooter2" Top="315.84" Width="1047.06"/>
+      </GroupHeaderBand>
+      <GroupFooterBand Name="GroupFooter1" Top="319.84" Width="1047.06" Height="21.35">
+        <ShapeObject Name="Shape4" Top="-1" Width="1044.4" Height="21.35"/>
+        <TextObject Name="Text47" Left="415.8" Width="94.5" Height="18.9" Text="[TotalProyectoPrv1]" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Tahoma, 7pt, style=Bold" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text48" Left="548.1" Width="94.5" Height="18.9" Text="[TotalProyectoPrv2]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Tahoma, 7pt, style=Bold" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text49" Left="680.4" Width="94.5" Height="18.9" Text="[TotalProyectoPrv3]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Tahoma, 7pt, style=Bold" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text50" Left="812.7" Width="94.5" Height="18.9" Text="[TotalProyectoPrv4]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Tahoma, 7pt, style=Bold" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text51" Left="945" Width="94.5" Height="18.9" Text="[TotalProyectoPrv5]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Tahoma, 7pt, style=Bold" Trimming="EllipsisCharacter"/>
+        <LineObject Name="Line8" Top="-0.55" Width="1044.5" Diagonal="true"/>
+        <TextObject Name="Text80" Left="28.35" Width="357.9" Height="18.9" Text="TOTALES" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      </GroupFooterBand>
+    </GroupHeaderBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="345.19" Width="1047.06" Height="37.8" CanGrow="true">
+      <TextObject Name="Text52" Width="94.5" Height="18.9" Text="Observación" VertAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text42" Top="18.9" Width="1039.5" Height="18.9" Text="[cc.observacioncc]" VertAlign="Center" Font="Tahoma, 8pt"/>
+    </ReportSummaryBand>
+    <PageFooterBand Name="PageFooter1" Top="386.99" Width="1047.06" Height="75.6"/>
+  </ReportPage>
+</Report>

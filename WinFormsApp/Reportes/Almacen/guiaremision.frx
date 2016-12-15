@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/26/2015 10:10:54" ReportInfo.Modified="04/27/2015 10:29:48" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <TableDataSource Name="guiaremision" ReferenceName="guiaremision" DataType="System.Int32" Enabled="true">
+      <Column Name="idguiaremisiondet" DataType="System.Int32"/>
+      <Column Name="idguiaremision" DataType="System.Int32"/>
+      <Column Name="almacenorigen" DataType="System.Int32"/>
+      <Column Name="nombrealmaorigen" DataType="System.String"/>
+      <Column Name="direccionalmacenorigen" DataType="System.String"/>
+      <Column Name="iddistritoalmaorigen" DataType="System.Int32"/>
+      <Column Name="nombreubigeoalmaorigen" DataType="System.String"/>
+      <Column Name="nombredepartamentoalmaorigen" DataType="System.String"/>
+      <Column Name="nombreprovinciaalmaorigen" DataType="System.String"/>
+      <Column Name="nombredistritoalmaorigen" DataType="System.String"/>
+      <Column Name="almacendestino" DataType="System.Int32"/>
+      <Column Name="nombrealmadestino" DataType="System.String"/>
+      <Column Name="direccionalmacenalmadestino" DataType="System.String"/>
+      <Column Name="iddistritoalmadestino" DataType="System.Int32"/>
+      <Column Name="nombreubigeoalmadestino" DataType="System.String"/>
+      <Column Name="nombredepartamentoalmadestino" DataType="System.String"/>
+      <Column Name="nombreprovinciaalmadestino" DataType="System.String"/>
+      <Column Name="nombredistritoalmadestino" DataType="System.String"/>
+      <Column Name="idsucursal" DataType="System.Int32"/>
+      <Column Name="codigosucursal" DataType="System.String"/>
+      <Column Name="nombresucursal" DataType="System.String"/>
+      <Column Name="idtipocp" DataType="System.Int32"/>
+      <Column Name="codigotipocp" DataType="System.String"/>
+      <Column Name="idtipoformato" DataType="System.Int32"/>
+      <Column Name="maxnumeroitems" DataType="System.Int32"/>
+      <Column Name="nombretipoformato" DataType="System.String"/>
+      <Column Name="abreviaturatipoformato" DataType="System.String"/>
+      <Column Name="idcptooperacion" DataType="System.Int32"/>
+      <Column Name="codigocptooperacion" DataType="System.String"/>
+      <Column Name="nombrecptooperacion" DataType="System.String"/>
+      <Column Name="idtipodocmov" DataType="System.Int32"/>
+      <Column Name="codigotipodocmov" DataType="System.String"/>
+      <Column Name="nombretipodocmov" DataType="System.String"/>
+      <Column Name="serieguiaremision" DataType="System.String"/>
+      <Column Name="numeroguiaremision" DataType="System.String"/>
+      <Column Name="incluyeimpuestoitems" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="idempleado" DataType="System.Int32"/>
+      <Column Name="nombreresponsable" DataType="System.String"/>
+      <Column Name="idsocionegocio" DataType="System.Int32"/>
+      <Column Name="razonsocial" DataType="System.String"/>
+      <Column Name="nombretipodocentidad" DataType="System.String"/>
+      <Column Name="abreviaturadocentidad" DataType="System.String"/>
+      <Column Name="nrodocentidadprincipal" DataType="System.String"/>
+      <Column Name="direccionfiscal" DataType="System.String"/>
+      <Column Name="iddireccionsocio" DataType="System.Int32"/>
+      <Column Name="direccionsocionegocio" DataType="System.String"/>
+      <Column Name="idguiaremisionmotivo" DataType="System.Int32"/>
+      <Column Name="nombreguiaremisionmotivo" DataType="System.String"/>
+      <Column Name="fechaguiaremision" DataType="System.DateTime"/>
+      <Column Name="fechatrasladoguia" DataType="System.DateTime"/>
+      <Column Name="glosaguiaremision" DataType="System.String"/>
+      <Column Name="idempresatransporte" DataType="System.Int32"/>
+      <Column Name="empresatransporte" DataType="System.String"/>
+      <Column Name="placavehiculo" DataType="System.String"/>
+      <Column Name="marcavehiculo" DataType="System.String"/>
+      <Column Name="certificadovehiculo" DataType="System.String"/>
+      <Column Name="chofervehiculo" DataType="System.String"/>
+      <Column Name="licenciachofer" DataType="System.String"/>
+      <Column Name="dnichofer" DataType="System.String"/>
+      <Column Name="anulado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="fechaanulado" DataType="System.DateTime"/>
+      <Column Name="tipocambio" DataType="System.Decimal"/>
+      <Column Name="idtipomoneda" DataType="System.Int32"/>
+      <Column Name="codigotipomoneda" DataType="System.String"/>
+      <Column Name="nombretipomoneda" DataType="System.String"/>
+      <Column Name="simbolomoneda" DataType="System.String"/>
+      <Column Name="idimpuesto" DataType="System.Int32"/>
+      <Column Name="abreviaturaigv" DataType="System.String"/>
+      <Column Name="nombreimpuesto" DataType="System.String"/>
+      <Column Name="porcentajeimpuesto" DataType="System.Decimal"/>
+      <Column Name="totalbruto" DataType="System.Decimal"/>
+      <Column Name="totalgravado" DataType="System.Decimal"/>
+      <Column Name="totalinafecto" DataType="System.Decimal"/>
+      <Column Name="totalexonerado" DataType="System.Decimal"/>
+      <Column Name="totalimpuesto" DataType="System.Decimal"/>
+      <Column Name="porcentajepercepcion" DataType="System.Decimal"/>
+      <Column Name="importetotalpercepcion" DataType="System.Decimal"/>
+      <Column Name="totaldocumento" DataType="System.Decimal"/>
+      <Column Name="numeroitem" DataType="System.Int32"/>
+      <Column Name="idarticulo" DataType="System.Int32"/>
+      <Column Name="codigoarticulo" DataType="System.String"/>
+      <Column Name="codigoproveedor" DataType="System.String"/>
+      <Column Name="codigodebarra" DataType="System.String"/>
+      <Column Name="idunidadinventario" DataType="System.Int32"/>
+      <Column Name="idarticuloclasificacion" DataType="System.Int32"/>
+      <Column Name="codigoclasificacion" DataType="System.String"/>
+      <Column Name="nombreclasificacion" DataType="System.String"/>
+      <Column Name="idmarca" DataType="System.Int32"/>
+      <Column Name="nombremarca" DataType="System.String"/>
+      <Column Name="nombrearticulo" DataType="System.String"/>
+      <Column Name="articulomoficado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="nombrearticulomod" DataType="System.String"/>
+      <Column Name="especificacion" DataType="System.String"/>
+      <Column Name="cantidad" DataType="System.Decimal"/>
+      <Column Name="idunidadmedida" DataType="System.Int32"/>
+      <Column Name="codigounidadmedida" DataType="System.String"/>
+      <Column Name="nombreunidadmedida" DataType="System.String"/>
+      <Column Name="abrunidadmedida" DataType="System.String"/>
+      <Column Name="factorconversion" DataType="System.Int32"/>
+      <Column Name="preciounitario" DataType="System.Decimal"/>
+      <Column Name="importetotal" DataType="System.Decimal"/>
+      <Column Name="pesounitario" DataType="System.Decimal"/>
+      <Column Name="pesototal" DataType="System.Decimal"/>
+      <Column Name="idordendeventadet" DataType="System.Int32"/>
+      <Column Name="serienumeroordenventa" DataType="System.String"/>
+      <Column Name="idtipoafectacionigv" DataType="System.Int32"/>
+      <Column Name="codigotipoafectacionigv" DataType="System.String"/>
+      <Column Name="nombretipoafectacionigv" DataType="System.String"/>
+      <Column Name="gravado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="exonerado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="inafecto" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="exportacion" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="idproyecto" DataType="System.Int32"/>
+      <Column Name="codigoproyecto" DataType="System.String"/>
+      <Column Name="nombreproyecto" DataType="System.String"/>
+      <Column Name="idarea" DataType="System.Int32"/>
+      <Column Name="codigoarea" DataType="System.String"/>
+      <Column Name="nombrearea" DataType="System.String"/>
+      <Column Name="idcentrodecosto" DataType="System.Int32"/>
+      <Column Name="codigocentrodecosto" DataType="System.String"/>
+      <Column Name="descripcioncentrodecosto" DataType="System.String"/>
+      <Column Name="idrequerimientodet" DataType="System.Int32"/>
+      <Column Name="serienumeroreq" DataType="System.String"/>
+    </TableDataSource>
+    <BusinessObjectDataSource Name="emp" ReferenceName="emp" DataType="System.Collections.Generic.List`1[[BusinessObjects.Entities.VwSucursal, BusinessObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Idsucursal" DataType="System.Int32"/>
+      <Column Name="Codigosucursal" DataType="System.String"/>
+      <Column Name="Nombresucursal" DataType="System.String"/>
+      <Column Name="Direccionsucursal" DataType="System.String"/>
+      <Column Name="Iddistrito" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Nombreubigeo" DataType="System.String"/>
+      <Column Name="Iddepartamento" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigodepartamento" DataType="System.String"/>
+      <Column Name="Nombredepartamento" DataType="System.String"/>
+      <Column Name="Idprovincia" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigoprovincia" DataType="System.String"/>
+      <Column Name="Nombreprovincia" DataType="System.String"/>
+      <Column Name="Codigodistrito" DataType="System.String"/>
+      <Column Name="Nombredistrito" DataType="System.String"/>
+      <Column Name="Idempresa" DataType="System.Int32"/>
+      <Column Name="Ruc" DataType="System.String"/>
+      <Column Name="Razonsocialempresa" DataType="System.String"/>
+      <Column Name="Direccionfiscal" DataType="System.String"/>
+      <Column Name="Paginaweb" DataType="System.String"/>
+      <Column Name="Telefono" DataType="System.String"/>
+      <Column Name="Logo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="Idalmacendefecto" DataType="System.Int32"/>
+      <Column Name="Codigoalmacen" DataType="System.String"/>
+      <Column Name="Nombrealmacen" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <Parameter Name="ImporteDocLetras" DataType="System.String"/>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="160.65">
+      <TextObject Name="Text1" Left="557.55" Top="47.25" Width="141.75" Height="18.9" Text="[guiaremision.serieguiaremision]-[guiaremision.numeroguiaremision]" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text4" Left="37.8" Top="85.05" Width="349.65" Height="18.9" Text="[guiaremision.razonsocial]" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text6" Left="481.95" Top="85.05" Width="94.5" Height="18.9" Text="[guiaremision.nrodocentidadprincipal]" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text8" Left="37.8" Top="66.15" Width="113.4" Height="18.9" Text="[guiaremision.fechaguiaremision]" Format="Date" Format.Format="d" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text10" Left="37.8" Top="122.85" Width="94.5" Height="18.9" Text="[guiaremision.fechatrasladoguia]" Format="Date" Format.Format="d" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text12" Left="481.95" Top="122.85" Width="94.5" Height="18.9" Text="[guiaremision.nombreguiaremisionmotivo]" Font="Tahoma, 8pt"/>
+      <TextObject Name="Text14" Left="37.8" Top="103.95" Width="652.05" Height="18.9" Text="[guiaremision.direccionsocionegocio]" Font="Tahoma, 8pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="164.65" Width="718.2" Height="28.35"/>
+    <DataBand Name="Data1" Top="197" Width="718.2" Height="18.9" DataSource="guiaremision">
+      <TextObject Name="Text3" Left="18.9" Width="94.5" Height="18.9" Text="[guiaremision.codigoarticulo]" Font="Arial, 8pt"/>
+      <TextObject Name="Text5" Left="113.4" Width="302.4" Height="18.9" Text="[guiaremision.nombrearticulo] [guiaremision.nombremarca]" Font="Arial, 8pt"/>
+      <TextObject Name="Text9" Left="415.8" Width="94.5" Height="18.9" Text="[guiaremision.cantidad]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text11" Left="510.3" Width="85.05" Height="18.9" Text="[guiaremision.pesounitario]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text13" Left="585.9" Width="94.5" Height="18.9" Text="[guiaremision.pesototal]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="219.9" Width="718.2" Height="500.85"/>
+  </ReportPage>
+</Report>

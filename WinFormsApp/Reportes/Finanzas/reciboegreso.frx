@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/06/2015 13:59:15" ReportInfo.Modified="06/30/2015 14:04:04" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="emp" ReferenceName="emp" DataType="System.Collections.Generic.List`1[[BusinessObjects.Entities.VwSucursal, BusinessObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Idsucursal" DataType="System.Int32"/>
+      <Column Name="Codigosucursal" DataType="System.String"/>
+      <Column Name="Nombresucursal" DataType="System.String"/>
+      <Column Name="Direccionsucursal" DataType="System.String"/>
+      <Column Name="Iddistrito" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Nombreubigeo" DataType="System.String"/>
+      <Column Name="Iddepartamento" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigodepartamento" DataType="System.String"/>
+      <Column Name="Nombredepartamento" DataType="System.String"/>
+      <Column Name="Idprovincia" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigoprovincia" DataType="System.String"/>
+      <Column Name="Nombreprovincia" DataType="System.String"/>
+      <Column Name="Codigodistrito" DataType="System.String"/>
+      <Column Name="Nombredistrito" DataType="System.String"/>
+      <Column Name="Idempresa" DataType="System.Int32"/>
+      <Column Name="Ruc" DataType="System.String"/>
+      <Column Name="Razonsocialempresa" DataType="System.String"/>
+      <Column Name="Direccionfiscal" DataType="System.String"/>
+      <Column Name="Paginaweb" DataType="System.String"/>
+      <Column Name="Telefono" DataType="System.String"/>
+      <Column Name="Logo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="Idalmacendefecto" DataType="System.Int32"/>
+      <Column Name="Codigoalmacen" DataType="System.String"/>
+      <Column Name="Nombrealmacen" DataType="System.String"/>
+    </BusinessObjectDataSource>
+    <TableDataSource Name="re" ReferenceName="re" DataType="System.Int32" Enabled="true">
+      <Column Name="idrecibocajaegresodet" DataType="System.Int32"/>
+      <Column Name="idrecibocajaegreso" DataType="System.Int32"/>
+      <Column Name="numeroitem" DataType="System.Int32"/>
+      <Column Name="serierecibo" DataType="System.String"/>
+      <Column Name="numerorecibo" DataType="System.String"/>
+      <Column Name="fecharecibo" DataType="System.DateTime"/>
+      <Column Name="fechapago" DataType="System.DateTime"/>
+      <Column Name="idcptooperacion" DataType="System.Int32"/>
+      <Column Name="codigocptooperacion" DataType="System.String"/>
+      <Column Name="nombrecptooperacion" DataType="System.String"/>
+      <Column Name="idsocionegocio" DataType="System.Int32"/>
+      <Column Name="razonsocial" DataType="System.String"/>
+      <Column Name="nombretipodocentidad" DataType="System.String"/>
+      <Column Name="abreviaturadocentidad" DataType="System.String"/>
+      <Column Name="ruc" DataType="System.String"/>
+      <Column Name="anulado" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="fechaanulado" DataType="System.DateTime"/>
+      <Column Name="idtipocp" DataType="System.Int32"/>
+      <Column Name="idtipoformato" DataType="System.Int32"/>
+      <Column Name="nombretipoformato" DataType="System.String"/>
+      <Column Name="abreviaturatipoformato" DataType="System.String"/>
+      <Column Name="idtipodocmov" DataType="System.Int32"/>
+      <Column Name="codigotipodocmov" DataType="System.String"/>
+      <Column Name="nombretipodocmov" DataType="System.String"/>
+      <Column Name="serietipocp" DataType="System.String"/>
+      <Column Name="numerotipocp" DataType="System.String"/>
+      <Column Name="importepago" DataType="System.Decimal"/>
+      <Column Name="idmediopago" DataType="System.Int32"/>
+      <Column Name="codigomediopago" DataType="System.String"/>
+      <Column Name="nombremediopago" DataType="System.String"/>
+      <Column Name="numeromediopago" DataType="System.String"/>
+      <Column Name="comentario" DataType="System.String"/>
+      <Column Name="totaldocumento" DataType="System.Decimal"/>
+      <Column Name="observaciones" DataType="System.String"/>
+    </TableDataSource>
+    <Parameter Name="FechaInicio" DataType="System.String"/>
+    <Parameter Name="fechaFinal" DataType="System.DateTime"/>
+    <Parameter Name="FechaFinal" DataType="System.String"/>
+    <Total Name="TotalRecibo" Expression="[re.importepago]" Evaluator="Data1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="210.1" PaperHeight="148.1" RawPaperSize="11">
+    <PageHeaderBand Name="PageHeader1" Width="718.58" Height="161.2">
+      <ShapeObject Name="Shape1" Left="3.45" Top="127.85" Width="345.8" Height="33.35"/>
+      <TextObject Name="Text1" Left="131.91" Top="21.9" Width="151.25" Height="22.8" Text="RECIBO EGRESO" HorzAlign="Center" Font="Tahoma, 12pt, style=Bold"/>
+      <TextObject Name="Text14" Left="5" Top="41.45" Width="151.1" Height="18.9" Text="RUC: [emp.Ruc]" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text5" Left="5" Top="25" Width="156.7" Height="18.9" Text="[emp.Razonsocialempresa]" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text23" Left="6.55" Top="141.3" Width="43.5" Height="12.9" Text="Nº ITEM" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text60" Left="67.15" Top="142.3" Width="194.45" Height="11.9" Text="DESCRIPCION" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text66" Left="5" Top="94.05" Width="92" Height="12.9" Text="RAZON SOCIAL" Font="Arial, 7pt, style=Bold"/>
+      <LineObject Name="Line51" Left="275.15" Top="129.2" Height="30.25" Diagonal="true"/>
+      <LineObject Name="Line53" Left="53.35" Top="129.1" Height="30.25" Diagonal="true"/>
+      <TextObject Name="Text93" Left="6.45" Top="109.95" Width="92" Height="12.9" Text="OBSERVACIONES" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text2" Left="96.5" Top="96.05" Width="255.15" Height="18.9" Text="[re.razonsocial]" Font="Arial, 7pt"/>
+      <TextObject Name="Text94" Left="276.2" Top="142.3" Width="72.85" Height="11.9" Text="IMPORTE" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+      <ShapeObject Name="Shape2" Left="-9450" Top="-9450" Width="94.5" Height="18.9"/>
+      <TextObject Name="Text95" Left="5" Top="79.15" Width="62.4" Height="14.9" Text="DNI/RUC" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text8" Left="96.5" Top="79.15" Width="94.5" Height="14.9" Text="[re.ruc]" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text96" Left="198.45" Top="78.7" Width="62.4" Height="12.9" Text="FECHA" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text9" Left="266.05" Top="78.15" Width="74.05" Height="14.9" Text="[re.fecharecibo]" Format="Date" Format.Format="d" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text10" Left="96.95" Top="109.95" Width="254.5" Height="14.9" Text="[re.observaciones]" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text97" Left="145.85" Top="45.8" Width="126.05" Height="22.8" Text="[re.serierecibo]-[re.numerorecibo]" HorzAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text98" Left="486.56" Top="25.8" Width="151.25" Height="22.8" Text="RECIBO EGRESO" HorzAlign="Center" Font="Tahoma, 12pt, style=Bold"/>
+      <TextObject Name="Text99" Left="359.65" Top="45.35" Width="151.1" Height="18.9" Text="RUC: [emp.Ruc]" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text100" Left="359.65" Top="28.9" Width="156.7" Height="18.9" Text="[emp.Razonsocialempresa]" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text103" Left="359.65" Top="97.95" Width="92" Height="12.9" Text="RAZON SOCIAL" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text104" Left="361.1" Top="113.85" Width="92" Height="12.9" Text="OBSERVACIONES" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text105" Left="451.15" Top="99.95" Width="255.15" Height="18.9" Text="[re.razonsocial]" Font="Arial, 7pt"/>
+      <TextObject Name="Text107" Left="359.65" Top="83.05" Width="62.4" Height="14.9" Text="DNI/RUC" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text108" Left="451.15" Top="83.05" Width="94.5" Height="14.9" Text="[re.ruc]" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text109" Left="553.1" Top="82.6" Width="62.4" Height="12.9" Text="FECHA" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text110" Left="620.7" Top="82.05" Width="74.05" Height="14.9" Text="[re.fecharecibo]" Format="Date" Format.Format="d" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text111" Left="451.6" Top="113.85" Width="254.5" Height="14.9" Text="[re.observaciones]" Font="Tahoma, 7pt"/>
+      <TextObject Name="Text112" Left="500.5" Top="49.7" Width="126.05" Height="22.8" Text="[re.serierecibo]-[re.numerorecibo]" HorzAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <ShapeObject Name="Shape4" Left="358.1" Top="127.75" Width="345.8" Height="33.35"/>
+      <TextObject Name="Text101" Left="361.2" Top="141.65" Width="43.5" Height="12.9" Text="Nº ITEM" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text102" Left="421.8" Top="142.65" Width="194.45" Height="11.9" Text="DESCRIPCION" Font="Arial, 7pt, style=Bold"/>
+      <LineObject Name="Line56" Left="629.8" Top="128.65" Height="30.25" Diagonal="true"/>
+      <LineObject Name="Line57" Left="408" Top="129" Height="30.25" Diagonal="true"/>
+      <TextObject Name="Text106" Left="630.85" Top="142.65" Width="72.85" Height="11.9" Text="IMPORTE" HorzAlign="Center" Font="Arial, 7pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="165.2" Width="718.58" Height="17" Guides="0" DataSource="re">
+      <LineObject Name="Line44" Left="4" Top="-1" Height="17.9" Diagonal="true"/>
+      <LineObject Name="Line54" Left="53.25" Top="-1.35" Height="18.25" Border.Style="Dash" Diagonal="true"/>
+      <TextObject Name="Text3" Left="6" Top="-2" Width="40.8" Height="15.9" Text="[re.numeroitem]" VertAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text4" Left="52.7" Top="-1" Width="215.5" Height="17.35" Text="[re.abreviaturatipoformato] [re.serietipocp]-[re.numerotipocp] [re.comentario]" VertAlign="Center" Font="Arial, 7pt"/>
+      <LineObject Name="Line52" Left="274.85" Top="-1.35" Height="18.25" Border.Style="Dash" Diagonal="true"/>
+      <TextObject Name="Text6" Left="247.85" Top="1" Width="94.5" Height="12.45" Text="[re.importepago]" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+      <LineObject Name="Line55" Left="348.1" Top="-0.9" Height="17.9" Diagonal="true"/>
+      <LineObject Name="Line59" Left="407.9" Top="-2.35" Height="18.25" Border.Style="Dash" Diagonal="true"/>
+      <TextObject Name="Text113" Left="360.65" Top="-1" Width="40.8" Height="15.9" Text="[re.numeroitem]" VertAlign="Center" Font="Arial, 7pt"/>
+      <TextObject Name="Text114" Left="407.35" Top="1" Width="210.5" Height="11.9" Text="[re.abreviaturatipoformato] [re.serietipocp]-[re.numerotipocp] [re.comentario]" VertAlign="Center" Font="Arial, 7pt"/>
+      <LineObject Name="Line60" Left="629.5" Top="-2.35" Height="18.25" Border.Style="Dash" Diagonal="true"/>
+      <TextObject Name="Text115" Left="602.5" Top="1" Width="94.5" Height="12.45" Text="[re.importepago]" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt" Trimming="EllipsisCharacter"/>
+      <LineObject Name="Line61" Left="701.75" Top="-0.9" Height="17.9" Diagonal="true"/>
+      <LineObject Name="Line58" Left="358.65" Top="-1" Height="17.9" Diagonal="true"/>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="186.2" Width="718.58" Height="186">
+      <ShapeObject Name="Shape3" Left="3.45" Top="-0.55" Width="345.75" Height="24.35"/>
+      <TextObject Name="Text82" Left="12.35" Top="6" Width="106.4" Height="12.9" Text="TOTAL RECIBO" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text7" Left="248.7" Top="5.9" Width="94.5" Height="11.45" Text="[TotalRecibo]" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 7pt"/>
+      <TextObject Name="Text116" Left="367" Top="7.1" Width="106.4" Height="12.9" Text="TOTAL RECIBO" Font="Arial, 7pt, style=Bold"/>
+      <TextObject Name="Text117" Left="603.35" Top="7" Width="94.5" Height="11.45" Text="[TotalRecibo]" Format="Number" Format.UseLocale="true" HorzAlign="Right" Font="Arial, 7pt"/>
+      <ShapeObject Name="Shape5" Left="358.1" Top="-0.45" Width="345.75" Height="24.35"/>
+    </ReportSummaryBand>
+    <PageFooterBand Name="PageFooter1" Top="376.2" Width="718.58" Height="47.25"/>
+  </ReportPage>
+</Report>

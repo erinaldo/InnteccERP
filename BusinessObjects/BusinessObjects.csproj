@@ -1,0 +1,478 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6300AAD-5C54-45B9-9C8D-73E1E2B1ADD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessObjects</RootNamespace>
+    <AssemblyName>BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ServiceStack.Common, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Common.4.0.50\lib\net40\ServiceStack.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e06fbc6124f57c43, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Interfaces.4.0.50\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.OrmLite.4.0.50\lib\net40\ServiceStack.OrmLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=4.0.50.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.4.0.50\lib\net40\ServiceStack.Text.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObject.cs" />
+    <Compile Include="BusinessRules\BusinessRule.cs" />
+    <Compile Include="BusinessRules\ValidateCompare.cs" />
+    <Compile Include="BusinessRules\ValidateCreditcard.cs" />
+    <Compile Include="BusinessRules\ValidateEmail.cs" />
+    <Compile Include="BusinessRules\ValidateId.cs" />
+    <Compile Include="BusinessRules\ValidateIPAddress.cs" />
+    <Compile Include="BusinessRules\ValidateLength.cs" />
+    <Compile Include="BusinessRules\ValidateRange.cs" />
+    <Compile Include="BusinessRules\ValidateRegex.cs" />
+    <Compile Include="BusinessRules\ValidateRequired.cs" />
+    <Compile Include="BusinessRules\ValidationDataType.cs" />
+    <Compile Include="BusinessRules\ValidationOperator.cs" />
+    <Compile Include="DataEntityState.cs" />
+    <Compile Include="Entities\Almacen\Almacen.cs" />
+    <Compile Include="Entities\Almacen\Entradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\Entradaalmacendet.cs" />
+    <Compile Include="Entities\Almacen\Entradaalmacendetitemcpcompradet.cs" />
+    <Compile Include="Entities\Almacen\Entradaalmacenobs.cs" />
+    <Compile Include="Entities\Almacen\Entradaalmacenubicacion.cs" />
+    <Compile Include="Entities\Almacen\Estadoarticuloingreso.cs" />
+    <Compile Include="Entities\Almacen\Estadoreclamo.cs" />
+    <Compile Include="Entities\Almacen\Guiaremision.cs" />
+    <Compile Include="Entities\Almacen\Guiaremisiondet.cs" />
+    <Compile Include="Entities\Almacen\Guiaremisiondetimpcpventadet.cs" />
+    <Compile Include="Entities\Almacen\Inventario.cs" />
+    <Compile Include="Entities\Almacen\Inventarioinicial.cs" />
+    <Compile Include="Entities\Almacen\Inventariostock.cs" />
+    <Compile Include="Entities\Almacen\Inventariostockdetserie.cs" />
+    <Compile Include="Entities\Almacen\Inventarioubicacion.cs" />
+    <Compile Include="Entities\Almacen\ItemGuiaRemisionCpVenta.cs" />
+    <Compile Include="Entities\Almacen\Salidaalmacen.cs" />
+    <Compile Include="Entities\Almacen\Salidaalmacendet.cs" />
+    <Compile Include="Entities\Almacen\Salidaalmacenubicacion.cs" />
+    <Compile Include="Entities\Almacen\Ubicacion.cs" />
+    <Compile Include="Entities\Almacen\VwAlmacen.cs" />
+    <Compile Include="Entities\Almacen\VwCpcompradetimpentradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwCpventaimpsalidaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacendet.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacendetimpguiaremision.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacendetverificacioncantidad.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacenobs.cs" />
+    <Compile Include="Entities\Almacen\VwEntradaalmacenubicacion.cs" />
+    <Compile Include="Entities\Almacen\VwGuiaremision.cs" />
+    <Compile Include="Entities\Almacen\VwGuiaremisiondet.cs" />
+    <Compile Include="Entities\Almacen\VwGuiaremisiondetimpcpventadet.cs" />
+    <Compile Include="Entities\Almacen\VwGuiaremisionimpsalidaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwInventario.cs" />
+    <Compile Include="Entities\Almacen\VwInventarioinicial.cs" />
+    <Compile Include="Entities\Almacen\VwInventariostock.cs" />
+    <Compile Include="Entities\Almacen\VwInventariostockdetserie.cs" />
+    <Compile Include="Entities\Almacen\VwInventarioubicacion.cs" />
+    <Compile Include="Entities\Almacen\VwNotacreditocliimpentradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwOrdencompraimpentradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwRendicioncajachicaimpsalidaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwSalidaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwSalidaalmacendet.cs" />
+    <Compile Include="Entities\Almacen\VwSalidaalmacendetimpentradaalmacen.cs" />
+    <Compile Include="Entities\Almacen\VwSalidaalmacendetverificacioncantidad.cs" />
+    <Compile Include="Entities\Almacen\VwSalidaalmacenubicacion.cs" />
+    <Compile Include="Entities\Almacen\VwStock.cs" />
+    <Compile Include="Entities\Almacen\VwUbicacion.cs" />
+    <Compile Include="Entities\Caja\Cierrecaja.cs" />
+    <Compile Include="Entities\Caja\Cierrecajadet.cs" />
+    <Compile Include="Entities\Caja\VwCierrecaja.cs" />
+    <Compile Include="Entities\Caja\VwCierrecajadet.cs" />
+    <Compile Include="Entities\Caja\VwCierrecajaimpresion.cs" />
+    <Compile Include="Entities\Caja\VwReciboresumen.cs" />
+    <Compile Include="Entities\Clinica\Categoriaitem.cs" />
+    <Compile Include="Entities\Clinica\Estadocita.cs" />
+    <Compile Include="Entities\Clinica\Historia.cs" />
+    <Compile Include="Entities\Clinica\Historiaarchivo.cs" />
+    <Compile Include="Entities\Clinica\Historiaclinica.cs" />
+    <Compile Include="Entities\Clinica\Historiaclinicaanalisis.cs" />
+    <Compile Include="Entities\Clinica\Historiaclinicacita.cs" />
+    <Compile Include="Entities\Clinica\Historiadet.cs" />
+    <Compile Include="Entities\Clinica\Historiadetitem.cs" />
+    <Compile Include="Entities\Clinica\Itemhistoria.cs" />
+    <Compile Include="Entities\Clinica\Motivocita.cs" />
+    <Compile Include="Entities\Clinica\Plantillahistoria.cs" />
+    <Compile Include="Entities\Clinica\Plantillahistoriadet.cs" />
+    <Compile Include="Entities\Clinica\Programacioncita.cs" />
+    <Compile Include="Entities\Clinica\Programacioncitadet.cs" />
+    <Compile Include="Entities\Clinica\Programacioncitadethistorial.cs" />
+    <Compile Include="Entities\Clinica\Tipoanalisis.cs" />
+    <Compile Include="Entities\Clinica\Tipoarchivo.cs" />
+    <Compile Include="Entities\Clinica\Tipociclomenstrual.cs" />
+    <Compile Include="Entities\Clinica\Tipohistoria.cs" />
+    <Compile Include="Entities\Clinica\VwHistoria.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriaarchivo.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriaclinica.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriaclinicaanalisis.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriaclinicacita.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriadet.cs" />
+    <Compile Include="Entities\Clinica\VwHistoriadetitem.cs" />
+    <Compile Include="Entities\Clinica\VwItemhistoria.cs" />
+    <Compile Include="Entities\Clinica\VwPlantillahistoria.cs" />
+    <Compile Include="Entities\Clinica\VwPlantillahistoriadet.cs" />
+    <Compile Include="Entities\Clinica\VwProgramacioncita.cs" />
+    <Compile Include="Entities\Clinica\VwProgramacioncitadet.cs" />
+    <Compile Include="Entities\Clinica\VwProgramacioncitadethistorial.cs" />
+    <Compile Include="Entities\Compras\Cotizacionprv.cs" />
+    <Compile Include="Entities\Compras\Cotizacionprvdet.cs" />
+    <Compile Include="Entities\Compras\Cpcompra.cs" />
+    <Compile Include="Entities\Compras\Cpcompradet.cs" />
+    <Compile Include="Entities\Compras\Cpcompredetserie.cs" />
+    <Compile Include="Entities\Compras\Cuadrocomparativo.cs" />
+    <Compile Include="Entities\Compras\Cuadrocomparativoarticulo.cs" />
+    <Compile Include="Entities\Compras\Cuadrocomparativoprv.cs" />
+    <Compile Include="Entities\Compras\Estadopago.cs" />
+    <Compile Include="Entities\Compras\Estadoreq.cs" />
+    <Compile Include="Entities\Compras\Notacredito.cs" />
+    <Compile Include="Entities\Compras\Notacreditodet.cs" />
+    <Compile Include="Entities\Compras\Notadebito.cs" />
+    <Compile Include="Entities\Compras\Notadebitodet.cs" />
+    <Compile Include="Entities\Compras\Ordencompra.cs" />
+    <Compile Include="Entities\Compras\Ordencompradet.cs" />
+    <Compile Include="Entities\Compras\Ordenservicio.cs" />
+    <Compile Include="Entities\Compras\Ordenserviciodet.cs" />
+    <Compile Include="Entities\Compras\Requerimiento.cs" />
+    <Compile Include="Entities\Compras\Requerimientodet.cs" />
+    <Compile Include="Entities\Compras\Tiporegistroorden.cs" />
+    <Compile Include="Entities\Compras\VwCotizacionprv.cs" />
+    <Compile Include="Entities\Compras\VwCotizacionprvdet.cs" />
+    <Compile Include="Entities\Compras\VwCpcompra.cs" />
+    <Compile Include="Entities\Compras\VwCpcompradet.cs" />
+    <Compile Include="Entities\Compras\VwCpcompradetguiaremisionimp.cs" />
+    <Compile Include="Entities\Compras\VwCpcompraimpnc.cs" />
+    <Compile Include="Entities\Compras\VwCpcompraimpnd.cs" />
+    <Compile Include="Entities\Compras\VwCpcompradetserie.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativo.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativoaaprobar.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativoarticulo.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativoarticuloimpoc.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativoarticuloimpos.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativomodeloautorizacion.cs" />
+    <Compile Include="Entities\Compras\VwCuadrocomparativoprv.cs" />
+    <Compile Include="Entities\Compras\VwNotacredito.cs" />
+    <Compile Include="Entities\Compras\VwNotacreditodet.cs" />
+    <Compile Include="Entities\Compras\VwNotadebito.cs" />
+    <Compile Include="Entities\Compras\VwNotadebitodet.cs" />
+    <Compile Include="Entities\Compras\VwOrdencompra.cs" />
+    <Compile Include="Entities\Compras\VwOrdencompradet.cs" />
+    <Compile Include="Entities\Compras\VwOrdencompradetingresoimp.cs" />
+    <Compile Include="Entities\Compras\VwOrdencompraimpresion.cs" />
+    <Compile Include="Entities\Compras\VwOrdenservicio.cs" />
+    <Compile Include="Entities\Compras\VwOrdenserviciodet.cs" />
+    <Compile Include="Entities\Compras\VwOrdenserviciodetcpcompraimp.cs" />
+    <Compile Include="Entities\Compras\VwOrdenservicioimpresion.cs" />
+    <Compile Include="Entities\Compras\VwRequerimiento.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientodet.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientodetcotizaprvimp.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientodetimpguiaremision.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientodetordcompraimp.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientodetordservicioimp.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientoimpresion.cs" />
+    <Compile Include="Entities\Compras\VwRequerimientosaaprobar.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaegreso.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaegresodet.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaegresoimprevisto.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaingreso.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaingresodet.cs" />
+    <Compile Include="Entities\Finanzas\Recibocajaingresoimprevisto.cs" />
+    <Compile Include="Entities\Finanzas\Rendicioncajachica.cs" />
+    <Compile Include="Entities\Finanzas\Rendicioncajachicadet.cs" />
+    <Compile Include="Entities\Finanzas\Tiporecibocaja.cs" />
+    <Compile Include="Entities\Finanzas\VwCtactecliente.cs" />
+    <Compile Include="Entities\Finanzas\VwCtacteproveedor.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaegreso.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaegresodet.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaegresoimprevisto.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaingreso.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaingresodet.cs" />
+    <Compile Include="Entities\Finanzas\VwRecibocajaingresoimprevistos.cs" />
+    <Compile Include="Entities\Finanzas\VwRendicioncajachica.cs" />
+    <Compile Include="Entities\Finanzas\VwRendicioncajachicadet.cs" />
+    <Compile Include="Entities\Inntecc\Accesoform.cs" />
+    <Compile Include="Entities\Inntecc\Area.cs" />
+    <Compile Include="Entities\Inntecc\Areacentrocostro.cs" />
+    <Compile Include="Entities\Inntecc\Articulo.cs" />
+    <Compile Include="Entities\Inntecc\Articuloclasificacion.cs" />
+    <Compile Include="Entities\Inntecc\Articulocompuesto.cs" />
+    <Compile Include="Entities\Inntecc\Articulodetalleunidad.cs" />
+    <Compile Include="Entities\Inntecc\Articuloimagen.cs" />
+    <Compile Include="Entities\Inntecc\Articuloseriedet.cs" />
+    <Compile Include="Entities\Inntecc\Articuloubicacion.cs" />
+    <Compile Include="Entities\Inntecc\Autorizaciontipocondicion.cs" />
+    <Compile Include="Entities\Inntecc\Categoriasocionegocio.cs" />
+    <Compile Include="Entities\Inntecc\Centrodecosto.cs" />
+    <Compile Include="Entities\Inntecc\Cptooperacion.cs" />
+    <Compile Include="Entities\Inntecc\Cuentacontable.cs" />
+    <Compile Include="Entities\Inntecc\Departamento.cs" />
+    <Compile Include="Entities\Inntecc\Diaferiado.cs" />
+    <Compile Include="Entities\Inntecc\DiaSemana.cs" />
+    <Compile Include="Entities\Inntecc\Distrito.cs" />
+    <Compile Include="Entities\Inntecc\Documentoaprobacion.cs" />
+    <Compile Include="Entities\Inntecc\Ejercicio.cs" />
+    <Compile Include="Entities\Inntecc\Elementogasto.cs" />
+    <Compile Include="Entities\Inntecc\Empleado.cs" />
+    <Compile Include="Entities\Inntecc\Empleadoanexo.cs" />
+    <Compile Include="Entities\Inntecc\Empleadoarea.cs" />
+    <Compile Include="Entities\Inntecc\Empleadoareaproyecto.cs" />
+    <Compile Include="Entities\Inntecc\Empresa.cs" />
+    <Compile Include="Entities\Inntecc\Entidadfinanciera.cs" />
+    <Compile Include="Entities\Inntecc\Estadoarticulo.cs" />
+    <Compile Include="Entities\Inntecc\Estadocivil.cs" />
+    <Compile Include="Entities\Inntecc\Estadosocionegocio.cs" />
+    <Compile Include="Entities\Inntecc\Etapaautorizacion.cs" />
+    <Compile Include="Entities\Inntecc\Etapaautorizaciondetalle.cs" />
+    <Compile Include="Entities\Inntecc\Grupoeconomico.cs" />
+    <Compile Include="Entities\Inntecc\Grupousuario.cs" />
+    <Compile Include="Entities\Inntecc\Grupousuarioitem.cs" />
+    <Compile Include="Entities\Inntecc\Impuesto.cs" />
+    <Compile Include="Entities\Inntecc\Impuestoisc.cs" />
+    <Compile Include="Entities\Inntecc\Listaprecio.cs" />
+    <Compile Include="Entities\Inntecc\LogStocks.cs" />
+    <Compile Include="Entities\Inntecc\Marca.cs" />
+    <Compile Include="Entities\Inntecc\Modeloautorizacion.cs" />
+    <Compile Include="Entities\Inntecc\Modeloautorizacioncondicion.cs" />
+    <Compile Include="Entities\Inntecc\Modeloautorizacionetapa.cs" />
+    <Compile Include="Entities\Inntecc\Pais.cs" />
+    <Compile Include="Entities\Inntecc\Periodo.cs" />
+    <Compile Include="Entities\Inntecc\Persona.cs" />
+    <Compile Include="Entities\Inntecc\Personacontacto.cs" />
+    <Compile Include="Entities\Inntecc\Prioridad.cs" />
+    <Compile Include="Entities\Inntecc\Provincia.cs" />
+    <Compile Include="Entities\Inntecc\Proyecto.cs" />
+    <Compile Include="Entities\Inntecc\Reporte.cs" />
+    <Compile Include="Entities\Inntecc\Rubronegocio.cs" />
+    <Compile Include="Entities\Inntecc\Seriearticulo.cs" />
+    <Compile Include="Entities\Inntecc\SexoPersona.cs" />
+    <Compile Include="Entities\Inntecc\Socionegentidadfinanciera.cs" />
+    <Compile Include="Entities\Inntecc\Socionegocio.cs" />
+    <Compile Include="Entities\Inntecc\Socionegociocontacto.cs" />
+    <Compile Include="Entities\Inntecc\Socionegociodireccion.cs" />
+    <Compile Include="Entities\Inntecc\Socionegociogarantia.cs" />
+    <Compile Include="Entities\Inntecc\Socionegociolimitecredito.cs" />
+    <Compile Include="Entities\Inntecc\Socionegociomarca.cs" />
+    <Compile Include="Entities\Inntecc\Socionegocioproyecto.cs" />
+    <Compile Include="Entities\Inntecc\Sucursal.cs" />
+    <Compile Include="Entities\Inntecc\Tipoafectacionigv.cs" />
+    <Compile Include="Entities\Inntecc\Tipoarticulo.cs" />
+    <Compile Include="Entities\Inntecc\Tipocambio.cs" />
+    <Compile Include="Entities\Inntecc\Tipocondicion.cs" />
+    <Compile Include="Entities\Inntecc\Tipocontratoempleado.cs" />
+    <Compile Include="Entities\Inntecc\Tipocp.cs" />
+    <Compile Include="Entities\Inntecc\Tipocppago.cs" />
+    <Compile Include="Entities\Inntecc\Tipodocentidad.cs" />
+    <Compile Include="Entities\Inntecc\Tipodocmov.cs" />
+    <Compile Include="Entities\Inntecc\Tipoformato.cs" />
+    <Compile Include="Entities\Inntecc\Tipogarantia.cs" />
+    <Compile Include="Entities\Inntecc\Tipogestionarticulo.cs" />
+    <Compile Include="Entities\Inntecc\Tipolista.cs" />
+    <Compile Include="Entities\Inntecc\Tipolistatipocondicion.cs" />
+    <Compile Include="Entities\Inntecc\Tipomediopago.cs" />
+    <Compile Include="Entities\Inntecc\Tipomoneda.cs" />
+    <Compile Include="Entities\Inntecc\Tipooperacion.cs" />
+    <Compile Include="Entities\Inntecc\Tiporatio.cs" />
+    <Compile Include="Entities\Inntecc\Tiposcontacto.cs" />
+    <Compile Include="Entities\Inntecc\Tiposnp.cs" />
+    <Compile Include="Entities\Inntecc\Tiposocio.cs" />
+    <Compile Include="Entities\Inntecc\Unidadmedida.cs" />
+    <Compile Include="Entities\Inntecc\Usuario.cs" />
+    <Compile Include="Entities\Inntecc\Valorpordefecto.cs" />
+    <Compile Include="Entities\Inntecc\VwAccesoform.cs" />
+    <Compile Include="Entities\Inntecc\VwAccesoopcion.cs" />
+    <Compile Include="Entities\Inntecc\VwArea.cs" />
+    <Compile Include="Entities\Inntecc\VwArticulo.cs" />
+    <Compile Include="Entities\Inntecc\VwArticuloclasificacion.cs" />
+    <Compile Include="Entities\Inntecc\VwArticulocompuesto.cs" />
+    <Compile Include="Entities\Inntecc\VwArticulodetalleunidad.cs" />
+    <Compile Include="Entities\Inntecc\VwArticuloinventario.cs" />
+    <Compile Include="Entities\Inntecc\VwArticuloseriedet.cs" />
+    <Compile Include="Entities\Inntecc\VwArticuloubicacion.cs" />
+    <Compile Include="Entities\Inntecc\VwArticulounidad.cs" />
+    <Compile Include="Entities\Inntecc\VwCentrodecosto.cs" />
+    <Compile Include="Entities\Inntecc\VwCptooperacion.cs" />
+    <Compile Include="Entities\Inntecc\VwDocumentoaprobacion.cs" />
+    <Compile Include="Entities\Inntecc\VwEmpleado.cs" />
+    <Compile Include="Entities\Inntecc\VwEmpleadoarea.cs" />
+    <Compile Include="Entities\Inntecc\VwEmpleadoareaproyecto.cs" />
+    <Compile Include="Entities\Inntecc\VwEtapaautorizacion.cs" />
+    <Compile Include="Entities\Inntecc\VwEtapaautorizaciondetalle.cs" />
+    <Compile Include="Entities\Inntecc\VwGrupousuarioitem.cs" />
+    <Compile Include="Entities\Inntecc\VwListaprecio.cs" />
+    <Compile Include="Entities\Inntecc\VwModeloautorizacion.cs" />
+    <Compile Include="Entities\Inntecc\VwModeloautorizacioncondicion.cs" />
+    <Compile Include="Entities\Inntecc\VwModeloautorizacionetapa.cs" />
+    <Compile Include="Entities\Inntecc\VwModeloautorizacioninfo.cs" />
+    <Compile Include="Entities\Inntecc\VwPaginaitem.cs" />
+    <Compile Include="Entities\Inntecc\VwPeriodo.cs" />
+    <Compile Include="Entities\Inntecc\VwPersona.cs" />
+    <Compile Include="Entities\Inntecc\VwPersonacontacto.cs" />
+    <Compile Include="Entities\Inntecc\VwProyecto.cs" />
+    <Compile Include="Entities\Inntecc\VwReporteusuario.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegentidadfinanciera.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegocio.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegociodireccion.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegociogarantia.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegociolimitecredito.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegociomarca.cs" />
+    <Compile Include="Entities\Inntecc\VwSocionegocioproyecto.cs" />
+    <Compile Include="Entities\Inntecc\VwSucursal.cs" />
+    <Compile Include="Entities\Inntecc\VwTipocambio.cs" />
+    <Compile Include="Entities\Inntecc\VwTipocp.cs" />
+    <Compile Include="Entities\Inntecc\VwTipolistatipocondicion.cs" />
+    <Compile Include="Entities\Inntecc\VwUbigeo.cs" />
+    <Compile Include="Entities\Inntecc\VwUsuario.cs" />
+    <Compile Include="Entities\Inntecc\Zona.cs" />
+    <Compile Include="Entities\Maquinaria\Clasificacionequipo.cs" />
+    <Compile Include="Entities\Maquinaria\Equipo.cs" />
+    <Compile Include="Entities\Maquinaria\Mantenimiento.cs" />
+    <Compile Include="Entities\Maquinaria\Mantenimientoimagen.cs" />
+    <Compile Include="Entities\Maquinaria\Marcaequipo.cs" />
+    <Compile Include="Entities\Maquinaria\Modeloequipo.cs" />
+    <Compile Include="Entities\Maquinaria\Ordentrabajo.cs" />
+    <Compile Include="Entities\Maquinaria\Tipoalquiler.cs" />
+    <Compile Include="Entities\Maquinaria\Tipoegresovalorizacion.cs" />
+    <Compile Include="Entities\Maquinaria\TurnoValorizacion.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacion.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizaciondanio.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizaciondanioelemento.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizaciondet.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacionegreso.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacionegresoproveedor.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacionelemento.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacionproveedor.cs" />
+    <Compile Include="Entities\Maquinaria\Valorizacionproveedordet.cs" />
+    <Compile Include="Entities\Maquinaria\VwEquipo.cs" />
+    <Compile Include="Entities\Maquinaria\VwMantenimiento.cs" />
+    <Compile Include="Entities\Maquinaria\VwModeloequipo.cs" />
+    <Compile Include="Entities\Maquinaria\VwOrdendeserviciodetvalorizaimp.cs" />
+    <Compile Include="Entities\Maquinaria\VwOrdentrabajo.cs" />
+    <Compile Include="Entities\Maquinaria\VwResumenelementodanio.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacion.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizaciondanio.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizaciondanioelemento.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizaciondet.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacionegreso.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacionegresoproveedor.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacionelemento.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacionproveedor.cs" />
+    <Compile Include="Entities\Maquinaria\VwValorizacionproveedordet.cs" />
+    <Compile Include="Entities\Movil\Clase.cs" />
+    <Compile Include="Entities\Movil\Plan.cs" />
+    <Compile Include="Entities\Movil\Tipo.cs" />
+    <Compile Include="Entities\Movil\Tipotope.cs" />
+    <Compile Include="Entities\Ventas\Articulolistaprecio.cs" />
+    <Compile Include="Entities\Ventas\Comisioncobro.cs" />
+    <Compile Include="Entities\Ventas\Comisioncobrodet.cs" />
+    <Compile Include="Entities\Ventas\Cotizacioncliente.cs" />
+    <Compile Include="Entities\Ventas\Cotizacionclientedet.cs" />
+    <Compile Include="Entities\Ventas\Cpventa.cs" />
+    <Compile Include="Entities\Ventas\Cpventadet.cs" />
+    <Compile Include="Entities\Ventas\Cpventadetserie.cs" />
+    <Compile Include="Entities\Ventas\Detraccioncliente.cs" />
+    <Compile Include="Entities\Ventas\Guiaremisionmotivo.cs" />
+    <Compile Include="Entities\Ventas\Notacreditocli.cs" />
+    <Compile Include="Entities\Ventas\Notacreditoclidet.cs" />
+    <Compile Include="Entities\Ventas\Notadebitocli.cs" />
+    <Compile Include="Entities\Ventas\Notadebitoclidet.cs" />
+    <Compile Include="Entities\Ventas\Ordendeventa.cs" />
+    <Compile Include="Entities\Ventas\Ordendeventadet.cs" />
+    <Compile Include="Entities\Compras\VwOrdencompradetcpcompraimp.cs" />
+    <Compile Include="Entities\Ventas\Tipocomisioncobro.cs" />
+    <Compile Include="Entities\Ventas\VwArticulolistaprecio.cs" />
+    <Compile Include="Entities\Ventas\VwArticulostocklista.cs" />
+    <Compile Include="Entities\Ventas\VwComisioncobro.cs" />
+    <Compile Include="Entities\Ventas\VwCotizacioncliente.cs" />
+    <Compile Include="Entities\Ventas\VwCotizacionclientedet.cs" />
+    <Compile Include="Entities\Ventas\VwCotizacionclientedetovimp.cs" />
+    <Compile Include="Entities\Ventas\VwCpventa.cs" />
+    <Compile Include="Entities\Ventas\VwCpventadet.cs" />
+    <Compile Include="Entities\Ventas\VwCpventadetserie.cs" />
+    <Compile Include="Entities\Ventas\VwCpventaimpnc.cs" />
+    <Compile Include="Entities\Ventas\VwCpventaimpnd.cs" />
+    <Compile Include="Entities\Ventas\VwDetraccioncliente.cs" />
+    <Compile Include="Entities\Ventas\VwNotacreditocli.cs" />
+    <Compile Include="Entities\Ventas\VwNotacreditoclidet.cs" />
+    <Compile Include="Entities\Ventas\VwNotacreditoclireciboingresoimp.cs" />
+    <Compile Include="Entities\Ventas\VwNotadebitocli.cs" />
+    <Compile Include="Entities\Ventas\VwNotadebitoclidet.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventa.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventadet.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventadetcpventaimp.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventadetimpguiaremision.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventadetvalorizaimp.cs" />
+    <Compile Include="Entities\Ventas\VwOrdendeventavalorizacpventaimp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoMantenimiento.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

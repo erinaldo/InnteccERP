@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/18/2015 17:54:11" ReportInfo.Modified="02/19/2015 09:38:37" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <TableDataSource Name="uc" ReferenceName="uc" DataType="System.Int32" Enabled="true">
+      <Column Name="idsucursal" DataType="System.Int32"/>
+      <Column Name="nombretipoformato" DataType="System.String"/>
+      <Column Name="abreviaturatipoformato" DataType="System.String"/>
+      <Column Name="documento" DataType="System.String"/>
+      <Column Name="fechaemision" DataType="System.DateTime"/>
+      <Column Name="idarticulo" DataType="System.Int32"/>
+      <Column Name="codigoarticulo" DataType="System.String"/>
+      <Column Name="nombrearticulo" DataType="System.String"/>
+      <Column Name="cantidad" DataType="System.Decimal"/>
+      <Column Name="codigounidadmedida" DataType="System.String"/>
+      <Column Name="nombreunidadmedida" DataType="System.String"/>
+      <Column Name="abrunidadmedida" DataType="System.String"/>
+      <Column Name="preciounitario" DataType="System.Decimal"/>
+      <Column Name="preciounitarioneto" DataType="System.Decimal"/>
+      <Column Name="importetotal" DataType="System.Decimal"/>
+      <Column Name="pesounitario" DataType="System.Decimal"/>
+      <Column Name="pesototal" DataType="System.Decimal"/>
+      <Column Name="costounitario" DataType="System.Decimal"/>
+      <Column Name="costototal" DataType="System.Decimal"/>
+      <Column Name="simbolomoneda" DataType="System.String"/>
+      <Column Name="razonsocial" DataType="System.String"/>
+      <Column Name="nombretipodocentidad" DataType="System.String"/>
+      <Column Name="nrodocentidadprincipal" DataType="System.String"/>
+      <Column Name="direccionfiscal" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" RawPaperSize="9" Guides="292.95,491.4,491.4,491.4,481.95">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="56.7">
+      <TextObject Name="Text1" Left="457.38" Top="18.45" Width="217.35" Height="18.9" Text="ULTIMOS COSTOS" Font="Tahoma, 13pt, style=Bold"/>
+      <TextObject Name="Text25" Left="935.55" Top="9.45" Width="85.05" Height="18.9" Text="[Date]" Format="Date" Format.Format="d" Font="Tahoma, 8pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="1047.06" Height="28.35">
+      <ShapeObject Name="Shape1" Left="-9.45" Width="1044.8" Height="25.35"/>
+      <TextObject Name="Text3" Left="9.45" Top="6" Width="75.6" Height="18.9" Text="FECHA" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text5" Left="73.6" Top="6" Width="94.5" Height="18.9" Text="DOCUMENTO" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text7" Left="176.55" Top="6" Width="94.5" Height="18.9" Text="RAZON SOCIAL" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text9" Left="415.8" Top="6" Width="94.5" Height="18.9" Text="CANTIDAD" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text11" Left="491.4" Top="6" Width="66.15" Height="18.9" Text="PRE. UNIT" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text13" Left="630.7" Top="6" Width="56.7" Height="18.9" Text="IMPORTE" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text15" Left="699.3" Top="6" Width="64.15" Height="18.9" Text="PESO UNIT." Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text17" Left="773.45" Top="6" Width="75.6" Height="18.9" Text="PESO TOTAL" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text19" Left="858.5" Top="6" Width="75.6" Height="18.9" Text="COSTO UNIT." Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text21" Left="935.55" Top="6" Width="94.5" Height="18.9" Text="COSTO TOTAL" HorzAlign="Right" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text23" Left="572" Top="6" Width="38.6" Height="18.9" Text="MON." Font="Tahoma, 7pt, style=Bold"/>
+    </PageHeaderBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="93.05" Width="1047.06" Height="21.9" Condition="[uc.codigoarticulo]">
+      <TextObject Name="Text24" Top="3" Width="491.4" Height="18.9" Text="ARTICULO [uc.codigoarticulo] - [uc.nombrearticulo]" Font="Tahoma, 8pt, style=Bold"/>
+      <DataBand Name="Data1" Top="118.95" Width="1047.06" Height="18.9" DataSource="uc">
+        <TextObject Name="Text2" Top="2" Width="75.6" Height="9.45" Text="[uc.fechaemision]" Format="Date" Format.Format="d" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text4" Left="73.6" Top="2" Width="103.95" Height="9.45" Text="[uc.abreviaturatipoformato][uc.documento]" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text6" Left="176.55" Top="2" Width="226.8" Height="9.45" Text="[uc.razonsocial]" Font="Tahoma, 7pt"/>
+        <TextObject Name="Text8" Left="381.45" Top="2" Width="85.05" Height="9.45" Text="[uc.cantidad]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text10" Left="469.5" Top="2" Width="75.6" Height="9.45" Text="[uc.preciounitarioneto]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text12" Left="582.9" Top="2" Width="94.5" Height="9.45" Text="[uc.importetotal]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text14" Left="660.5" Top="2" Width="94.5" Height="9.45" Text="[uc.pesounitario]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text16" Left="741.1" Top="2" Width="94.5" Height="9.45" Text="[uc.pesototal]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text18" Left="827.15" Top="2" Width="94.5" Height="9.45" Text="[uc.costounitario]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text20" Left="935.55" Top="2" Width="94.5" Height="9.45" Text="[uc.costototal]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Tahoma, 7pt" Trimming="EllipsisCharacter"/>
+        <TextObject Name="Text22" Left="572" Top="2" Width="40.95" Height="9.45" Text="[uc.simbolomoneda]" Font="Tahoma, 7pt"/>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="141.85" Width="1047.06" Height="37.8"/>
+    </GroupHeaderBand>
+    <PageFooterBand Name="PageFooter1" Top="183.65" Width="1047.06" Height="18.9"/>
+  </ReportPage>
+</Report>

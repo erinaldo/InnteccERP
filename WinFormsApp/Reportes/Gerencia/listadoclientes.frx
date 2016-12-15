@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/26/2015 12:33:22" ReportInfo.Modified="10/26/2015 12:38:01" ReportInfo.CreatorVersion="2014.4.7.0">
+  <Dictionary>
+    <TableDataSource Name="lis" ReferenceName="lis" DataType="System.Int32" Enabled="true">
+      <Column Name="idsocionegocio" DataType="System.Int32"/>
+      <Column Name="idpersona" DataType="System.Int32"/>
+      <Column Name="apepaterno" DataType="System.String"/>
+      <Column Name="apematerno" DataType="System.String"/>
+      <Column Name="nombrespersona" DataType="System.String"/>
+      <Column Name="razonsocial" DataType="System.String"/>
+      <Column Name="idtipodocent" DataType="System.Int32"/>
+      <Column Name="codigotipodocentidad" DataType="System.String"/>
+      <Column Name="nombretipodocentidad" DataType="System.String"/>
+      <Column Name="abreviaturadocentidad" DataType="System.String"/>
+      <Column Name="nrodocentidadprincipal" DataType="System.String"/>
+      <Column Name="iddistrito" DataType="System.Int32"/>
+      <Column Name="nombreubigeo" DataType="System.String"/>
+      <Column Name="direccionfiscal" DataType="System.String"/>
+      <Column Name="telefono" DataType="System.String"/>
+      <Column Name="movil" DataType="System.String"/>
+      <Column Name="email" DataType="System.String"/>
+      <Column Name="fechanacimiento" DataType="System.DateTime"/>
+      <Column Name="sexo" DataType="System.String"/>
+      <Column Name="idtiposocio" DataType="System.Int32"/>
+      <Column Name="nombretiposocio" DataType="System.String"/>
+      <Column Name="codigosocio" DataType="System.String"/>
+      <Column Name="fecharegistro" DataType="System.DateTime"/>
+      <Column Name="nrodocentidad" DataType="System.String"/>
+      <Column Name="idtipocondicion" DataType="System.Int32"/>
+      <Column Name="codigocondicion" DataType="System.String"/>
+      <Column Name="nombrecondicion" DataType="System.String"/>
+      <Column Name="diascondicion" DataType="System.Int32"/>
+      <Column Name="idtipolista" DataType="System.Int32"/>
+      <Column Name="codigotipolista" DataType="System.String"/>
+      <Column Name="nombretipolista" DataType="System.String"/>
+      <Column Name="procentajedescuento" DataType="System.Decimal"/>
+      <Column Name="esagenteretenedor" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="esactivo" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="pordescuentototal" DataType="System.Decimal"/>
+      <Column Name="comentario" DataType="System.String"/>
+      <Column Name="incluyeigvitems" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="idsocionegentidadfinanciera" DataType="System.Int32"/>
+      <Column Name="identfinaciera" DataType="System.Int32"/>
+      <Column Name="codentidadfinaciera" DataType="System.String"/>
+      <Column Name="nombreentidadfinanciera" DataType="System.String"/>
+      <Column Name="idtipomoneda" DataType="System.Int32"/>
+      <Column Name="codigotipomoneda" DataType="System.String"/>
+      <Column Name="nombretipomoneda" DataType="System.String"/>
+      <Column Name="simbolomoneda" DataType="System.String"/>
+      <Column Name="nrocuenta" DataType="System.String"/>
+      <Column Name="nrocuentainterbancario" DataType="System.String"/>
+      <Column Name="escuentadetraccion" DataType="System.Boolean" BindableControl="CheckBox"/>
+      <Column Name="nombrecontacto" DataType="System.String"/>
+      <Column Name="areacontacto" DataType="System.String"/>
+      <Column Name="direccioncontacto" DataType="System.String"/>
+      <Column Name="telefonocontacto" DataType="System.String"/>
+      <Column Name="movilcontacto" DataType="System.String"/>
+      <Column Name="emailcontacto" DataType="System.String"/>
+    </TableDataSource>
+    <BusinessObjectDataSource Name="emp" ReferenceName="emp" DataType="System.Collections.Generic.List`1[[BusinessObjects.Entities.VwSucursal, BusinessObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]" Enabled="true">
+      <Column Name="Idsucursal" DataType="System.Int32"/>
+      <Column Name="Codigosucursal" DataType="System.String"/>
+      <Column Name="Nombresucursal" DataType="System.String"/>
+      <Column Name="Direccionsucursal" DataType="System.String"/>
+      <Column Name="Iddistrito" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Nombreubigeo" DataType="System.String"/>
+      <Column Name="Iddepartamento" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigodepartamento" DataType="System.String"/>
+      <Column Name="Nombredepartamento" DataType="System.String"/>
+      <Column Name="Idprovincia" DataType="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"/>
+      <Column Name="Codigoprovincia" DataType="System.String"/>
+      <Column Name="Nombreprovincia" DataType="System.String"/>
+      <Column Name="Codigodistrito" DataType="System.String"/>
+      <Column Name="Nombredistrito" DataType="System.String"/>
+      <Column Name="Idempresa" DataType="System.Int32"/>
+      <Column Name="Ruc" DataType="System.String"/>
+      <Column Name="Razonsocialempresa" DataType="System.String"/>
+      <Column Name="Direccionfiscal" DataType="System.String"/>
+      <Column Name="Paginaweb" DataType="System.String"/>
+      <Column Name="Telefono" DataType="System.String"/>
+      <Column Name="Logo" DataType="System.Byte[]" BindableControl="Picture"/>
+      <Column Name="Idalmacendefecto" DataType="System.Int32"/>
+      <Column Name="Codigoalmacen" DataType="System.String"/>
+      <Column Name="Nombrealmacen" DataType="System.String"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" RawPaperSize="9" FirstPageSource="1" OtherPagesSource="1">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="78.05">
+      <PictureObject Name="Picture1" Left="9.45" Top="9.45" Width="53.25" Height="37.6" DataColumn="emp.Logo"/>
+      <TextObject Name="Text81" Left="56.7" Top="9.45" Width="163.6" Height="18.9" Text="[emp.Razonsocialempresa]" HorzAlign="Center" Font="Tahoma, 9pt, style=Bold"/>
+      <TextObject Name="Text82" Left="56.7" Top="24.35" Width="163.6" Height="18.9" Text="RUC: [emp.Ruc]" HorzAlign="Center" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text83" Left="56.7" Top="37.8" Width="163.6" Height="18.9" Text="[emp.Paginaweb]" HorzAlign="Center" Font="Tahoma, 7pt, style=Bold"/>
+      <TextObject Name="Text84" Left="56.7" Top="49.7" Width="160.65" Height="28.35" Text="[emp.Direccionfiscal]" HorzAlign="Center" Font="Tahoma, 6pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="82.35" Width="1047.06" Height="28.35">
+      <TextObject Name="Text2" Width="94.5" Height="18.9" Text="Razon Social"/>
+      <TextObject Name="Text4" Left="160.65" Width="94.5" Height="18.9" Text="RUC"/>
+      <TextObject Name="Text6" Left="255.15" Width="170.1" Height="18.9" Text="Dirección"/>
+      <TextObject Name="Text10" Left="567" Width="94.5" Height="18.9" Text="Celular"/>
+      <TextObject Name="Text12" Left="670.95" Width="94.5" Height="18.9" Text="Banco"/>
+      <TextObject Name="Text14" Left="822.15" Width="66.15" Height="18.9" Text="Moneda"/>
+      <TextObject Name="Text16" Left="888.3" Width="94.5" Height="18.9" Text="N° Cuenta"/>
+      <TextObject Name="Text8" Left="425.25" Width="94.5" Height="18.9" Text="Contacto"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="115" Width="1047.06" Height="18.9" DataSource="lis">
+      <TextObject Name="Text1" Width="160.65" Height="18.9" Text="[lis.razonsocial]"/>
+      <TextObject Name="Text3" Left="160.65" Width="94.5" Height="18.9" Text="[lis.nrodocentidadprincipal]"/>
+      <TextObject Name="Text5" Left="255.15" Width="170.1" Height="18.9" Text="[lis.direccionfiscal]"/>
+      <TextObject Name="Text9" Left="567" Width="94.5" Height="18.9" Text="[lis.movilcontacto]"/>
+      <TextObject Name="Text11" Left="670.95" Width="151.2" Height="18.9" Text="[lis.nombreentidadfinanciera]"/>
+      <TextObject Name="Text13" Left="822.15" Width="66.15" Height="18.9" Text="[lis.simbolomoneda]"/>
+      <TextObject Name="Text15" Left="888.3" Width="151.2" Height="18.9" Text="[lis.nrocuenta]"/>
+      <TextObject Name="Text7" Left="425.25" Width="132.3" Height="18.9" Text="[lis.nombrecontacto]"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="138.2" Width="1047.06" Height="18.9"/>
+  </ReportPage>
+</Report>
