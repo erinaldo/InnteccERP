@@ -466,7 +466,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 575);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 579);
             this.barDockControlBottom.Size = new System.Drawing.Size(1075, 0);
             // 
             // barDockControlLeft
@@ -474,14 +474,14 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 544);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 548);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1075, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 544);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 548);
             // 
             // btnNuevo
             // 
@@ -547,7 +547,7 @@
             this.tcCotizaCliente.Location = new System.Drawing.Point(0, 31);
             this.tcCotizaCliente.Name = "tcCotizaCliente";
             this.tcCotizaCliente.SelectedTabPage = this.tpCpVenta;
-            this.tcCotizaCliente.Size = new System.Drawing.Size(1075, 544);
+            this.tcCotizaCliente.Size = new System.Drawing.Size(1075, 548);
             this.tcCotizaCliente.TabIndex = 0;
             this.tcCotizaCliente.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpCpVenta,
@@ -613,7 +613,7 @@
             this.tpCpVenta.Controls.Add(this.rSeriecpventa);
             this.tpCpVenta.Controls.Add(this.iIdtipocp);
             this.tpCpVenta.Name = "tpCpVenta";
-            this.tpCpVenta.Size = new System.Drawing.Size(1069, 516);
+            this.tpCpVenta.Size = new System.Drawing.Size(1069, 520);
             this.tpCpVenta.Text = "Datos del comprobante";
             // 
             // iHoratransaccion
@@ -669,9 +669,11 @@
             0,
             0,
             0});
-            this.rTotalinafecto.Location = new System.Drawing.Point(221, 514);
+            this.rTotalinafecto.Location = new System.Drawing.Point(223, 487);
             this.rTotalinafecto.MenuManager = this.bmMantenimiento;
             this.rTotalinafecto.Name = "rTotalinafecto";
+            this.rTotalinafecto.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.rTotalinafecto.Properties.Appearance.Options.UseFont = true;
             this.rTotalinafecto.Properties.Appearance.Options.UseTextOptions = true;
             this.rTotalinafecto.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.rTotalinafecto.Properties.Mask.EditMask = "n";
@@ -685,16 +687,17 @@
             // 
             // labelControl22
             // 
-            this.labelControl22.Location = new System.Drawing.Point(164, 518);
+            this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl22.Location = new System.Drawing.Point(155, 490);
             this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(54, 13);
+            this.labelControl22.Size = new System.Drawing.Size(62, 14);
             this.labelControl22.TabIndex = 42;
             this.labelControl22.Text = "T. Inafecto";
             this.labelControl22.Visible = false;
             // 
             // labelControl21
             // 
-            this.labelControl21.Location = new System.Drawing.Point(12, 491);
+            this.labelControl21.Location = new System.Drawing.Point(540, 539);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(39, 13);
             this.labelControl21.TabIndex = 38;
@@ -708,7 +711,7 @@
             0,
             0,
             0});
-            this.rTotalbruto.Location = new System.Drawing.Point(57, 487);
+            this.rTotalbruto.Location = new System.Drawing.Point(585, 535);
             this.rTotalbruto.MenuManager = this.bmMantenimiento;
             this.rTotalbruto.Name = "rTotalbruto";
             this.rTotalbruto.Properties.Appearance.Options.UseTextOptions = true;
@@ -724,7 +727,7 @@
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(168, 492);
+            this.labelControl10.Location = new System.Drawing.Point(379, 538);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(45, 13);
             this.labelControl10.TabIndex = 48;
@@ -734,16 +737,16 @@
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl15.Location = new System.Drawing.Point(730, 493);
+            this.labelControl15.Location = new System.Drawing.Point(741, 490);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(76, 14);
+            this.labelControl15.Size = new System.Drawing.Size(52, 14);
             this.labelControl15.TabIndex = 46;
-            this.labelControl15.Text = "Impuesto IGV";
+            this.labelControl15.Text = "Impuesto";
             // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl11.Location = new System.Drawing.Point(376, 494);
+            this.labelControl11.Location = new System.Drawing.Point(335, 490);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(74, 14);
             this.labelControl11.TabIndex = 44;
@@ -752,11 +755,11 @@
             // labelControl20
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.labelControl20.Location = new System.Drawing.Point(563, 493);
+            this.labelControl20.Location = new System.Drawing.Point(537, 490);
             this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(53, 14);
+            this.labelControl20.Size = new System.Drawing.Size(77, 14);
             this.labelControl20.TabIndex = 40;
-            this.labelControl20.Text = "Sub Total";
+            this.labelControl20.Text = "Total Grabado";
             // 
             // rImportetotal
             // 
@@ -765,7 +768,7 @@
             0,
             0,
             0});
-            this.rImportetotal.Location = new System.Drawing.Point(221, 488);
+            this.rImportetotal.Location = new System.Drawing.Point(432, 534);
             this.rImportetotal.MenuManager = this.bmMantenimiento;
             this.rImportetotal.Name = "rImportetotal";
             this.rImportetotal.Properties.Appearance.Options.UseTextOptions = true;
@@ -786,7 +789,7 @@
             0,
             0,
             0});
-            this.rTotalimpuesto.Location = new System.Drawing.Point(813, 490);
+            this.rTotalimpuesto.Location = new System.Drawing.Point(812, 487);
             this.rTotalimpuesto.MenuManager = this.bmMantenimiento;
             this.rTotalimpuesto.Name = "rTotalimpuesto";
             this.rTotalimpuesto.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
@@ -808,7 +811,7 @@
             0,
             0,
             0});
-            this.rtotalexonerado.Location = new System.Drawing.Point(456, 490);
+            this.rtotalexonerado.Location = new System.Drawing.Point(415, 487);
             this.rtotalexonerado.MenuManager = this.bmMantenimiento;
             this.rtotalexonerado.Name = "rtotalexonerado";
             this.rtotalexonerado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
@@ -830,7 +833,7 @@
             0,
             0,
             0});
-            this.rTotalgravado.Location = new System.Drawing.Point(623, 490);
+            this.rTotalgravado.Location = new System.Drawing.Point(622, 487);
             this.rTotalgravado.MenuManager = this.bmMantenimiento;
             this.rTotalgravado.Name = "rTotalgravado";
             this.rTotalgravado.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8F);
@@ -919,7 +922,7 @@
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
-            this.labelControl16.Location = new System.Drawing.Point(920, 493);
+            this.labelControl16.Location = new System.Drawing.Point(919, 490);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(31, 14);
             this.labelControl16.TabIndex = 54;
@@ -932,7 +935,7 @@
             0,
             0,
             0});
-            this.rTotaldocumento.Location = new System.Drawing.Point(958, 490);
+            this.rTotaldocumento.Location = new System.Drawing.Point(957, 487);
             this.rTotaldocumento.MenuManager = this.bmMantenimiento;
             this.rTotaldocumento.Name = "rTotaldocumento";
             this.rTotaldocumento.Properties.Appearance.BackColor = System.Drawing.Color.Yellow;
@@ -2090,7 +2093,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1075, 575);
+            this.ClientSize = new System.Drawing.Size(1075, 579);
             this.Controls.Add(this.tcCotizaCliente);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
