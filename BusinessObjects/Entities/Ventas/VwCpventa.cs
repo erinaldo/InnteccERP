@@ -13,7 +13,7 @@ namespace BusinessObjects.Entities
 		public  int  Idsucursal{ get; set; }
 		public  string Codigosucursal{ get; set; }
 		public  string Nombresucursal{ get; set; }
-		public  int?  Idtipocp{ get; set; }
+		public  int  Idtipocp{ get; set; }
 		public  string Codigotipocp{ get; set; }
 		public  int?  Idtipoformato{ get; set; }
 		public  string Nombretipoformato{ get; set; }

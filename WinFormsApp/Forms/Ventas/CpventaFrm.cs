@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Drawing;
 using System.Windows.Forms;
 using ActionService;
 using BusinessObjects;
@@ -7,7 +6,6 @@ using BusinessObjects.Entities;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Views.Grid;
-using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using Utilities;
 using WinFormsApp.Properties;
 
@@ -94,8 +92,24 @@ namespace WinFormsApp
 
             //Cursor = Cursors.WaitCursor;
             AsignarIdEntidadMnt();
-            var formMnt = new CpventaMntFrm(IdEntidadMnt, TipoMnt, gcConsulta, this);
-            formMnt.ShowDialog();
+
+            switch (SessionApp.VersionApp)
+            {
+                case "PRINCIPAL":
+                    var formMntPrincipal = new CpventaMntFrmClaro(IdEntidadMnt, TipoMnt, gcConsulta, this);
+                    formMntPrincipal.ShowDialog();
+                    break;
+                case "CLINICA":
+                    var formMntClaro = new CpventaMntFrm(IdEntidadMnt, TipoMnt, gcConsulta, this);
+                    formMntClaro.ShowDialog();
+                    break;
+
+            }
+
+             
+           
+
+
             //XtraMessageBox.Show(formMnt.IdEntidadMnt.ToString());
             //formMnt.Show();
             //formMnt.BringToFront();
@@ -161,12 +175,25 @@ namespace WinFormsApp
                 case "btnReciboIngreso":
                     if (SessionApp.EmpleadoSel != null)
                     {
-                        IdEntidadMnt = Convert.ToInt32(gvConsulta.GetRowCellValue(gvConsulta.FocusedRowHandle, NombreIdEntidadMnt));
-                        CajaCobroCpVentaFrm cajaCobroCpVentaFrm = new CajaCobroCpVentaFrm(Convert.ToInt32(IdEntidadMnt), SessionApp.EmpleadoSel.Idempleado);
-                        cajaCobroCpVentaFrm.ShowDialog();
-                        if (cajaCobroCpVentaFrm.DialogResult == DialogResult.OK)
-                        {
+                        //IdEntidadMnt = Convert.ToInt32(gvConsulta.GetRowCellValue(gvConsulta.FocusedRowHandle, NombreIdEntidadMnt));
+                        //CajaCobroCpVentaFrm cajaCobroCpVentaFrm = new CajaCobroCpVentaFrm(Convert.ToInt32(IdEntidadMnt), SessionApp.EmpleadoSel.Idempleado);
+                        //cajaCobroCpVentaFrm.ShowDialog();
+                        //if (cajaCobroCpVentaFrm.DialogResult == DialogResult.OK)
+                        //{
 
+                        //}
+                        if (EstadoReferenciaCaja())
+                        {
+                            break;
+                        }
+                        if (SessionApp.EmpleadoSel != null)
+                        {
+                            CajaCobroCpVentaFrmResumen cajaCobroCpVentaFrm = new CajaCobroCpVentaFrmResumen(Convert.ToInt32(IdEntidadMnt), SessionApp.EmpleadoSel.Idempleado);
+                            cajaCobroCpVentaFrm.ShowDialog();
+                            if (cajaCobroCpVentaFrm.DialogResult == DialogResult.OK)
+                            {
+                               
+                            }
                         }
                     }
                     else
@@ -175,7 +202,24 @@ namespace WinFormsApp
                     }
                     break;
             }
-        }        
+        }
+
+        private bool EstadoReferenciaCaja()
+        {
+            VwCpventa vwCpventa = (VwCpventa)gvConsulta.GetFocusedRow();
+            var idTipoCp = vwCpventa.Idtipocp;
+            var serieTipoCp = vwCpventa.Seriecpventa;
+            var numeroTipoCp = vwCpventa.Numerocpventa;
+
+            if (Service.CpVentaTieneReferenciaCaja(idTipoCp, serieTipoCp, numeroTipoCp))
+            {
+                XtraMessageBox.Show("El Comprobante de venta tiene Recibo de Caja", "Atención",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return true;
+            }
+            return false;
+
+        }
+
         public void EstablecerPermisos()
         {
             Permisos = Service.GetPermisosForm(IdUsuario, Name);

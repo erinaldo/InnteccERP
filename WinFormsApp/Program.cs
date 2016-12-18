@@ -60,10 +60,19 @@ namespace WinFormsApp
                     return; 
                 }
             }
-            
 
-            //UserLookAndFeel.Default.SetSkinStyle(_appSkinStyle);
-            UserLookAndFeel.Default.SetSkinStyle("Office 2007 Green");
+            string versionApp = ConfigurationManager.AppSettings.Get("VersionApp");
+
+            switch (versionApp)
+            {
+                case "PRINCIPAL":
+                    UserLookAndFeel.Default.SetSkinStyle(_appSkinStyle);
+                    break;
+                case "CLINICA":
+                    UserLookAndFeel.Default.SetSkinStyle("Office 2007 Green");
+                    break;
+
+            }
             
 
             CacheObjects cacheObjects = new CacheObjects();
@@ -77,16 +86,24 @@ namespace WinFormsApp
             SessionApp.UsuarioSel = null;
             SessionApp.GrupoUsarioSel = null;
             SessionApp.EmpleadoSel = null;
+            SessionApp.VersionApp = versionApp;
 
             _usuarioIngresoFrm = new UsuarioIngresoFrm();
             if (_usuarioIngresoFrm.ShowDialog() == DialogResult.Cancel)
             {
                 return;
-            }                        
+            }
 
-            //Application.Run(new Principal());
-            Application.Run(new ModuloClinica());
-                                    
+            switch (versionApp)
+            {
+                case "PRINCIPAL":
+                    Application.Run(new Principal());
+                    break;
+                case "CLINICA":
+                    Application.Run(new ModuloClinica());
+                    break;
+
+            }                                    
         }
 
         private static void CurrentDomainOnUnhandledException(object sender, UnhandledExceptionEventArgs e)

@@ -17,7 +17,7 @@ using WinFormsApp.Properties;
 
 namespace WinFormsApp
 {
-    public partial class CpventaMntFrm : XtraForm
+    public partial class CpventaMntFrmClaro : XtraForm
     {
         public int IdEntidadMnt { get; set; }
         public TipoMantenimiento TipoMnt { get; set; }
@@ -49,7 +49,7 @@ namespace WinFormsApp
         public UserAudit UserAudit { get; set; }
         public int IdPacienteARegistrar { get; set; }
         public int? Idprogramacioncitadet { get; set; }
-        public CpventaMntFrm(int idEntidadMnt, TipoMantenimiento tipoMnt, GridControl gridParent, CpventaFrm formParent) 
+        public CpventaMntFrmClaro(int idEntidadMnt, TipoMantenimiento tipoMnt, GridControl gridParent, CpventaFrm formParent) 
         {
             if (tipoMnt == TipoMantenimiento.SinEspecificar && idEntidadMnt <= 0)
             {
@@ -73,7 +73,7 @@ namespace WinFormsApp
 
             UserAudit = new UserAudit();
         }
-        public CpventaMntFrm(int idEntidadMnt, TipoMantenimiento tipoMnt, GridControl gridParent, CpventaFrm formParent, int idPacienteARegistrar, int? idprogramacioncitadet)
+        public CpventaMntFrmClaro(int idEntidadMnt, TipoMantenimiento tipoMnt, GridControl gridParent, CpventaFrm formParent, int idPacienteARegistrar, int? idprogramacioncitadet)
         {
             if (tipoMnt == TipoMantenimiento.SinEspecificar && idEntidadMnt <= 0)
             {
@@ -101,7 +101,7 @@ namespace WinFormsApp
             Idprogramacioncitadet = idprogramacioncitadet;
 
         }   
-        private void CpventaMntFrm_Load(object sender, EventArgs e)
+        private void CpventaMntFrmClaro_Load(object sender, EventArgs e)
         {
             EstablecerPermisos();
             InicioTipoMantenimiento();
@@ -968,7 +968,7 @@ namespace WinFormsApp
             btnLimpiarCampos.Enabled = false;
             btnActualizar.Enabled = false;
         }
-        private void CpventaMntFrm_KeyPress(object sender, KeyPressEventArgs e)
+        private void CpventaMntFrmClaro_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)(Keys.Enter))
             {
@@ -985,7 +985,7 @@ namespace WinFormsApp
             WinFormUtils.ReadOnlyFields(tpCpVenta, readOnly);
             //XtraFormUtils.ReadOnlyFields(tpLogistica, readOnly);        
         }
-        private void CpventaMntFrm_FormClosing(object sender, FormClosingEventArgs e)
+        private void CpventaMntFrmClaro_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (FormParent != null)
             {                
@@ -1025,7 +1025,7 @@ namespace WinFormsApp
             var subMenu = e.Item as BarSubItem;
             if (subMenu != null) return;
             TipoMantenimiento tipoMantenimientoItem;
-            CpventaMntItemFrm cpventaMntItemFrm;
+            CpventaMntItemFrmClaro cpventaMntItemFrmclaro;
             VwCpventadet vwCpventadetMntItem;
 
 
@@ -1084,17 +1084,17 @@ namespace WinFormsApp
                     vwCpventadetMntItem.Numeroitem = sgtItem == null ? 1 : sgtItem.Numeroitem + 1;
 
                     tipoMantenimientoItem = TipoMantenimiento.Nuevo;
-                    cpventaMntItemFrm = new CpventaMntItemFrm(tipoMantenimientoItem, vwCpventadetMntItem, VwCpventadetList, CpVentaItemParameter);
-                    cpventaMntItemFrm.ShowDialog();
+                    cpventaMntItemFrmclaro = new CpventaMntItemFrmClaro(tipoMantenimientoItem, vwCpventadetMntItem, VwCpventadetList, CpVentaItemParameter);
+                    cpventaMntItemFrmclaro.ShowDialog();
 
-                    if (cpventaMntItemFrm.DialogResult == DialogResult.OK)
+                    if (cpventaMntItemFrmclaro.DialogResult == DialogResult.OK)
                     {
                         VwCpventadetList.Add(vwCpventadetMntItem);
 
                         //Agregar items de detalle compuesto
-                        if (cpventaMntItemFrm.VwCpventadetdetComponenteList != null && cpventaMntItemFrm.VwCpventadetdetComponenteList .Count > 0)
+                        if (cpventaMntItemFrmclaro.VwCpventadetdetComponenteList != null && cpventaMntItemFrmclaro.VwCpventadetdetComponenteList .Count > 0)
                         {
-                            foreach (var itemDetCompuesto in cpventaMntItemFrm.VwCpventadetdetComponenteList)
+                            foreach (var itemDetCompuesto in cpventaMntItemFrmclaro.VwCpventadetdetComponenteList)
                             {
                                 VwCpventadetList.Add(itemDetCompuesto);
                             }
@@ -1123,9 +1123,9 @@ namespace WinFormsApp
                     
                     vwCpventadetMntItem = (VwCpventadet)gvDetalle.GetFocusedRow();
                     tipoMantenimientoItem = TipoMantenimiento.Modificar;
-                    cpventaMntItemFrm = new CpventaMntItemFrm(tipoMantenimientoItem, vwCpventadetMntItem, VwCpventadetList, CpVentaItemParameter);
-                    cpventaMntItemFrm.ShowDialog();
-                    if (cpventaMntItemFrm.DialogResult == DialogResult.OK)
+                    cpventaMntItemFrmclaro = new CpventaMntItemFrmClaro(tipoMantenimientoItem, vwCpventadetMntItem, VwCpventadetList, CpVentaItemParameter);
+                    cpventaMntItemFrmclaro.ShowDialog();
+                    if (cpventaMntItemFrmclaro.DialogResult == DialogResult.OK)
                     {
                         SumarTotales();
                     }
@@ -1513,18 +1513,5 @@ namespace WinFormsApp
         }
     }
 
-    public class CpVentaItem
-    {
-        public int IdSucursalConsulta { get; set; }
-        public int IdAlmacenConsulta { get; set; }
-        public int IdTipoListaConsulta { get; set; }
-        public int IdTipoMonedaConsulta { get; set; }
-        public int IdTipoCondicion { get; set; }
-        public int? IdAreaEmpleado { get; set; }
-        public int? IdProyectoCliente { get; set; }
-        public int? IdCentroBeneficio { get; set; }
-        public int IdCliente { get; set; }
-        public bool Incluyeimpuestoitems { get; set; }
-        public decimal Porcentajeimpuesto { get; set; }
-    }
+  
 }

@@ -2,11 +2,15 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>E:\Dot Net\CorpTeg\InnteccErp\InnteccErpSource\WinFormsApp\Forms\Caja\CierrecajaMntFrm.cs</string>
-      <string>E:\Dot Net\CorpTeg\InnteccErp\InnteccErpSource\WinFormsApp\Forms\Caja\CierrecajaMntFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaFrm.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Dot Net\CorpTeg\InnteccErp\InnteccErpSource\WinFormsApp\Reportes\Helper\ImpresionFormato.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntFrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>E:\Empresa\Años\2016\InnteccERP\BusinessObjects\Entities\Ventas\VwCpventa.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

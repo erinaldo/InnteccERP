@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp
 {
-    partial class CpventaMntItemFrm
+    partial class CpventaMntItemFrmClaro
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaMntItemFrm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaMntItemFrmClaro));
             this.bmMntItems = new DevExpress.XtraBars.BarManager(this.components);
             this.barMntItems = new DevExpress.XtraBars.Bar();
             this.btnGrabarItem = new DevExpress.XtraBars.BarButtonItem();
@@ -1559,7 +1559,7 @@
             this.tpOtros.Size = new System.Drawing.Size(609, 327);
             this.tpOtros.Text = "Otros";
             // 
-            // CpventaMntItemFrm
+            // CpventaMntItemFrmClaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1574,11 +1574,11 @@
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "CpventaMntItemFrm";
+            this.Name = "CpventaMntItemFrmClaro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item de Comprobante de Venta";
-            this.Load += new System.EventHandler(this.CpventaMntItemFrm_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CpventaMntItemFrm_KeyPress);
+            this.Load += new System.EventHandler(this.CpventaMntItemFrmClaro_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CpventaMntItemFrmClaro_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.bmMntItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcProductos)).EndInit();
             this.tcProductos.ResumeLayout(false);

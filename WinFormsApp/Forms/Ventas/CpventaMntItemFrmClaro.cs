@@ -14,7 +14,7 @@ using WinFormsApp.Properties;
 
 namespace WinFormsApp
 {
-    public partial class CpventaMntItemFrm : XtraForm
+    public partial class CpventaMntItemFrmClaro : XtraForm
     {
         public int IdEntidadMnt { get; set; }
         public TipoMantenimiento TipoMnt { get; set; }
@@ -35,7 +35,7 @@ namespace WinFormsApp
         public UserAudit UserAudit { get; set; }
         public List<Almacen> AlmacenList { get; set; }
         public List<VwArticuloseriedet> VwArticuloseriedetList { get; set; }
-        public CpventaMntItemFrm(TipoMantenimiento tipoMnt, VwCpventadet vwCpventadetMnt, List<VwCpventadet> vwCpventadetList, CpVentaItem cpVentaItemParameter)
+        public CpventaMntItemFrmClaro(TipoMantenimiento tipoMnt, VwCpventadet vwCpventadetMnt, List<VwCpventadet> vwCpventadetList, CpVentaItem cpVentaItemParameter)
         {
 
             InitializeComponent();
@@ -50,7 +50,7 @@ namespace WinFormsApp
             CpVentaItemParameter = cpVentaItemParameter;
             UserAudit = new UserAudit();
         }
-        private void CpventaMntItemFrm_Load(object sender, EventArgs e)
+        private void CpventaMntItemFrmClaro_Load(object sender, EventArgs e)
         {
             InicioTipoMantenimiento();
             switch (TipoMnt)
@@ -440,7 +440,7 @@ namespace WinFormsApp
 
             return true;
         }
-        private void CpventaMntItemFrm_KeyPress(object sender, KeyPressEventArgs e)
+        private void CpventaMntItemFrmClaro_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)(Keys.Enter))
             {

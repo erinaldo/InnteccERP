@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp
 {
-    partial class CpventaMntFrm
+    partial class CpventaMntFrmClaro
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaMntFrm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaMntFrmClaro));
             this.gcCalcularItem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.riCalcularItem = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.bmMantenimiento = new DevExpress.XtraBars.BarManager(this.components);
@@ -2081,7 +2081,7 @@
             this.btnSeries.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSeries.LargeGlyph")));
             this.btnSeries.Name = "btnSeries";
             // 
-            // CpventaMntFrm
+            // CpventaMntFrmClaro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -2096,12 +2096,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "CpventaMntFrm";
+            this.Name = "CpventaMntFrmClaro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comprobante de venta";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CpventaMntFrm_FormClosing);
-            this.Load += new System.EventHandler(this.CpventaMntFrm_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CpventaMntFrm_KeyPress);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CpventaMntFrmClaro_FormClosing);
+            this.Load += new System.EventHandler(this.CpventaMntFrmClaro_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CpventaMntFrmClaro_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.riCalcularItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bmMantenimiento)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcCotizaCliente)).EndInit();

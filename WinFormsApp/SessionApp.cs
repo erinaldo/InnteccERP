@@ -21,6 +21,7 @@ namespace WinFormsApp
 
         static readonly IService Service = new Service();
 
+        internal static string VersionApp { get; set; }
         internal static void RecargarInventarioInicial()
         {        
             string orden = "fechainventarioinicial desc limit 1";
