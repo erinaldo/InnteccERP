@@ -2,15 +2,15 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaFrm.cs</string>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\App.config</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntFrm.cs</string>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntItemFrmClaro.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntItemFrmClaro.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\BusinessObjects\Entities\Ventas\VwCpventa.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Buscadores\BuscadorArticuloCondicionFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Buscadores\BuscadorArticuloCondicionFrm.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

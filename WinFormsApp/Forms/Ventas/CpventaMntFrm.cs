@@ -1395,8 +1395,8 @@ namespace WinFormsApp
                 //
                 rImportetotalpercepcion.EditValue = decimal.Round(rIncluyeimpuestoitems.Checked ? totalValorPercepcion : totalValorPercepcion * factorImpuesto, 2);
                 rTotalgravado.EditValue = decimal.Round(rIncluyeimpuestoitems.Checked ? totalgravado / factorImpuesto : totalgravado, 2);
-                rTotalinafecto.EditValue = decimal.Round(rIncluyeimpuestoitems.Checked ? totalinafecto / factorImpuesto : totalinafecto, 2);
-                rtotalexonerado.EditValue = decimal.Round(rIncluyeimpuestoitems.Checked ? totalexonerado / factorImpuesto : totalexonerado, 2);
+                rTotalinafecto.EditValue = totalinafecto;
+                rtotalexonerado.EditValue = totalexonerado;
 
                 rTotalimpuesto.EditValue = decimal.Round(rIncluyeimpuestoitems.Checked ? totalgravado - (decimal)rTotalgravado.EditValue : totalgravado * porcentajeImpuesto / 100, 2);
                 rImportetotal.EditValue = (decimal)rTotalgravado.EditValue + (decimal)rTotalinafecto.EditValue + (decimal)rtotalexonerado.EditValue + (decimal)rTotalimpuesto.EditValue;

@@ -57,6 +57,7 @@ namespace WinFormsApp
 
         private void CargarDetalle()
         {
+            Cursor = Cursors.WaitCursor;
             string whereListaPrecio = string.Format("idlistaprecio = '{0}'", iIdlistaprecio.EditValue);
             gcDetalle.DataSource = null;
             VwArticulolistaprecioList = Service.GetAllVwArticulolistaprecio(whereListaPrecio, "idarticulolistaprecio");
@@ -71,7 +72,7 @@ namespace WinFormsApp
                 gcMargenCreditoOpcion2.Caption = string.Format("% Margen {0}", vwListaprecio.Diascondicion2);
                 gcCreditodia2.Caption = string.Format("Crédito {0} Días", vwListaprecio.Diascondicion2);
             }
-            gvDetalle.BestFitColumns();
+            Cursor = Cursors.Default;
         }
 
         private void ListaprecioActualizacionFrm_KeyPress(object sender, KeyPressEventArgs e)
@@ -208,8 +209,7 @@ namespace WinFormsApp
             item.Lastmodified = DateTime.Now;
             item.DataEntityState = DataEntityState.Modified;
             gvDetalle.UpdateCurrentRow();
-            gvDetalle.PostEditor();
-            gvDetalle.BestFitColumns(true);
+            gvDetalle.PostEditor();            
         }
 
         private void CalcularPrecios(VwArticulolistaprecio item)

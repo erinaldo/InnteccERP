@@ -42,6 +42,7 @@
             this.gridColumn19 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn20 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.riMemoEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn21 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDetalle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDetalle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.riFechaHora)).BeginInit();
@@ -80,7 +82,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.Location = new System.Drawing.Point(797, 7);
+            this.btnAgregar.Location = new System.Drawing.Point(864, 7);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(107, 23);
             this.btnAgregar.TabIndex = 1;
@@ -149,7 +151,8 @@
             this.gcDetalle.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.riNumerico2,
             this.riNumerico4,
-            this.riFechaHora});
+            this.riFechaHora,
+            this.riMemoEdit});
             this.gcDetalle.Size = new System.Drawing.Size(1198, 470);
             this.gcDetalle.TabIndex = 65;
             this.gcDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -176,11 +179,14 @@
             this.gridColumn9,
             this.gridColumn26});
             this.gvDetalle.GridControl = this.gcDetalle;
+            this.gvDetalle.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.gvDetalle.Name = "gvDetalle";
             this.gvDetalle.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.False;
             this.gvDetalle.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.False;
             this.gvDetalle.OptionsFind.AlwaysVisible = true;
             this.gvDetalle.OptionsView.ColumnAutoWidth = false;
+            this.gvDetalle.OptionsView.RowAutoHeight = true;
+            this.gvDetalle.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.gvDetalle.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gvDetalle_CellValueChanged);
             // 
             // gridColumn23
@@ -213,12 +219,17 @@
             // gridColumn20
             // 
             this.gridColumn20.Caption = "Nombre Artículo";
+            this.gridColumn20.ColumnEdit = this.riMemoEdit;
             this.gridColumn20.FieldName = "Nombrearticulo";
             this.gridColumn20.Name = "gridColumn20";
             this.gridColumn20.OptionsColumn.ReadOnly = true;
             this.gridColumn20.Visible = true;
             this.gridColumn20.VisibleIndex = 2;
-            this.gridColumn20.Width = 104;
+            this.gridColumn20.Width = 313;
+            // 
+            // riMemoEdit
+            // 
+            this.riMemoEdit.Name = "riMemoEdit";
             // 
             // gridColumn1
             // 
@@ -231,6 +242,7 @@
             // gridColumn21
             // 
             this.gridColumn21.Caption = "Marca";
+            this.gridColumn21.ColumnEdit = this.riMemoEdit;
             this.gridColumn21.FieldName = "Nombremarca";
             this.gridColumn21.Name = "gridColumn21";
             this.gridColumn21.OptionsColumn.ReadOnly = true;
@@ -260,6 +272,7 @@
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 5;
+            this.gridColumn8.Width = 70;
             // 
             // riNumerico4
             // 
@@ -281,7 +294,7 @@
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 6;
-            this.gridColumn7.Width = 81;
+            this.gridColumn7.Width = 80;
             // 
             // riNumerico2
             // 
@@ -300,11 +313,12 @@
             this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.Caption = "Contado";
-            this.gridColumn6.ColumnEdit = this.riNumerico4;
+            this.gridColumn6.ColumnEdit = this.riNumerico2;
             this.gridColumn6.FieldName = "Preciocontado";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 7;
+            this.gridColumn6.Width = 60;
             // 
             // gcMargenCreditoOpcion1
             // 
@@ -314,18 +328,19 @@
             this.gcMargenCreditoOpcion1.Name = "gcMargenCreditoOpcion1";
             this.gcMargenCreditoOpcion1.Visible = true;
             this.gcMargenCreditoOpcion1.VisibleIndex = 8;
+            this.gcMargenCreditoOpcion1.Width = 60;
             // 
             // gcCreditodia1
             // 
             this.gcCreditodia1.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gcCreditodia1.AppearanceHeader.Options.UseFont = true;
             this.gcCreditodia1.Caption = "Crédito";
-            this.gcCreditodia1.ColumnEdit = this.riNumerico4;
+            this.gcCreditodia1.ColumnEdit = this.riNumerico2;
             this.gcCreditodia1.FieldName = "Preciocreditoopcion1";
             this.gcCreditodia1.Name = "gcCreditodia1";
             this.gcCreditodia1.Visible = true;
             this.gcCreditodia1.VisibleIndex = 9;
-            this.gcCreditodia1.Width = 63;
+            this.gcCreditodia1.Width = 60;
             // 
             // gcMargenCreditoOpcion2
             // 
@@ -335,19 +350,19 @@
             this.gcMargenCreditoOpcion2.Name = "gcMargenCreditoOpcion2";
             this.gcMargenCreditoOpcion2.Visible = true;
             this.gcMargenCreditoOpcion2.VisibleIndex = 10;
-            this.gcMargenCreditoOpcion2.Width = 69;
+            this.gcMargenCreditoOpcion2.Width = 60;
             // 
             // gcCreditodia2
             // 
             this.gcCreditodia2.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gcCreditodia2.AppearanceHeader.Options.UseFont = true;
             this.gcCreditodia2.Caption = "Crédito";
-            this.gcCreditodia2.ColumnEdit = this.riNumerico4;
+            this.gcCreditodia2.ColumnEdit = this.riNumerico2;
             this.gcCreditodia2.FieldName = "Preciocreditoopcion2";
             this.gcCreditodia2.Name = "gcCreditodia2";
             this.gcCreditodia2.Visible = true;
             this.gcCreditodia2.VisibleIndex = 11;
-            this.gcCreditodia2.Width = 85;
+            this.gcCreditodia2.Width = 60;
             // 
             // gridColumn9
             // 
@@ -366,12 +381,11 @@
             this.gridColumn26.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
             this.gridColumn26.AppearanceHeader.Options.UseFont = true;
             this.gridColumn26.Caption = "Sugerido/P.";
-            this.gridColumn26.ColumnEdit = this.riNumerico4;
+            this.gridColumn26.ColumnEdit = this.riNumerico2;
             this.gridColumn26.FieldName = "Preciosugerido";
             this.gridColumn26.Name = "gridColumn26";
             this.gridColumn26.Visible = true;
             this.gridColumn26.VisibleIndex = 13;
-            this.gridColumn26.Width = 74;
             // 
             // riFechaHora
             // 
@@ -428,7 +442,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
-            this.btnActualizar.Location = new System.Drawing.Point(1023, 7);
+            this.btnActualizar.Location = new System.Drawing.Point(1090, 7);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(107, 23);
             this.btnActualizar.TabIndex = 110;
@@ -438,7 +452,7 @@
             // btnEliminarArticulo
             // 
             this.btnEliminarArticulo.Image = global::WinFormsApp.Properties.Resources.Action_Delete;
-            this.btnEliminarArticulo.Location = new System.Drawing.Point(910, 7);
+            this.btnEliminarArticulo.Location = new System.Drawing.Point(977, 7);
             this.btnEliminarArticulo.Name = "btnEliminarArticulo";
             this.btnEliminarArticulo.Size = new System.Drawing.Size(107, 23);
             this.btnEliminarArticulo.TabIndex = 111;
@@ -459,7 +473,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1229, 508);
+            this.ClientSize = new System.Drawing.Size(1209, 508);
             this.Controls.Add(this.rListaprecioincluyeimpuesto);
             this.Controls.Add(this.btnEliminarArticulo);
             this.Controls.Add(this.btnActualizar);
@@ -483,6 +497,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDetalle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDetalle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.riFechaHora)).EndInit();
@@ -532,6 +547,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gcMargenCreditoOpcion1;
         private DevExpress.XtraGrid.Columns.GridColumn gcMargenCreditoOpcion2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit riMemoEdit;
 
     }
 }

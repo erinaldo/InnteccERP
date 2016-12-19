@@ -115,6 +115,7 @@ namespace WinFormsApp
 
             gcArticulo.DataSource = Service.ConsultaArticuloStockLista(idSucursal, idAlmacen, idTipoLista, fechaConsulta, condicion);
 
+
             Cursor = Cursors.Default;
         }
         private void txtDatoABuscar_KeyPress(object sender, KeyPressEventArgs e)

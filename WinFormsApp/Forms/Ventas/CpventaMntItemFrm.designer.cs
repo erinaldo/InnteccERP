@@ -53,6 +53,8 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.tcProductos = new DevExpress.XtraTab.XtraTabControl();
             this.tpProducto = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.iImpuesto = new DevExpress.XtraEditors.TextEdit();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
@@ -132,12 +134,12 @@
             this.iIdcentrodecosto = new DevExpress.XtraEditors.LookUpEdit();
             this.tpCaracteristicas = new DevExpress.XtraTab.XtraTabPage();
             this.iEspecificacion = new DevExpress.XtraRichEdit.RichEditControl();
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.bmMntItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcProductos)).BeginInit();
             this.tcProductos.SuspendLayout();
             this.tpProducto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iImpuesto.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iStock.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBonificacion.Properties)).BeginInit();
@@ -175,8 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iAbrunidadmedida.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdcentrodecosto.Properties)).BeginInit();
             this.tpCaracteristicas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.SuspendLayout();
             // 
             // bmMntItems
@@ -328,6 +328,20 @@
             this.tpProducto.Name = "tpProducto";
             this.tpProducto.Size = new System.Drawing.Size(631, 424);
             this.tpProducto.Text = "Item comprobante de venta";
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Location = new System.Drawing.Point(4, 339);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(624, 2);
+            this.panelControl2.TabIndex = 52;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Location = new System.Drawing.Point(4, 146);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(624, 2);
+            this.panelControl1.TabIndex = 51;
             // 
             // labelControl20
             // 
@@ -1146,7 +1160,7 @@
             // 
             this.tpCaracteristicas.Controls.Add(this.iEspecificacion);
             this.tpCaracteristicas.Name = "tpCaracteristicas";
-            this.tpCaracteristicas.Size = new System.Drawing.Size(631, 416);
+            this.tpCaracteristicas.Size = new System.Drawing.Size(631, 424);
             this.tpCaracteristicas.Text = "Caracteristicas";
             // 
             // iEspecificacion
@@ -1161,22 +1175,8 @@
             this.iEspecificacion.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
             this.iEspecificacion.Options.HorizontalScrollbar.Visibility = DevExpress.XtraRichEdit.RichEditScrollbarVisibility.Hidden;
             this.iEspecificacion.Options.VerticalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            this.iEspecificacion.Size = new System.Drawing.Size(631, 416);
+            this.iEspecificacion.Size = new System.Drawing.Size(631, 424);
             this.iEspecificacion.TabIndex = 44;
-            // 
-            // panelControl1
-            // 
-            this.panelControl1.Location = new System.Drawing.Point(4, 146);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(624, 2);
-            this.panelControl1.TabIndex = 51;
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Location = new System.Drawing.Point(4, 339);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(624, 2);
-            this.panelControl2.TabIndex = 52;
             // 
             // CpventaMntItemFrm
             // 
@@ -1203,6 +1203,8 @@
             this.tcProductos.ResumeLayout(false);
             this.tpProducto.ResumeLayout(false);
             this.tpProducto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iImpuesto.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iStock.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iBonificacion.Properties)).EndInit();
@@ -1240,8 +1242,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iAbrunidadmedida.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdcentrodecosto.Properties)).EndInit();
             this.tpCaracteristicas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

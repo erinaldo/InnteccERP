@@ -52,6 +52,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.riMemoEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -63,6 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoBarra.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvArticulo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,7 +175,8 @@
             this.gcArticulo.MainView = this.gvArticulo;
             this.gcArticulo.Name = "gcArticulo";
             this.gcArticulo.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.riNumerico4});
+            this.riNumerico4,
+            this.riMemoEdit});
             this.gcArticulo.Size = new System.Drawing.Size(960, 424);
             this.gcArticulo.TabIndex = 10;
             this.gcArticulo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -191,10 +194,15 @@
             this.gcPreciolista,
             this.gcPublico});
             this.gvArticulo.GridControl = this.gcArticulo;
+            this.gvArticulo.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.gvArticulo.Name = "gvArticulo";
+            this.gvArticulo.OptionsBehavior.ReadOnly = true;
             this.gvArticulo.OptionsMenu.EnableColumnMenu = false;
             this.gvArticulo.OptionsMenu.EnableFooterMenu = false;
             this.gvArticulo.OptionsMenu.EnableGroupPanelMenu = false;
+            this.gvArticulo.OptionsView.ColumnAutoWidth = false;
+            this.gvArticulo.OptionsView.RowAutoHeight = true;
+            this.gvArticulo.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
             this.gvArticulo.ShownEditor += new System.EventHandler(this.gvArticulo_ShownEditor);
             this.gvArticulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gvArticulo_KeyPress);
             this.gvArticulo.DoubleClick += new System.EventHandler(this.gvArticulo_DoubleClick);
@@ -220,11 +228,16 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Nombre Articulo";
+            this.gridColumn3.ColumnEdit = this.riMemoEdit;
             this.gridColumn3.FieldName = "Nombrearticulo";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 400;
+            this.gridColumn3.Width = 380;
+            // 
+            // riMemoEdit
+            // 
+            this.riMemoEdit.Name = "riMemoEdit";
             // 
             // gridColumn4
             // 
@@ -260,12 +273,11 @@
             // 
             this.riNumerico4.Appearance.Options.UseTextOptions = true;
             this.riNumerico4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.riNumerico4.AutoHeight = false;
-            this.riNumerico4.DisplayFormat.FormatString = "n4";
+            this.riNumerico4.DisplayFormat.FormatString = "n2";
             this.riNumerico4.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.riNumerico4.EditFormat.FormatString = "n4";
+            this.riNumerico4.EditFormat.FormatString = "n2";
             this.riNumerico4.EditFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.riNumerico4.Mask.EditMask = "n4";
+            this.riNumerico4.Mask.EditMask = "n2";
             this.riNumerico4.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.riNumerico4.Mask.UseMaskAsDisplayFormat = true;
             this.riNumerico4.Name = "riNumerico4";
@@ -322,6 +334,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigoBarra.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcArticulo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvArticulo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -350,5 +363,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gcPreciolista;
         private DevExpress.XtraGrid.Columns.GridColumn gcPublico;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit riNumerico4;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit riMemoEdit;
     }
 }

@@ -292,6 +292,8 @@
             this.gcCalcularItem.ColumnEdit = this.riCalcularItem;
             this.gcCalcularItem.FieldName = "Calcularitem";
             this.gcCalcularItem.Name = "gcCalcularItem";
+            this.gcCalcularItem.Visible = true;
+            this.gcCalcularItem.VisibleIndex = 11;
             // 
             // riCalcularItem
             // 
@@ -466,7 +468,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 579);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 572);
             this.barDockControlBottom.Size = new System.Drawing.Size(1075, 0);
             // 
             // barDockControlLeft
@@ -474,14 +476,14 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 548);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 541);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1075, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 548);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 541);
             // 
             // btnNuevo
             // 
@@ -547,7 +549,7 @@
             this.tcCotizaCliente.Location = new System.Drawing.Point(0, 31);
             this.tcCotizaCliente.Name = "tcCotizaCliente";
             this.tcCotizaCliente.SelectedTabPage = this.tpCpVenta;
-            this.tcCotizaCliente.Size = new System.Drawing.Size(1075, 548);
+            this.tcCotizaCliente.Size = new System.Drawing.Size(1075, 541);
             this.tcCotizaCliente.TabIndex = 0;
             this.tcCotizaCliente.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpCpVenta,
@@ -613,7 +615,7 @@
             this.tpCpVenta.Controls.Add(this.rSeriecpventa);
             this.tpCpVenta.Controls.Add(this.iIdtipocp);
             this.tpCpVenta.Name = "tpCpVenta";
-            this.tpCpVenta.Size = new System.Drawing.Size(1069, 520);
+            this.tpCpVenta.Size = new System.Drawing.Size(1069, 513);
             this.tpCpVenta.Text = "Datos del comprobante";
             // 
             // iHoratransaccion
@@ -1599,6 +1601,7 @@
             this.gvDetalle.OptionsCustomization.AllowFilter = false;
             this.gvDetalle.OptionsCustomization.AllowGroup = false;
             this.gvDetalle.OptionsCustomization.AllowSort = false;
+            this.gvDetalle.OptionsDetail.EnableMasterViewMode = false;
             this.gvDetalle.OptionsMenu.EnableColumnMenu = false;
             this.gvDetalle.OptionsView.ColumnAutoWidth = false;
             this.gvDetalle.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
@@ -1826,6 +1829,8 @@
             this.gridColumn37.ColumnEdit = this.riCalcularItem;
             this.gridColumn37.FieldName = "Bonificacion";
             this.gridColumn37.Name = "gridColumn37";
+            this.gridColumn37.Visible = true;
+            this.gridColumn37.VisibleIndex = 12;
             // 
             // barDockControl3
             // 
@@ -2093,7 +2098,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1075, 579);
+            this.ClientSize = new System.Drawing.Size(1075, 572);
             this.Controls.Add(this.tcCotizaCliente);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
