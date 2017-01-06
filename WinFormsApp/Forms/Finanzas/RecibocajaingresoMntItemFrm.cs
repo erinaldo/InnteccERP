@@ -132,14 +132,14 @@ namespace WinFormsApp
                     VwRecibocajadetMnt.Numeroitem = (int)iNumeroitem.EditValue;
 
                     VwRecibocajadetMnt.Idtipodocmov = (int?)iIdtipodocmov.EditValue;
-                    VwRecibocajadetMnt.Idtipocp = (int)iIdtipocp.EditValue;
+                    VwRecibocajadetMnt.Idtipocp = (int?)iIdtipocp.EditValue;
                     VwRecibocajadetMnt.Serietipocp = iSerietipocp.Text.Trim();
                     VwRecibocajadetMnt.Numerotipocp = iNumerotipocp.Text.Trim();
                     VwRecibocajadetMnt.Importepago = (decimal)iImportepago.EditValue;
                     VwRecibocajadetMnt.Idmediopago = (int)iIdmediopago.EditValue;
                     VwRecibocajadetMnt.Numeromediopago = iNumeromediopago.Text.Trim();
                     VwRecibocajadetMnt.Comentario = iComentario.Text.Trim();
-                    VwRecibocajadetMnt.Idcpventa = (int)iIdcpventa.EditValue;
+                    VwRecibocajadetMnt.Idcpventa = (int?)iIdcpventa.EditValue;
                     VwRecibocajadetMnt.Idnotacreditocli = (int?) iIdnotacreditocli.EditValue;
                     VwRecibocajadetMnt.Importenc = (decimal) iImporteNotaCredito.EditValue;
 

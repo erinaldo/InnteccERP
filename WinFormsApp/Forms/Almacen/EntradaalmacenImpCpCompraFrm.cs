@@ -248,7 +248,7 @@ namespace WinFormsApp
                                         {
                                             Identradaalmacendet = identradaalmacendet,
                                             Idubicacion = vwArticuloubicacion.Idubicacion,
-                                            Cantidadarticulo = 0m
+                                            Cantidadarticulo = entradaalmacendetMnt.Cantidad
                                         };
                                         Service.SaveEntradaalmacenubicacion(entradaalmacenubicacion);
                                     }

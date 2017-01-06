@@ -5468,6 +5468,167 @@ namespace ActionService
         VwPlantillahistoriadet GetVwPlantillahistoriadet(Expression<Func<VwPlantillahistoriadet, bool>> criteria);
 
         #endregion
+
+        #region Cie service
+
+        long CountCie();
+        long CountCie(Expression<Func<Cie, bool>> criteria);
+        int SaveCie(Cie entity);
+        void UpdateCie(Cie entity);
+        void DeleteCie(int id);
+        List<Cie> GetAllCie();
+        List<Cie> GetAllCie(Expression<Func<Cie, bool>> criteria);
+        List<Cie> GetAllCie(string orders);
+        List<Cie> GetAllCie(string conditions, string orders);
+        Cie GetCie(int id);
+        Cie GetCie(Expression<Func<Cie, bool>> criteria);
+
+        #endregion
+
+        #region Cpt service
+
+        long CountCpt();
+        long CountCpt(Expression<Func<Cpt, bool>> criteria);
+        int SaveCpt(Cpt entity);
+        void UpdateCpt(Cpt entity);
+        void DeleteCpt(int id);
+        List<Cpt> GetAllCpt();
+        List<Cpt> GetAllCpt(Expression<Func<Cpt, bool>> criteria);
+        List<Cpt> GetAllCpt(string orders);
+        List<Cpt> GetAllCpt(string conditions, string orders);
+        Cpt GetCpt(int id);
+        Cpt GetCpt(Expression<Func<Cpt, bool>> criteria);
+
+        #endregion
+
+        #region Grupoedad service
+
+        long CountGrupoedad();
+        long CountGrupoedad(Expression<Func<Grupoedad, bool>> criteria);
+        int SaveGrupoedad(Grupoedad entity);
+        void UpdateGrupoedad(Grupoedad entity);
+        void DeleteGrupoedad(int id);
+        List<Grupoedad> GetAllGrupoedad();
+        List<Grupoedad> GetAllGrupoedad(Expression<Func<Grupoedad, bool>> criteria);
+        List<Grupoedad> GetAllGrupoedad(string orders);
+        List<Grupoedad> GetAllGrupoedad(string conditions, string orders);
+        Grupoedad GetGrupoedad(int id);
+        Grupoedad GetGrupoedad(Expression<Func<Grupoedad, bool>> criteria);
+
+        #endregion
+
+        #region Servicioespecialidad service
+
+        long CountServicioespecialidad();
+        long CountServicioespecialidad(Expression<Func<Servicioespecialidad, bool>> criteria);
+        int SaveServicioespecialidad(Servicioespecialidad entity);
+        void UpdateServicioespecialidad(Servicioespecialidad entity);
+        void DeleteServicioespecialidad(int id);
+        List<Servicioespecialidad> GetAllServicioespecialidad();
+        List<Servicioespecialidad> GetAllServicioespecialidad(Expression<Func<Servicioespecialidad, bool>> criteria);
+        List<Servicioespecialidad> GetAllServicioespecialidad(string orders);
+        List<Servicioespecialidad> GetAllServicioespecialidad(string conditions, string orders);
+        Servicioespecialidad GetServicioespecialidad(int id);
+        Servicioespecialidad GetServicioespecialidad(Expression<Func<Servicioespecialidad, bool>> criteria);
+
+        #endregion
+
+        #region Tipocirugia service
+
+        long CountTipocirugia();
+        long CountTipocirugia(Expression<Func<Tipocirugia, bool>> criteria);
+        int SaveTipocirugia(Tipocirugia entity);
+        void UpdateTipocirugia(Tipocirugia entity);
+        void DeleteTipocirugia(int id);
+        List<Tipocirugia> GetAllTipocirugia();
+        List<Tipocirugia> GetAllTipocirugia(Expression<Func<Tipocirugia, bool>> criteria);
+        List<Tipocirugia> GetAllTipocirugia(string orders);
+        List<Tipocirugia> GetAllTipocirugia(string conditions, string orders);
+        Tipocirugia GetTipocirugia(int id);
+        Tipocirugia GetTipocirugia(Expression<Func<Tipocirugia, bool>> criteria);
+
+        #endregion
+
+        #region Tipocolegioprofesional service
+
+        long CountTipocolegioprofesional();
+        long CountTipocolegioprofesional(Expression<Func<Tipocolegioprofesional, bool>> criteria);
+        int SaveTipocolegioprofesional(Tipocolegioprofesional entity);
+        void UpdateTipocolegioprofesional(Tipocolegioprofesional entity);
+        void DeleteTipocolegioprofesional(int id);
+        List<Tipocolegioprofesional> GetAllTipocolegioprofesional();
+        List<Tipocolegioprofesional> GetAllTipocolegioprofesional(Expression<Func<Tipocolegioprofesional, bool>> criteria);
+        List<Tipocolegioprofesional> GetAllTipocolegioprofesional(string orders);
+        List<Tipocolegioprofesional> GetAllTipocolegioprofesional(string conditions, string orders);
+        Tipocolegioprofesional GetTipocolegioprofesional(int id);
+        Tipocolegioprofesional GetTipocolegioprofesional(Expression<Func<Tipocolegioprofesional, bool>> criteria);
+
+        #endregion
+
+        #region Tipocomplicacionparto service
+
+        long CountTipocomplicacionparto();
+        long CountTipocomplicacionparto(Expression<Func<Tipocomplicacionparto, bool>> criteria);
+        int SaveTipocomplicacionparto(Tipocomplicacionparto entity);
+        void UpdateTipocomplicacionparto(Tipocomplicacionparto entity);
+        void DeleteTipocomplicacionparto(int id);
+        List<Tipocomplicacionparto> GetAllTipocomplicacionparto();
+        List<Tipocomplicacionparto> GetAllTipocomplicacionparto(Expression<Func<Tipocomplicacionparto, bool>> criteria);
+        List<Tipocomplicacionparto> GetAllTipocomplicacionparto(string orders);
+        List<Tipocomplicacionparto> GetAllTipocomplicacionparto(string conditions, string orders);
+        Tipocomplicacionparto GetTipocomplicacionparto(int id);
+        Tipocomplicacionparto GetTipocomplicacionparto(Expression<Func<Tipocomplicacionparto, bool>> criteria);
+
+        #endregion
+
+        #region Tipodiagnostico service
+
+        long CountTipodiagnostico();
+        long CountTipodiagnostico(Expression<Func<Tipodiagnostico, bool>> criteria);
+        int SaveTipodiagnostico(Tipodiagnostico entity);
+        void UpdateTipodiagnostico(Tipodiagnostico entity);
+        void DeleteTipodiagnostico(int id);
+        List<Tipodiagnostico> GetAllTipodiagnostico();
+        List<Tipodiagnostico> GetAllTipodiagnostico(Expression<Func<Tipodiagnostico, bool>> criteria);
+        List<Tipodiagnostico> GetAllTipodiagnostico(string orders);
+        List<Tipodiagnostico> GetAllTipodiagnostico(string conditions, string orders);
+        Tipodiagnostico GetTipodiagnostico(int id);
+        Tipodiagnostico GetTipodiagnostico(Expression<Func<Tipodiagnostico, bool>> criteria);
+
+        #endregion
+
+        #region Tipoevento service
+
+        long CountTipoevento();
+        long CountTipoevento(Expression<Func<Tipoevento, bool>> criteria);
+        int SaveTipoevento(Tipoevento entity);
+        void UpdateTipoevento(Tipoevento entity);
+        void DeleteTipoevento(int id);
+        List<Tipoevento> GetAllTipoevento();
+        List<Tipoevento> GetAllTipoevento(Expression<Func<Tipoevento, bool>> criteria);
+        List<Tipoevento> GetAllTipoevento(string orders);
+        List<Tipoevento> GetAllTipoevento(string conditions, string orders);
+        Tipoevento GetTipoevento(int id);
+        Tipoevento GetTipoevento(Expression<Func<Tipoevento, bool>> criteria);
+
+        #endregion
+
+        #region Tipoparto service
+
+        long CountTipoparto();
+        long CountTipoparto(Expression<Func<Tipoparto, bool>> criteria);
+        int SaveTipoparto(Tipoparto entity);
+        void UpdateTipoparto(Tipoparto entity);
+        void DeleteTipoparto(int id);
+        List<Tipoparto> GetAllTipoparto();
+        List<Tipoparto> GetAllTipoparto(Expression<Func<Tipoparto, bool>> criteria);
+        List<Tipoparto> GetAllTipoparto(string orders);
+        List<Tipoparto> GetAllTipoparto(string conditions, string orders);
+        Tipoparto GetTipoparto(int id);
+        Tipoparto GetTipoparto(Expression<Func<Tipoparto, bool>> criteria);
+
+        #endregion
+
         #endregion
 
         #region Movil
@@ -5536,6 +5697,8 @@ namespace ActionService
         #endregion
 
         #endregion
+
+
 
     }
 }

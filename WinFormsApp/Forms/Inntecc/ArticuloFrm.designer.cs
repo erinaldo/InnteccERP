@@ -68,20 +68,21 @@
             this.gcConsulta = new DevExpress.XtraGrid.GridControl();
             this.gvConsulta = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.riMemoEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bmConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvConsulta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // bmConsulta
@@ -365,7 +366,7 @@
             this.gcConsulta.MenuManager = this.bmConsulta;
             this.gcConsulta.Name = "gcConsulta";
             this.gcConsulta.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemTextEdit1});
+            this.riMemoEdit});
             this.gcConsulta.Size = new System.Drawing.Size(818, 274);
             this.gcConsulta.TabIndex = 0;
             this.gcConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -376,9 +377,10 @@
             // 
             this.gvConsulta.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
+            this.gridColumn11,
+            this.gridColumn8,
             this.gridColumn3,
             this.gridColumn4,
-            this.gridColumn8,
             this.gridColumn5,
             this.gridColumn9,
             this.gridColumn6,
@@ -392,6 +394,7 @@
             this.gvConsulta.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.True;
             this.gvConsulta.OptionsBehavior.ReadOnly = true;
             this.gvConsulta.OptionsView.ColumnAutoWidth = false;
+            this.gvConsulta.OptionsView.RowAutoHeight = true;
             this.gvConsulta.OptionsView.ShowFooter = true;
             this.gvConsulta.ShownEditor += new System.EventHandler(this.gvConsulta_ShownEditor);
             this.gvConsulta.KeyDown += new System.Windows.Forms.KeyEventHandler(this.gvConsulta_KeyDown);
@@ -409,13 +412,30 @@
             this.gridColumn1.VisibleIndex = 0;
             this.gridColumn1.Width = 67;
             // 
+            // gridColumn11
+            // 
+            this.gridColumn11.Caption = "Clasificación Pred.";
+            this.gridColumn11.FieldName = "Nombreclasificacionpadre";
+            this.gridColumn11.Name = "gridColumn11";
+            this.gridColumn11.Visible = true;
+            this.gridColumn11.VisibleIndex = 1;
+            this.gridColumn11.Width = 99;
+            // 
+            // gridColumn8
+            // 
+            this.gridColumn8.Caption = "Clasificacion";
+            this.gridColumn8.FieldName = "Nombreclasificacion";
+            this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.Visible = true;
+            this.gridColumn8.VisibleIndex = 2;
+            // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Código";
             this.gridColumn3.FieldName = "Codigoarticulo";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
+            this.gridColumn3.VisibleIndex = 3;
             // 
             // gridColumn4
             // 
@@ -423,23 +443,20 @@
             this.gridColumn4.FieldName = "Codigoproveedor";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "Clasificacion";
-            this.gridColumn8.FieldName = "Nombreclasificaciondetalle";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 6;
+            this.gridColumn4.VisibleIndex = 4;
             // 
             // gridColumn5
             // 
             this.gridColumn5.Caption = "Nombre articulo";
+            this.gridColumn5.ColumnEdit = this.riMemoEdit;
             this.gridColumn5.FieldName = "Nombrearticulo";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
+            this.gridColumn5.VisibleIndex = 5;
+            // 
+            // riMemoEdit
+            // 
+            this.riMemoEdit.Name = "riMemoEdit";
             // 
             // gridColumn9
             // 
@@ -447,7 +464,7 @@
             this.gridColumn9.FieldName = "Numerodeserie";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 4;
+            this.gridColumn9.VisibleIndex = 6;
             // 
             // gridColumn6
             // 
@@ -455,7 +472,7 @@
             this.gridColumn6.FieldName = "Nombremarca";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.VisibleIndex = 7;
             // 
             // gridColumn7
             // 
@@ -463,7 +480,7 @@
             this.gridColumn7.FieldName = "Nombreunidadmedida";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 8;
+            this.gridColumn7.VisibleIndex = 9;
             this.gridColumn7.Width = 99;
             // 
             // gridColumn2
@@ -472,7 +489,7 @@
             this.gridColumn2.FieldName = "Activo";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 7;
+            this.gridColumn2.VisibleIndex = 8;
             // 
             // gridColumn10
             // 
@@ -480,13 +497,8 @@
             this.gridColumn10.FieldName = "Caracteristicas";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 9;
+            this.gridColumn10.VisibleIndex = 10;
             this.gridColumn10.Width = 88;
-            // 
-            // repositoryItemTextEdit1
-            // 
-            this.repositoryItemTextEdit1.AutoHeight = false;
-            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
             // ArticuloFrm
             // 
@@ -510,7 +522,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bmConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvConsulta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,7 +555,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gvConsulta;
         private DevExpress.XtraBars.BarButtonItem btnActualizar;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
@@ -554,5 +565,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraBars.BarButtonItem btnStockUbicacion;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit riMemoEdit;
     }
 }

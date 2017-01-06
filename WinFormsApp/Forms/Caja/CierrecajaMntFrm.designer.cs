@@ -55,6 +55,7 @@
             this.btnGrabar = new DevExpress.XtraBars.BarButtonItem();
             this.btnGrabarCerrar = new DevExpress.XtraBars.BarButtonItem();
             this.btnImprimir = new DevExpress.XtraBars.BarButtonItem();
+            this.btnImprimirDetalle = new DevExpress.XtraBars.BarButtonItem();
             this.btnActualizar = new DevExpress.XtraBars.BarButtonItem();
             this.btnImportar = new DevExpress.XtraBars.BarButtonItem();
             this.btnCerrar = new DevExpress.XtraBars.BarButtonItem();
@@ -121,7 +122,6 @@
             this.btnEditItem = new DevExpress.XtraBars.BarButtonItem();
             this.btnDelItem = new DevExpress.XtraBars.BarButtonItem();
             this.iIdtipodocimp = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.btnImprimirDetalle = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.bmMantenimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcRequerimiento)).BeginInit();
             this.tcRequerimiento.SuspendLayout();
@@ -239,6 +239,13 @@
             this.btnImprimir.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
             this.btnImprimir.Id = 84;
             this.btnImprimir.Name = "btnImprimir";
+            // 
+            // btnImprimirDetalle
+            // 
+            this.btnImprimirDetalle.Caption = "Imprimir Detalle";
+            this.btnImprimirDetalle.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
+            this.btnImprimirDetalle.Id = 92;
+            this.btnImprimirDetalle.Name = "btnImprimirDetalle";
             // 
             // btnActualizar
             // 
@@ -497,6 +504,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.iFechacierre.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.iFechacierre.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
             this.iFechacierre.Size = new System.Drawing.Size(80, 20);
             this.iFechacierre.TabIndex = 170;
             this.iFechacierre.Tag = "Ingrese la fecha del documento";
@@ -788,6 +796,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.rFecharegistro.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.rFecharegistro.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
             this.rFecharegistro.Size = new System.Drawing.Size(80, 20);
             this.rFecharegistro.TabIndex = 2;
             this.rFecharegistro.Tag = "Ingrese la fecha del documento";
@@ -930,13 +939,6 @@
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Idtipodocmov", "Id.", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Nombretipodocmov", "Tipo")});
             this.iIdtipodocimp.Name = "iIdtipodocimp";
-            // 
-            // btnImprimirDetalle
-            // 
-            this.btnImprimirDetalle.Caption = "Imprimir Detalle";
-            this.btnImprimirDetalle.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
-            this.btnImprimirDetalle.Id = 92;
-            this.btnImprimirDetalle.Name = "btnImprimirDetalle";
             // 
             // CierrecajaMntFrm
             // 

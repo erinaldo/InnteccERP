@@ -451,7 +451,6 @@ namespace WinFormsApp
                     }
                 }
             }
-
         }
         private DateTime FechaInicialInventario()
         {
@@ -1550,7 +1549,7 @@ namespace WinFormsApp
             //if (cantidadModificados > 0 && iAnulado.Checked == false && VwEntradaalmacendetList.Count > 0)
             if (iAnulado.Checked == false && VwEntradaalmacendetList.Count > 0)
             {
-                ActualizarListaDePrecioDesdeCostoPromedio();
+                //ActualizarListaDePrecioDesdeCostoPromedio();
             }
         }
         private void EntradaalmacenMntFrm_FormClosing(object sender, FormClosingEventArgs e)

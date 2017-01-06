@@ -405,6 +405,17 @@
         IVwPlantillahistoriadetDao VwPlantillahistoriadetDao { get; }
 
 
+        ICieDao CieDao { get; }
+        ICptDao CptDao { get; }
+        IGrupoedadDao GrupoedadDao { get; }
+        IServicioespecialidadDao ServicioespecialidadDao { get; }
+        ITipocirugiaDao TipocirugiaDao { get; }
+        ITipocolegioprofesionalDao TipocolegioprofesionalDao { get; }
+        ITipocomplicacionpartoDao TipocomplicacionpartoDao { get; }
+        ITipodiagnosticoDao TipodiagnosticoDao { get; }
+        ITipoeventoDao TipoeventoDao { get; }
+        ITipopartoDao TipopartoDao { get; }
+
         #endregion
 
         #region Movil

@@ -28,7 +28,7 @@ namespace WinFormsApp
         private static readonly object SyncLock = new Object();
 
         static readonly IService Service = new Service();
-
+        public ImpresionFormato ImpresionFormato { get; set; }
         private CpventaFrm()
         {
 
@@ -175,13 +175,6 @@ namespace WinFormsApp
                 case "btnReciboIngreso":
                     if (SessionApp.EmpleadoSel != null)
                     {
-                        //IdEntidadMnt = Convert.ToInt32(gvConsulta.GetRowCellValue(gvConsulta.FocusedRowHandle, NombreIdEntidadMnt));
-                        //CajaCobroCpVentaFrm cajaCobroCpVentaFrm = new CajaCobroCpVentaFrm(Convert.ToInt32(IdEntidadMnt), SessionApp.EmpleadoSel.Idempleado);
-                        //cajaCobroCpVentaFrm.ShowDialog();
-                        //if (cajaCobroCpVentaFrm.DialogResult == DialogResult.OK)
-                        //{
-
-                        //}
                         if (EstadoReferenciaCaja())
                         {
                             break;
@@ -199,6 +192,16 @@ namespace WinFormsApp
                     else
                     {
                         WinFormUtils.MessageWarning("Ingrese con usuario valido.");
+                    }
+                    break;
+                case "btnImprimirMovCajaDet":
+                    if (ImpresionFormato == null)
+                    {
+                        ImpresionFormato = new ImpresionFormato();
+                    }
+                    if (IdEntidadMnt > 0)
+                    {
+                        //ImpresionFormato.FormatoCierreCajaDetalle((DateTime)iFechacierre.EditValue);
                     }
                     break;
             }
@@ -323,6 +326,11 @@ namespace WinFormsApp
             //    GridCellInfo gridCellInfo = e.Cell as GridCellInfo;
             //    if (gridCellInfo != null) gridCellInfo.CellButtonRect = Rectangle.Empty;
             //}
+        }
+
+        private void btnReciboIngreso_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }      
     }
 }

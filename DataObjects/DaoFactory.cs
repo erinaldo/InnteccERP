@@ -402,6 +402,17 @@
         public IVwItemhistoriaDao VwItemhistoriaDao { get { return new VwItemhistoriaDao(); } }
         public IVwPlantillahistoriaDao VwPlantillahistoriaDao { get { return new VwPlantillahistoriaDao(); } }
         public IVwPlantillahistoriadetDao VwPlantillahistoriadetDao { get { return new VwPlantillahistoriadetDao(); } }
+
+        public ICieDao CieDao { get { return new CieDao(); } }
+        public ICptDao CptDao { get { return new CptDao(); } }
+        public IGrupoedadDao GrupoedadDao { get { return new GrupoedadDao(); } }
+        public IServicioespecialidadDao ServicioespecialidadDao { get { return new ServicioespecialidadDao(); } }
+        public ITipocirugiaDao TipocirugiaDao { get { return new TipocirugiaDao(); } }
+        public ITipocolegioprofesionalDao TipocolegioprofesionalDao { get { return new TipocolegioprofesionalDao(); } }
+        public ITipocomplicacionpartoDao TipocomplicacionpartoDao { get { return new TipocomplicacionpartoDao(); } }
+        public ITipodiagnosticoDao TipodiagnosticoDao { get { return new TipodiagnosticoDao(); } }
+        public ITipoeventoDao TipoeventoDao { get { return new TipoeventoDao(); } }
+        public ITipopartoDao TipopartoDao { get { return new TipopartoDao(); } }
         #endregion
 
         #region Movil

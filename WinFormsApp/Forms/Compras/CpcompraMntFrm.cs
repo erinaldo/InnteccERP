@@ -609,7 +609,7 @@ namespace WinFormsApp
             if (!string.IsNullOrEmpty(msgItemPreUni))
             {
                 XtraMessageBox.Show("Existe items con precio unitario cero verifique: \n\n" + msgItemPreUni, "Atención", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return false;
+                //return false;
             }
 
 

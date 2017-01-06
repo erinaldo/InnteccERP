@@ -32,17 +32,18 @@ namespace WinFormsApp
 
         private void BuscarArticuloPorCodigo()
         {
-            //gvArticulo.BeginUpdate();
+            Cursor = Cursors.WaitCursor;
             string wherecodigo = string.Format("codigoarticulo LIKE '%{0}%'", txtCodigo.Text.Trim());
             gcArticulo.DataSource = Service.GetAllVwArticuloinventario(wherecodigo, "nombrearticulo");
-            //gvArticulo.EndUpdate();
-            //gvArticulo.BestFitColumns();
+            Cursor = Cursors.Default;
         }
 
         private void BuscarArticuloPorNombre()
         {
+            Cursor = Cursors.WaitCursor;
+
             string datoBusqueda = txtDatoABuscar.Text.Trim().Replace("'", "''");
-            //gvArticulo.BeginUpdate();
+            
             string nombreArticuloUnSoloEspacio = Regex.Replace(datoBusqueda, @"\s+", " ").Trim();
             string[] palabrasArticulo = nombreArticuloUnSoloEspacio.Split(' ');
             string whereDinamico = palabrasArticulo.Aggregate(string.Empty, (current, palabra) => current + " nombrearticulo||codigoproveedor LIKE '%" + palabra + "%' AND ");
@@ -52,8 +53,7 @@ namespace WinFormsApp
             //}  
             whereDinamico = whereDinamico.Substring(0, whereDinamico.Length-5);
             gcArticulo.DataSource = Service.GetAllVwArticuloinventario(whereDinamico, "nombrearticulo");
-            //gvArticulo.EndUpdate();
-            //gvArticulo.BestFitColumns();
+            Cursor = Cursors.Default;
         }
 
         private void txtDatoABuscar_KeyPress(object sender, KeyPressEventArgs e)

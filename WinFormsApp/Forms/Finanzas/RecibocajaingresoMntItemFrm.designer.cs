@@ -54,7 +54,6 @@
             this.rFechaNc = new DevExpress.XtraEditors.DateEdit();
             this.rNumeroNc = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.iIdcpventa = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.iIdtipodocmov = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
@@ -79,6 +78,7 @@
             this.iNumeroitem = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.iImportepago = new DevExpress.XtraEditors.TextEdit();
+            this.iIdcpventa = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bmMntItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcProductos)).BeginInit();
             this.tcProductos.SuspendLayout();
@@ -89,7 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.rFechaNc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rFechaNc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rNumeroNc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iIdcpventa.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdtipodocmov.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iNumeromediopago.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iComentario.Properties)).BeginInit();
@@ -101,6 +100,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iNumeroitem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iImportepago.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iIdcpventa.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bmMntItems
@@ -194,6 +194,7 @@
             // 
             // tpProducto
             // 
+            this.tpProducto.Controls.Add(this.iIdcpventa);
             this.tpProducto.Controls.Add(this.iIdnotacreditocli);
             this.tpProducto.Controls.Add(this.labelControl8);
             this.tpProducto.Controls.Add(this.iImporteTotal);
@@ -204,7 +205,6 @@
             this.tpProducto.Controls.Add(this.rFechaNc);
             this.tpProducto.Controls.Add(this.rNumeroNc);
             this.tpProducto.Controls.Add(this.labelControl12);
-            this.tpProducto.Controls.Add(this.iIdcpventa);
             this.tpProducto.Controls.Add(this.labelControl1);
             this.tpProducto.Controls.Add(this.iIdtipodocmov);
             this.tpProducto.Controls.Add(this.labelControl21);
@@ -347,19 +347,6 @@
             this.labelControl12.TabIndex = 39;
             this.labelControl12.Text = "Nota de credito";
             // 
-            // iIdcpventa
-            // 
-            this.iIdcpventa.EditValue = 0;
-            this.iIdcpventa.Location = new System.Drawing.Point(526, 13);
-            this.iIdcpventa.Name = "iIdcpventa";
-            this.iIdcpventa.Properties.AllowFocused = false;
-            this.iIdcpventa.Properties.Appearance.Options.UseTextOptions = true;
-            this.iIdcpventa.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.iIdcpventa.Properties.ReadOnly = true;
-            this.iIdcpventa.Size = new System.Drawing.Size(59, 20);
-            this.iIdcpventa.TabIndex = 17;
-            this.iIdcpventa.TabStop = false;
-            // 
             // labelControl1
             // 
             this.labelControl1.Location = new System.Drawing.Point(10, 41);
@@ -384,7 +371,6 @@
             this.iIdtipodocmov.Properties.ReadOnly = true;
             this.iIdtipodocmov.Size = new System.Drawing.Size(187, 20);
             this.iIdtipodocmov.TabIndex = 3;
-            this.iIdtipodocmov.Tag = "Seleccione el tipo";
             this.iIdtipodocmov.EditValueChanged += new System.EventHandler(this.iIdtipodocmov_EditValueChanged);
             // 
             // labelControl21
@@ -431,7 +417,6 @@
             this.iNumerotipocp.Properties.ReadOnly = true;
             this.iNumerotipocp.Size = new System.Drawing.Size(93, 20);
             this.iNumerotipocp.TabIndex = 8;
-            this.iNumerotipocp.Tag = "Ingrese el Número de Documento";
             // 
             // iSerietipocp
             // 
@@ -446,7 +431,6 @@
             this.iSerietipocp.Properties.ReadOnly = true;
             this.iSerietipocp.Size = new System.Drawing.Size(56, 20);
             this.iSerietipocp.TabIndex = 7;
-            this.iSerietipocp.Tag = "Ingrese el Número de serie";
             // 
             // labelControl3
             // 
@@ -518,7 +502,6 @@
             this.iIdtipocp.Properties.View = this.searchLookUpEdit1View;
             this.iIdtipocp.Size = new System.Drawing.Size(187, 20);
             this.iIdtipocp.TabIndex = 5;
-            this.iIdtipocp.Tag = "Seleccione el tipo de documento";
             // 
             // searchLookUpEdit1View
             // 
@@ -603,6 +586,18 @@
             this.iImportepago.Size = new System.Drawing.Size(119, 20);
             this.iImportepago.TabIndex = 10;
             // 
+            // iIdcpventa
+            // 
+            this.iIdcpventa.Location = new System.Drawing.Point(555, 13);
+            this.iIdcpventa.Name = "iIdcpventa";
+            this.iIdcpventa.Properties.AllowFocused = false;
+            this.iIdcpventa.Properties.Appearance.Options.UseTextOptions = true;
+            this.iIdcpventa.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.iIdcpventa.Properties.ReadOnly = true;
+            this.iIdcpventa.Size = new System.Drawing.Size(59, 20);
+            this.iIdcpventa.TabIndex = 64;
+            this.iIdcpventa.TabStop = false;
+            // 
             // RecibocajaingresoMntItemFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -633,7 +628,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.rFechaNc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rFechaNc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rNumeroNc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iIdcpventa.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdtipodocmov.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iNumeromediopago.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iComentario.Properties)).EndInit();
@@ -645,6 +639,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iNumeroitem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iImportepago.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iIdcpventa.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -686,7 +681,6 @@
         private DevExpress.XtraEditors.TextEdit iNumeromediopago;
         private DevExpress.XtraEditors.LookUpEdit iIdtipodocmov;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit iIdcpventa;
         private DevExpress.XtraEditors.TextEdit rNumeroNc;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.SimpleButton btnImportarNC;
@@ -697,5 +691,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.TextEdit iImporteTotal;
         private DevExpress.XtraEditors.TextEdit iIdnotacreditocli;
+        private DevExpress.XtraEditors.TextEdit iIdcpventa;
     }
 }

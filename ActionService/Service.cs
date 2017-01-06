@@ -416,6 +416,16 @@ namespace ActionService
         static readonly IVwPlantillahistoriaDao VwPlantillahistoriaDao = Factory.VwPlantillahistoriaDao;
         static readonly IVwPlantillahistoriadetDao VwPlantillahistoriadetDao = Factory.VwPlantillahistoriadetDao;
 
+        static readonly ICieDao CieDao = Factory.CieDao;
+        static readonly ICptDao CptDao = Factory.CptDao;
+        static readonly IGrupoedadDao GrupoedadDao = Factory.GrupoedadDao;
+        static readonly IServicioespecialidadDao ServicioespecialidadDao = Factory.ServicioespecialidadDao;
+        static readonly ITipocirugiaDao TipocirugiaDao = Factory.TipocirugiaDao;
+        static readonly ITipocolegioprofesionalDao TipocolegioprofesionalDao = Factory.TipocolegioprofesionalDao;
+        static readonly ITipocomplicacionpartoDao TipocomplicacionpartoDao = Factory.TipocomplicacionpartoDao;
+        static readonly ITipodiagnosticoDao TipodiagnosticoDao = Factory.TipodiagnosticoDao;
+        static readonly ITipoeventoDao TipoeventoDao = Factory.TipoeventoDao;
+        static readonly ITipopartoDao TipopartoDao = Factory.TipopartoDao;
         #endregion
 
         #region Movil

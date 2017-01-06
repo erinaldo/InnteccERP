@@ -39,9 +39,9 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaFrm));
             DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CpventaFrm));
             this.bmConsulta = new DevExpress.XtraBars.BarManager(this.components);
             this.BarMnt = new DevExpress.XtraBars.Bar();
             this.btnNuevo = new DevExpress.XtraBars.BarButtonItem();
@@ -75,11 +75,14 @@
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.riNumerico2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.riNumerico2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.btnImprimirMovCajaDet = new DevExpress.XtraBars.BarButtonItem();
+            this.btnFiltro = new DevExpress.XtraBars.BarButtonItem();
+            this.sbiFiltro = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.bmConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvConsulta)).BeginInit();
@@ -116,8 +119,11 @@
             this.btnExportXlsx,
             this.btnCerrar,
             this.btnActualizar,
-            this.btnReciboIngreso});
-            this.bmConsulta.MaxItemId = 79;
+            this.btnReciboIngreso,
+            this.btnImprimirMovCajaDet,
+            this.btnFiltro,
+            this.sbiFiltro});
+            this.bmConsulta.MaxItemId = 83;
             this.bmConsulta.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bmConsulta_ItemClick);
             // 
             // BarMnt
@@ -137,8 +143,10 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEliminar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnActualizar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.bsiExportar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnReciboIngreso, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCerrar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnFiltro, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(this.sbiFiltro, true),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCerrar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnImprimirMovCajaDet, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.BarMnt.OptionsBar.UseWholeRow = true;
             this.BarMnt.Text = "Barra de herramientas";
             // 
@@ -304,11 +312,12 @@
             // 
             // btnReciboIngreso
             // 
-            this.btnReciboIngreso.Caption = "Recibo de ingreso";
+            this.btnReciboIngreso.Caption = "Cobro";
             this.btnReciboIngreso.Glyph = ((System.Drawing.Image)(resources.GetObject("btnReciboIngreso.Glyph")));
             this.btnReciboIngreso.Id = 78;
             this.btnReciboIngreso.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnReciboIngreso.LargeGlyph")));
             this.btnReciboIngreso.Name = "btnReciboIngreso";
+            this.btnReciboIngreso.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReciboIngreso_ItemClick);
             // 
             // btnCerrar
             // 
@@ -469,6 +478,14 @@
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 10;
             // 
+            // riNumerico2
+            // 
+            this.riNumerico2.AutoHeight = false;
+            this.riNumerico2.Mask.EditMask = "n2";
+            this.riNumerico2.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.riNumerico2.Mask.UseMaskAsDisplayFormat = true;
+            this.riNumerico2.Name = "riNumerico2";
+            // 
             // gridColumn12
             // 
             this.gridColumn12.Caption = "Condicion";
@@ -501,13 +518,26 @@
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 9;
             // 
-            // riNumerico2
+            // btnImprimirMovCajaDet
             // 
-            this.riNumerico2.AutoHeight = false;
-            this.riNumerico2.Mask.EditMask = "n2";
-            this.riNumerico2.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.riNumerico2.Mask.UseMaskAsDisplayFormat = true;
-            this.riNumerico2.Name = "riNumerico2";
+            this.btnImprimirMovCajaDet.Caption = "Detalle de movimientos de caja";
+            this.btnImprimirMovCajaDet.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
+            this.btnImprimirMovCajaDet.Id = 79;
+            this.btnImprimirMovCajaDet.Name = "btnImprimirMovCajaDet";
+            // 
+            // btnFiltro
+            // 
+            this.btnFiltro.Caption = "Filtro";
+            this.btnFiltro.Glyph = global::WinFormsApp.Properties.Resources.Action_Filter;
+            this.btnFiltro.Id = 80;
+            this.btnFiltro.Name = "btnFiltro";
+            // 
+            // sbiFiltro
+            // 
+            this.sbiFiltro.Caption = "Filtro";
+            this.sbiFiltro.Id = 82;
+            this.sbiFiltro.Name = "sbiFiltro";
+            this.sbiFiltro.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // CpventaFrm
             // 
@@ -577,5 +607,8 @@
         private DevExpress.XtraBars.BarButtonItem btnReciboIngreso;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit riNumerico2;
+        private DevExpress.XtraBars.BarButtonItem btnImprimirMovCajaDet;
+        private DevExpress.XtraBars.BarButtonItem btnFiltro;
+        private DevExpress.XtraBars.BarStaticItem sbiFiltro;
     }
 }

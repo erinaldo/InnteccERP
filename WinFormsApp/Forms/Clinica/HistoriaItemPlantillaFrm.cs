@@ -129,7 +129,8 @@ namespace WinFormsApp
                             }
 
                         }
-                        HistoriaMntFrm.ActualizarDetalleItemsHistoria();
+                        //Todo: Descomentar para dejarlos como plantilla
+                        //HistoriaMntFrm.ActualizarDetalleItemsHistoria();
                     }
 
                     DialogResult = DialogResult.OK;

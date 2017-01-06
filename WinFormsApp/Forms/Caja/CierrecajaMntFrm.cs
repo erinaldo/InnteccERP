@@ -141,6 +141,7 @@ namespace WinFormsApp
 
             btnCerrar.Enabled = !enabled;
             btnImprimir.Enabled = !enabled;
+            btnImprimirDetalle.Enabled = !enabled;
             btnActualizar.Enabled = !enabled;
             bsiImportar.Enabled = !enabled;
             btnCtacteCliente.Enabled = !enabled;
@@ -466,28 +467,38 @@ namespace WinFormsApp
                     }
                     if (IdEntidadMnt > 0)
                     {
-                        ImpresionFormato.FormatoCierreCajaDetalle(CierrecajaMnt);
+                        ImpresionFormato.FormatoCierreCajaDetalle((DateTime)iFechacierre.EditValue);
                     }
 
                     break;
 
-                    
+
             }
         }
         private void CargarResumen()
         {
+
 
             DateTime fechacierre = (DateTime)iFechacierre.EditValue;
             var responsable = iIdempleado.EditValue;
 
             if (fechacierre != null && responsable != null)
             {
+                if (VwReciboresumenList != null)
+                {
+                    VwReciboresumenList.Clear();
+                }
+                if (VwCierrecajadetList != null)
+                {
+                    VwCierrecajadetList.Clear();
+                }
+
+
                 // Cursor = Cursors.WaitCursor;
                 const string wherePendientes = @" and fecharecibo 
                                                not in (select a.fechacierre
                                                from caja.vwcierrecaja a)";
-                string where =
-                    string.Format("fecharecibo = '{0}' and idempleado = {1} and idsucursal = {2} {3}", fechacierre.ToString("yyyy-MM-dd"), (int)iIdempleado.EditValue, (int)iIdsucursal.EditValue, wherePendientes);
+                string where = string.Format("fecharecibo = '{0:yyyy-MM-dd}' and idempleado = {1} and idsucursal = {2} {3}", fechacierre, (int)iIdempleado.EditValue, (int)iIdsucursal.EditValue, wherePendientes);
                 VwReciboresumenList = Service.GetAllVwReciboresumen(where, "idmediopago");
                 var cantidadRegistro = VwReciboresumenList.Count();
                 if (cantidadRegistro == 0)

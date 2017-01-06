@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SuperToolTip superToolTip29 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem29 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip30 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem30 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip48 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem48 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip47 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem47 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip28 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem28 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip45 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem45 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip46 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem46 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip42 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem42 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip43 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem43 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip44 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem44 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistoriaMntFrm));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip35 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem35 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip36 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem36 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SuperToolTip superToolTip37 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem37 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
             this.bmMantenimiento = new DevExpress.XtraBars.BarManager(this.components);
             this.BarMnt = new DevExpress.XtraBars.Bar();
-            this.btnGrabar = new DevExpress.XtraBars.BarButtonItem();
             this.btnGrabarCerrar = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btnActualizar = new DevExpress.XtraBars.BarButtonItem();
             this.btnCerrar = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -74,48 +74,13 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnNuevo = new DevExpress.XtraBars.BarButtonItem();
+            this.btnGrabar = new DevExpress.XtraBars.BarButtonItem();
             this.btnGrabarNuevo = new DevExpress.XtraBars.BarButtonItem();
             this.btnLimpiarCampos = new DevExpress.XtraBars.BarButtonItem();
             this.btnEliminar = new DevExpress.XtraBars.BarButtonItem();
             this.tcHistoria = new DevExpress.XtraTab.XtraTabControl();
             this.tpDatos = new DevExpress.XtraTab.XtraTabPage();
-            this.tcItems = new DevExpress.XtraTab.XtraTabControl();
-            this.tpItems = new DevExpress.XtraTab.XtraTabPage();
-            this.gcDetalle = new DevExpress.XtraGrid.GridControl();
-            this.gvDetalle = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.riMemoValor = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
-            this.barDockControl9 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl10 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl11 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl12 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl13 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl14 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl15 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl16 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl19 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl20 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl18 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl17 = new DevExpress.XtraBars.BarDockControl();
-            this.tcDetalleCitas = new DevExpress.XtraTab.XtraTabControl();
-            this.tpCitas = new DevExpress.XtraTab.XtraTabPage();
-            this.gcCitas = new DevExpress.XtraGrid.GridControl();
-            this.gvCitas = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
+            this.iIdpersonaconyugue = new DevExpress.XtraEditors.TextEdit();
             this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
             this.iFechanacimiento = new DevExpress.XtraEditors.DateEdit();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
@@ -163,43 +128,21 @@
             this.rNumerohistoria = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.rSeriehistoria = new DevExpress.XtraEditors.TextEdit();
             this.iIdtipocp = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.pkIdEntidad = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.bmItemsCita = new DevExpress.XtraBars.BarManager(this.components);
-            this.barItems = new DevExpress.XtraBars.Bar();
-            this.btnAddItem = new DevExpress.XtraBars.BarButtonItem();
-            this.btnEditItem = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDelItem = new DevExpress.XtraBars.BarButtonItem();
-            this.bmItemHistoria = new DevExpress.XtraBars.BarManager(this.components);
-            this.bar1 = new DevExpress.XtraBars.Bar();
-            this.btnAddItemHistoria = new DevExpress.XtraBars.BarButtonItem();
-            this.btnEditItemHistoria = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDelItemHistoria = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddPlantilla = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.tpObservacion = new DevExpress.XtraTab.XtraTabPage();
             this.iObservacion = new DevExpress.XtraEditors.MemoEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.iIdpersonaconyugue = new DevExpress.XtraEditors.TextEdit();
+            this.tpCamposOcultos = new DevExpress.XtraTab.XtraTabPage();
+            this.rSeriehistoria = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bmMantenimiento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tcHistoria)).BeginInit();
             this.tcHistoria.SuspendLayout();
             this.tpDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tcItems)).BeginInit();
-            this.tcItems.SuspendLayout();
-            this.tpItems.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcDetalle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDetalle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.riMemoValor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcDetalleCitas)).BeginInit();
-            this.tcDetalleCitas.SuspendLayout();
-            this.tpCitas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcCitas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvCitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iIdpersonaconyugue.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFechanacimiento.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFechanacimiento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEmailcliente.Properties)).BeginInit();
@@ -223,14 +166,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.iFecharegistro.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFecharegistro.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rNumerohistoria.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rSeriehistoria.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdtipocp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkIdEntidad.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmItemsCita)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmItemHistoria)).BeginInit();
+            this.tpObservacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iObservacion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iIdpersonaconyugue.Properties)).BeginInit();
+            this.tpCamposOcultos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rSeriehistoria.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // bmMantenimiento
@@ -270,26 +212,12 @@
             this.BarMnt.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.BarMnt.FloatLocation = new System.Drawing.Point(376, 165);
             this.BarMnt.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGrabar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGrabarCerrar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnGrabarCerrar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnActualizar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnCerrar, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.BarMnt.OptionsBar.UseWholeRow = true;
             this.BarMnt.Text = "Barra de herramientas";
-            // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Caption = "Grabar";
-            this.btnGrabar.CategoryGuid = new System.Guid("bf24888c-c336-4331-92ed-90df15ac84f5");
-            this.btnGrabar.Glyph = global::WinFormsApp.Properties.Resources.Action_Save;
-            this.btnGrabar.Id = 78;
-            this.btnGrabar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G));
-            this.btnGrabar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_32x32;
-            this.btnGrabar.Name = "btnGrabar";
-            toolTipTitleItem29.Text = "Grabar (Ctrl + G)";
-            superToolTip29.Items.Add(toolTipTitleItem29);
-            this.btnGrabar.SuperTip = superToolTip29;
             // 
             // btnGrabarCerrar
             // 
@@ -300,9 +228,16 @@
             this.btnGrabarCerrar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Enter));
             this.btnGrabarCerrar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_Close_32x32;
             this.btnGrabarCerrar.Name = "btnGrabarCerrar";
-            toolTipTitleItem30.Text = "Grabar y cerrar (Ctrl + Enter)";
-            superToolTip30.Items.Add(toolTipTitleItem30);
-            this.btnGrabarCerrar.SuperTip = superToolTip30;
+            toolTipTitleItem1.Text = "Grabar y cerrar (Ctrl + Enter)";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.btnGrabarCerrar.SuperTip = superToolTip1;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Imprimir";
+            this.barButtonItem1.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
+            this.barButtonItem1.Id = 84;
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // btnActualizar
             // 
@@ -313,9 +248,9 @@
             this.btnActualizar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.btnActualizar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Refresh_32x32;
             this.btnActualizar.Name = "btnActualizar";
-            toolTipTitleItem48.Text = "Actualizar (F5)";
-            superToolTip48.Items.Add(toolTipTitleItem48);
-            this.btnActualizar.SuperTip = superToolTip48;
+            toolTipTitleItem2.Text = "Actualizar (F5)";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.btnActualizar.SuperTip = superToolTip2;
             // 
             // btnCerrar
             // 
@@ -327,37 +262,37 @@
             this.btnCerrar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.btnCerrar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Close_32x32;
             this.btnCerrar.Name = "btnCerrar";
-            toolTipTitleItem47.Text = "Salir de ventana (Ctrl + S)";
-            superToolTip47.Items.Add(toolTipTitleItem47);
-            this.btnCerrar.SuperTip = superToolTip47;
+            toolTipTitleItem3.Text = "Salir de ventana (Ctrl + S)";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.btnCerrar.SuperTip = superToolTip3;
             // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(1189, 31);
+            this.barDockControlTop.Size = new System.Drawing.Size(548, 31);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 652);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1189, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 403);
+            this.barDockControlBottom.Size = new System.Drawing.Size(548, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 621);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 372);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1189, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 621);
+            this.barDockControlRight.Location = new System.Drawing.Point(548, 31);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 372);
             // 
             // btnNuevo
             // 
@@ -369,9 +304,23 @@
             this.btnNuevo.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_New_32x32;
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.ShortcutKeyDisplayString = "Ctrl +N";
-            toolTipTitleItem28.Text = "Nuevo (Ctrl + N)";
-            superToolTip28.Items.Add(toolTipTitleItem28);
-            this.btnNuevo.SuperTip = superToolTip28;
+            toolTipTitleItem10.Text = "Nuevo (Ctrl + N)";
+            superToolTip10.Items.Add(toolTipTitleItem10);
+            this.btnNuevo.SuperTip = superToolTip10;
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Caption = "Grabar";
+            this.btnGrabar.CategoryGuid = new System.Guid("bf24888c-c336-4331-92ed-90df15ac84f5");
+            this.btnGrabar.Glyph = global::WinFormsApp.Properties.Resources.Action_Save;
+            this.btnGrabar.Id = 78;
+            this.btnGrabar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G));
+            this.btnGrabar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_32x32;
+            this.btnGrabar.Name = "btnGrabar";
+            toolTipTitleItem11.Text = "Grabar (Ctrl + G)";
+            superToolTip11.Items.Add(toolTipTitleItem11);
+            this.btnGrabar.SuperTip = superToolTip11;
+            this.btnGrabar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnGrabarNuevo
             // 
@@ -382,9 +331,9 @@
             this.btnGrabarNuevo.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert));
             this.btnGrabarNuevo.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_New_32x32;
             this.btnGrabarNuevo.Name = "btnGrabarNuevo";
-            toolTipTitleItem45.Text = "Grabar y Nuevo (Ctrl + Ins)";
-            superToolTip45.Items.Add(toolTipTitleItem45);
-            this.btnGrabarNuevo.SuperTip = superToolTip45;
+            toolTipTitleItem12.Text = "Grabar y Nuevo (Ctrl + Ins)";
+            superToolTip12.Items.Add(toolTipTitleItem12);
+            this.btnGrabarNuevo.SuperTip = superToolTip12;
             // 
             // btnLimpiarCampos
             // 
@@ -403,9 +352,9 @@
             this.btnEliminar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Delete_32x32;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShortcutKeyDisplayString = "Ctrl + E";
-            toolTipTitleItem46.Text = "Eliminar (Ctrl + E)\r\n";
-            superToolTip46.Items.Add(toolTipTitleItem46);
-            this.btnEliminar.SuperTip = superToolTip46;
+            toolTipTitleItem13.Text = "Eliminar (Ctrl + E)\r\n";
+            superToolTip13.Items.Add(toolTipTitleItem13);
+            this.btnEliminar.SuperTip = superToolTip13;
             // 
             // tcHistoria
             // 
@@ -413,18 +362,16 @@
             this.tcHistoria.Location = new System.Drawing.Point(0, 31);
             this.tcHistoria.Name = "tcHistoria";
             this.tcHistoria.SelectedTabPage = this.tpDatos;
-            this.tcHistoria.Size = new System.Drawing.Size(1189, 621);
+            this.tcHistoria.Size = new System.Drawing.Size(548, 372);
             this.tcHistoria.TabIndex = 0;
             this.tcHistoria.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tpDatos});
+            this.tpDatos,
+            this.tpObservacion,
+            this.tpCamposOcultos});
             // 
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.iIdpersonaconyugue);
-            this.tpDatos.Controls.Add(this.labelControl5);
-            this.tpDatos.Controls.Add(this.iObservacion);
-            this.tpDatos.Controls.Add(this.tcItems);
-            this.tpDatos.Controls.Add(this.tcDetalleCitas);
             this.tpDatos.Controls.Add(this.labelControl18);
             this.tpDatos.Controls.Add(this.iFechanacimiento);
             this.tpDatos.Controls.Add(this.labelControl16);
@@ -461,345 +408,26 @@
             this.tpDatos.Controls.Add(this.rNumerohistoria);
             this.tpDatos.Controls.Add(this.labelControl3);
             this.tpDatos.Controls.Add(this.labelControl2);
-            this.tpDatos.Controls.Add(this.rSeriehistoria);
             this.tpDatos.Controls.Add(this.iIdtipocp);
             this.tpDatos.Controls.Add(this.pkIdEntidad);
             this.tpDatos.Controls.Add(this.labelControl1);
             this.tpDatos.Name = "tpDatos";
-            this.tpDatos.Size = new System.Drawing.Size(1183, 593);
+            this.tpDatos.Size = new System.Drawing.Size(542, 344);
             this.tpDatos.Text = "Datos de identificación";
             // 
-            // tcItems
-            // 
-            this.tcItems.Location = new System.Drawing.Point(654, 3);
-            this.tcItems.Name = "tcItems";
-            this.tcItems.SelectedTabPage = this.tpItems;
-            this.tcItems.Size = new System.Drawing.Size(522, 585);
-            this.tcItems.TabIndex = 42;
-            this.tcItems.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tpItems});
-            // 
-            // tpItems
-            // 
-            this.tpItems.Controls.Add(this.gcDetalle);
-            this.tpItems.Controls.Add(this.barDockControl9);
-            this.tpItems.Controls.Add(this.barDockControl10);
-            this.tpItems.Controls.Add(this.barDockControl11);
-            this.tpItems.Controls.Add(this.barDockControl12);
-            this.tpItems.Controls.Add(this.barDockControl13);
-            this.tpItems.Controls.Add(this.barDockControl14);
-            this.tpItems.Controls.Add(this.barDockControl15);
-            this.tpItems.Controls.Add(this.barDockControl16);
-            this.tpItems.Controls.Add(this.barDockControl19);
-            this.tpItems.Controls.Add(this.barDockControl20);
-            this.tpItems.Controls.Add(this.barDockControl18);
-            this.tpItems.Controls.Add(this.barDockControl17);
-            this.tpItems.Name = "tpItems";
-            this.tpItems.Size = new System.Drawing.Size(516, 557);
-            this.tpItems.Text = "Items";
-            // 
-            // gcDetalle
-            // 
-            this.gcDetalle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcDetalle.Location = new System.Drawing.Point(0, 31);
-            this.gcDetalle.MainView = this.gvDetalle;
-            this.gcDetalle.MenuManager = this.bmMantenimiento;
-            this.gcDetalle.Name = "gcDetalle";
-            this.gcDetalle.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.riMemoValor});
-            this.gcDetalle.Size = new System.Drawing.Size(516, 526);
-            this.gcDetalle.TabIndex = 10;
-            this.gcDetalle.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvDetalle});
-            this.gcDetalle.ProcessGridKey += new System.Windows.Forms.KeyEventHandler(this.gcDetalle_ProcessGridKey);
-            // 
-            // gvDetalle
-            // 
-            this.gvDetalle.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn6,
-            this.gridColumn10});
-            this.gvDetalle.GridControl = this.gcDetalle;
-            this.gvDetalle.GroupCount = 1;
-            this.gvDetalle.HorzScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
-            this.gvDetalle.Name = "gvDetalle";
-            this.gvDetalle.OptionsBehavior.AutoExpandAllGroups = true;
-            this.gvDetalle.OptionsCustomization.AllowColumnMoving = false;
-            this.gvDetalle.OptionsView.ColumnAutoWidth = false;
-            this.gvDetalle.OptionsView.RowAutoHeight = true;
-            this.gvDetalle.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
-            this.gvDetalle.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
-            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.gridColumn8, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.gvDetalle.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
-            this.gvDetalle.CellValueChanged += new DevExpress.XtraGrid.Views.Base.CellValueChangedEventHandler(this.gvDetalle_CellValueChanged);
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "Id.";
-            this.gridColumn4.FieldName = "Idhistoriadetitem";
-            this.gridColumn4.Name = "gridColumn4";
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "Id. Item historia";
-            this.gridColumn5.FieldName = "Iditemhistoria";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Width = 133;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "Item de historia";
-            this.gridColumn6.FieldName = "Nombreitemhistoria";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.OptionsColumn.ReadOnly = true;
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 1;
-            this.gridColumn6.Width = 133;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.Caption = "Categoría";
-            this.gridColumn8.FieldName = "Nombrecategoriaitem";
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.OptionsColumn.ReadOnly = true;
-            this.gridColumn8.SortMode = DevExpress.XtraGrid.ColumnSortMode.Custom;
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 0;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.Caption = "Nº";
-            this.gridColumn9.FieldName = "Ordenhistoriadetitem";
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.OptionsColumn.ReadOnly = true;
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 0;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.Caption = "Valor";
-            this.gridColumn10.ColumnEdit = this.riMemoValor;
-            this.gridColumn10.FieldName = "Valoritemhistoria";
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 2;
-            this.gridColumn10.Width = 227;
-            // 
-            // riMemoValor
-            // 
-            this.riMemoValor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.riMemoValor.Name = "riMemoValor";
-            this.riMemoValor.EditValueChanged += new System.EventHandler(this.riMemoValor_EditValueChanged);
-            // 
-            // barDockControl9
-            // 
-            this.barDockControl9.CausesValidation = false;
-            this.barDockControl9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl9.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl9.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl10
-            // 
-            this.barDockControl10.CausesValidation = false;
-            this.barDockControl10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl10.Location = new System.Drawing.Point(516, 31);
-            this.barDockControl10.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl11
-            // 
-            this.barDockControl11.CausesValidation = false;
-            this.barDockControl11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl11.Location = new System.Drawing.Point(0, 557);
-            this.barDockControl11.Size = new System.Drawing.Size(516, 0);
-            // 
-            // barDockControl12
-            // 
-            this.barDockControl12.CausesValidation = false;
-            this.barDockControl12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl12.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl12.Size = new System.Drawing.Size(516, 0);
-            // 
-            // barDockControl13
-            // 
-            this.barDockControl13.CausesValidation = false;
-            this.barDockControl13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl13.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl13.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl14
-            // 
-            this.barDockControl14.CausesValidation = false;
-            this.barDockControl14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl14.Location = new System.Drawing.Point(516, 31);
-            this.barDockControl14.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl15
-            // 
-            this.barDockControl15.CausesValidation = false;
-            this.barDockControl15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl15.Location = new System.Drawing.Point(0, 557);
-            this.barDockControl15.Size = new System.Drawing.Size(516, 0);
-            // 
-            // barDockControl16
-            // 
-            this.barDockControl16.CausesValidation = false;
-            this.barDockControl16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl16.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl16.Size = new System.Drawing.Size(516, 0);
-            // 
-            // barDockControl19
-            // 
-            this.barDockControl19.CausesValidation = false;
-            this.barDockControl19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl19.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl19.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl20
-            // 
-            this.barDockControl20.CausesValidation = false;
-            this.barDockControl20.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl20.Location = new System.Drawing.Point(516, 31);
-            this.barDockControl20.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl18
-            // 
-            this.barDockControl18.CausesValidation = false;
-            this.barDockControl18.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl18.Location = new System.Drawing.Point(0, 557);
-            this.barDockControl18.Size = new System.Drawing.Size(516, 0);
-            // 
-            // barDockControl17
-            // 
-            this.barDockControl17.CausesValidation = false;
-            this.barDockControl17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl17.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl17.Size = new System.Drawing.Size(516, 31);
-            // 
-            // tcDetalleCitas
-            // 
-            this.tcDetalleCitas.Location = new System.Drawing.Point(533, 3);
-            this.tcDetalleCitas.Name = "tcDetalleCitas";
-            this.tcDetalleCitas.SelectedTabPage = this.tpCitas;
-            this.tcDetalleCitas.Size = new System.Drawing.Size(120, 585);
-            this.tcDetalleCitas.TabIndex = 41;
-            this.tcDetalleCitas.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.tpCitas});
-            // 
-            // tpCitas
-            // 
-            this.tpCitas.Controls.Add(this.gcCitas);
-            this.tpCitas.Controls.Add(this.barDockControl5);
-            this.tpCitas.Controls.Add(this.barDockControl6);
-            this.tpCitas.Controls.Add(this.barDockControl7);
-            this.tpCitas.Controls.Add(this.barDockControl8);
-            this.tpCitas.Controls.Add(this.barDockControl3);
-            this.tpCitas.Controls.Add(this.barDockControl4);
-            this.tpCitas.Controls.Add(this.barDockControl2);
-            this.tpCitas.Controls.Add(this.barDockControl1);
-            this.tpCitas.Name = "tpCitas";
-            this.tpCitas.Size = new System.Drawing.Size(114, 557);
-            this.tpCitas.Text = "Detalle de citas";
-            // 
-            // gcCitas
-            // 
-            this.gcCitas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcCitas.Location = new System.Drawing.Point(0, 31);
-            this.gcCitas.MainView = this.gvCitas;
-            this.gcCitas.MenuManager = this.bmMantenimiento;
-            this.gcCitas.Name = "gcCitas";
-            this.gcCitas.Size = new System.Drawing.Size(114, 526);
-            this.gcCitas.TabIndex = 0;
-            this.gcCitas.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvCitas});
-            // 
-            // gvCitas
-            // 
-            this.gvCitas.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn3,
-            this.gridColumn7});
-            this.gvCitas.GridControl = this.gcCitas;
-            this.gvCitas.Name = "gvCitas";
-            this.gvCitas.OptionsBehavior.ReadOnly = true;
-            this.gvCitas.OptionsCustomization.AllowGroup = false;
-            this.gvCitas.OptionsView.ColumnAutoWidth = false;
-            this.gvCitas.OptionsView.ShowFilterPanelMode = DevExpress.XtraGrid.Views.Base.ShowFilterPanelMode.Never;
-            this.gvCitas.OptionsView.ShowGroupPanel = false;
-            this.gvCitas.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gvCitas_FocusedRowChanged);
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "Id.";
-            this.gridColumn3.FieldName = "Idhistoriadet";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Width = 58;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.Caption = "Fecha";
-            this.gridColumn7.FieldName = "Fechahistoriadet";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 0;
-            this.gridColumn7.Width = 84;
-            // 
-            // barDockControl5
-            // 
-            this.barDockControl5.CausesValidation = false;
-            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl5.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl5.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl6
-            // 
-            this.barDockControl6.CausesValidation = false;
-            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl6.Location = new System.Drawing.Point(114, 31);
-            this.barDockControl6.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl7
-            // 
-            this.barDockControl7.CausesValidation = false;
-            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 557);
-            this.barDockControl7.Size = new System.Drawing.Size(114, 0);
-            // 
-            // barDockControl8
-            // 
-            this.barDockControl8.CausesValidation = false;
-            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl8.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl8.Size = new System.Drawing.Size(114, 0);
-            // 
-            // barDockControl3
-            // 
-            this.barDockControl3.CausesValidation = false;
-            this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 31);
-            this.barDockControl3.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl4
-            // 
-            this.barDockControl4.CausesValidation = false;
-            this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(114, 31);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 526);
-            // 
-            // barDockControl2
-            // 
-            this.barDockControl2.CausesValidation = false;
-            this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 557);
-            this.barDockControl2.Size = new System.Drawing.Size(114, 0);
-            // 
-            // barDockControl1
-            // 
-            this.barDockControl1.CausesValidation = false;
-            this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl1.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl1.Size = new System.Drawing.Size(114, 31);
+            // iIdpersonaconyugue
+            // 
+            this.iIdpersonaconyugue.Location = new System.Drawing.Point(255, 311);
+            this.iIdpersonaconyugue.Name = "iIdpersonaconyugue";
+            this.iIdpersonaconyugue.Properties.AllowFocused = false;
+            this.iIdpersonaconyugue.Properties.Appearance.Options.UseTextOptions = true;
+            this.iIdpersonaconyugue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.iIdpersonaconyugue.Properties.ReadOnly = true;
+            this.iIdpersonaconyugue.Size = new System.Drawing.Size(56, 20);
+            this.iIdpersonaconyugue.TabIndex = 198;
+            this.iIdpersonaconyugue.TabStop = false;
+            this.iIdpersonaconyugue.Visible = false;
+            this.iIdpersonaconyugue.EditValueChanged += new System.EventHandler(this.iIdpersonaconyugue_EditValueChanged);
             // 
             // labelControl18
             // 
@@ -967,7 +595,7 @@
             // iIdpacientetitular
             // 
             this.iIdpacientetitular.EditValue = "0";
-            this.iIdpacientetitular.Location = new System.Drawing.Point(170, 562);
+            this.iIdpacientetitular.Location = new System.Drawing.Point(190, 311);
             this.iIdpacientetitular.MenuManager = this.bmMantenimiento;
             this.iIdpacientetitular.Name = "iIdpacientetitular";
             this.iIdpacientetitular.Properties.AllowFocused = false;
@@ -1029,17 +657,17 @@
             this.bePersonaConyugue.EditValue = "";
             this.bePersonaConyugue.Location = new System.Drawing.Point(105, 258);
             this.bePersonaConyugue.Name = "bePersonaConyugue";
-            toolTipTitleItem42.Text = "Buscar Registro (F3)";
-            superToolTip42.Items.Add(toolTipTitleItem42);
-            toolTipTitleItem43.Text = "Nuevo Registro (Ctrl + Ins)";
-            superToolTip43.Items.Add(toolTipTitleItem43);
-            toolTipTitleItem44.Text = "Modificar Registro (Ctrl + M)";
-            superToolTip44.Items.Add(toolTipTitleItem44);
+            toolTipTitleItem4.Text = "Buscar Registro (F3)";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            toolTipTitleItem5.Text = "Nuevo Registro (Ctrl + Ins)";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            toolTipTitleItem6.Text = "Modificar Registro (Ctrl + M)";
+            superToolTip6.Items.Add(toolTipTitleItem6);
             this.bePersonaConyugue.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Search, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F3), serializableAppearanceObject4, "", null, superToolTip42, true),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.add, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert)), serializableAppearanceObject5, "", null, superToolTip43, true),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Edit_12x12, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)), serializableAppearanceObject6, "", null, superToolTip44, true),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("bePersonaConyugue.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject11, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Search, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F3), serializableAppearanceObject1, "", null, superToolTip4, true),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.add, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert)), serializableAppearanceObject2, "", null, superToolTip5, true),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Edit_12x12, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)), serializableAppearanceObject3, "", null, superToolTip6, true),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("bePersonaConyugue.Properties.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
             this.bePersonaConyugue.Properties.ReadOnly = true;
             this.bePersonaConyugue.Size = new System.Drawing.Size(422, 22);
             this.bePersonaConyugue.TabIndex = 36;
@@ -1167,16 +795,16 @@
             this.beClienteTitular.EditValue = "";
             this.beClienteTitular.Location = new System.Drawing.Point(105, 81);
             this.beClienteTitular.Name = "beClienteTitular";
-            toolTipTitleItem35.Text = "Buscar Registro (F3)";
-            superToolTip35.Items.Add(toolTipTitleItem35);
-            toolTipTitleItem36.Text = "Nuevo Registro (Ctrl + Ins)";
-            superToolTip36.Items.Add(toolTipTitleItem36);
-            toolTipTitleItem37.Text = "Modificar Registro (Ctrl + M)";
-            superToolTip37.Items.Add(toolTipTitleItem37);
+            toolTipTitleItem7.Text = "Buscar Registro (F3)";
+            superToolTip7.Items.Add(toolTipTitleItem7);
+            toolTipTitleItem8.Text = "Nuevo Registro (Ctrl + Ins)";
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            toolTipTitleItem9.Text = "Modificar Registro (Ctrl + M)";
+            superToolTip9.Items.Add(toolTipTitleItem9);
             this.beClienteTitular.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Search, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F3), serializableAppearanceObject7, "", null, superToolTip35, true),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.add, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert)), serializableAppearanceObject8, "", null, superToolTip36, true),
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Edit_12x12, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)), serializableAppearanceObject9, "", null, superToolTip37, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Search, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.F3), serializableAppearanceObject5, "", null, superToolTip7, true),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.add, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert)), serializableAppearanceObject6, "", null, superToolTip8, true),
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Edit_12x12, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)), serializableAppearanceObject7, "", null, superToolTip9, true)});
             this.beClienteTitular.Properties.ReadOnly = true;
             this.beClienteTitular.Size = new System.Drawing.Size(400, 22);
             this.beClienteTitular.TabIndex = 16;
@@ -1268,23 +896,23 @@
             // rNumerohistoria
             // 
             this.rNumerohistoria.EditValue = "0";
-            this.rNumerohistoria.Location = new System.Drawing.Point(442, 6);
+            this.rNumerohistoria.Location = new System.Drawing.Point(432, 7);
             this.rNumerohistoria.MenuManager = this.bmMantenimiento;
             this.rNumerohistoria.Name = "rNumerohistoria";
             this.rNumerohistoria.Properties.Mask.EditMask = "d8";
             this.rNumerohistoria.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.rNumerohistoria.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.rNumerohistoria.Properties.ReadOnly = true;
-            this.rNumerohistoria.Size = new System.Drawing.Size(85, 20);
+            this.rNumerohistoria.Size = new System.Drawing.Size(95, 20);
             this.rNumerohistoria.TabIndex = 4;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(317, 10);
+            this.labelControl3.Location = new System.Drawing.Point(328, 10);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(72, 13);
+            this.labelControl3.Size = new System.Drawing.Size(90, 13);
             this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "Serie y número";
+            this.labelControl3.Text = "Numero de historia";
             // 
             // labelControl2
             // 
@@ -1294,22 +922,6 @@
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "Tipo doc.";
             // 
-            // rSeriehistoria
-            // 
-            this.rSeriehistoria.EditValue = "0";
-            this.rSeriehistoria.Location = new System.Drawing.Point(395, 6);
-            this.rSeriehistoria.MenuManager = this.bmMantenimiento;
-            this.rSeriehistoria.Name = "rSeriehistoria";
-            this.rSeriehistoria.Properties.Appearance.Options.UseTextOptions = true;
-            this.rSeriehistoria.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.rSeriehistoria.Properties.Mask.EditMask = "d4";
-            this.rSeriehistoria.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.rSeriehistoria.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.rSeriehistoria.Properties.ReadOnly = true;
-            this.rSeriehistoria.Size = new System.Drawing.Size(41, 20);
-            this.rSeriehistoria.TabIndex = 3;
-            this.rSeriehistoria.TabStop = false;
-            // 
             // iIdtipocp
             // 
             this.iIdtipocp.Location = new System.Drawing.Point(105, 6);
@@ -1318,7 +930,7 @@
             this.iIdtipocp.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.iIdtipocp.Properties.View = this.searchLookUpEdit1View;
-            this.iIdtipocp.Size = new System.Drawing.Size(206, 20);
+            this.iIdtipocp.Size = new System.Drawing.Size(217, 20);
             this.iIdtipocp.TabIndex = 1;
             this.iIdtipocp.Tag = "Seleccione el tipo de documento";
             this.iIdtipocp.EditValueChanged += new System.EventHandler(this.iIdtipocp_EditValueChanged);
@@ -1351,7 +963,7 @@
             // pkIdEntidad
             // 
             this.pkIdEntidad.EditValue = "0";
-            this.pkIdEntidad.Location = new System.Drawing.Point(105, 562);
+            this.pkIdEntidad.Location = new System.Drawing.Point(125, 311);
             this.pkIdEntidad.MenuManager = this.bmMantenimiento;
             this.pkIdEntidad.Name = "pkIdEntidad";
             this.pkIdEntidad.Properties.AllowFocused = false;
@@ -1364,166 +976,57 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(85, 565);
+            this.labelControl1.Location = new System.Drawing.Point(105, 314);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(14, 13);
             this.labelControl1.TabIndex = 7;
             this.labelControl1.Text = "Id.";
             // 
-            // bmItemsCita
+            // tpObservacion
             // 
-            this.bmItemsCita.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.barItems});
-            this.bmItemsCita.DockControls.Add(this.barDockControl1);
-            this.bmItemsCita.DockControls.Add(this.barDockControl2);
-            this.bmItemsCita.DockControls.Add(this.barDockControl3);
-            this.bmItemsCita.DockControls.Add(this.barDockControl4);
-            this.bmItemsCita.Form = this.tpCitas;
-            this.bmItemsCita.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.btnAddItem,
-            this.btnEditItem,
-            this.btnDelItem});
-            this.bmItemsCita.MaxItemId = 4;
-            this.bmItemsCita.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bmItemsCita_ItemClick);
-            // 
-            // barItems
-            // 
-            this.barItems.BarName = "Tools";
-            this.barItems.DockCol = 0;
-            this.barItems.DockRow = 0;
-            this.barItems.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.barItems.FloatLocation = new System.Drawing.Point(268, 472);
-            this.barItems.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnAddItem, true),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnEditItem),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDelItem)});
-            this.barItems.OptionsBar.UseWholeRow = true;
-            this.barItems.Text = "Tools";
-            // 
-            // btnAddItem
-            // 
-            this.btnAddItem.Caption = "Agregar item";
-            this.btnAddItem.Glyph = global::WinFormsApp.Properties.Resources.Action_Inline_New;
-            this.btnAddItem.Id = 0;
-            this.btnAddItem.Name = "btnAddItem";
-            // 
-            // btnEditItem
-            // 
-            this.btnEditItem.Caption = "Modificar item";
-            this.btnEditItem.Glyph = global::WinFormsApp.Properties.Resources.Action_Inline_Edit;
-            this.btnEditItem.Id = 1;
-            this.btnEditItem.Name = "btnEditItem";
-            // 
-            // btnDelItem
-            // 
-            this.btnDelItem.Caption = "Eliminar item";
-            this.btnDelItem.Glyph = global::WinFormsApp.Properties.Resources.Action_Delete_12x12;
-            this.btnDelItem.Id = 2;
-            this.btnDelItem.Name = "btnDelItem";
-            // 
-            // bmItemHistoria
-            // 
-            this.bmItemHistoria.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.bar1});
-            this.bmItemHistoria.DockControls.Add(this.barDockControl17);
-            this.bmItemHistoria.DockControls.Add(this.barDockControl18);
-            this.bmItemHistoria.DockControls.Add(this.barDockControl19);
-            this.bmItemHistoria.DockControls.Add(this.barDockControl20);
-            this.bmItemHistoria.Form = this.tpItems;
-            this.bmItemHistoria.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.btnAddItemHistoria,
-            this.btnEditItemHistoria,
-            this.btnDelItemHistoria,
-            this.btnAddPlantilla});
-            this.bmItemHistoria.MaxItemId = 4;
-            this.bmItemHistoria.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bmItemHistoria_ItemClick);
-            // 
-            // bar1
-            // 
-            this.bar1.BarName = "Tools";
-            this.bar1.DockCol = 0;
-            this.bar1.DockRow = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnAddItemHistoria, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnEditItemHistoria, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDelItemHistoria, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnAddPlantilla, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
-            this.bar1.OptionsBar.UseWholeRow = true;
-            this.bar1.Text = "Tools";
-            // 
-            // btnAddItemHistoria
-            // 
-            this.btnAddItemHistoria.Caption = "Agregar item";
-            this.btnAddItemHistoria.Glyph = global::WinFormsApp.Properties.Resources.Action_Inline_New;
-            this.btnAddItemHistoria.Id = 0;
-            this.btnAddItemHistoria.Name = "btnAddItemHistoria";
-            // 
-            // btnEditItemHistoria
-            // 
-            this.btnEditItemHistoria.Caption = "Editar item";
-            this.btnEditItemHistoria.Glyph = global::WinFormsApp.Properties.Resources.Action_Edit_12x12;
-            this.btnEditItemHistoria.Id = 1;
-            this.btnEditItemHistoria.Name = "btnEditItemHistoria";
-            // 
-            // btnDelItemHistoria
-            // 
-            this.btnDelItemHistoria.Caption = "Eliminar item";
-            this.btnDelItemHistoria.Glyph = global::WinFormsApp.Properties.Resources.Action_Delete_12x12;
-            this.btnDelItemHistoria.Id = 2;
-            this.btnDelItemHistoria.Name = "btnDelItemHistoria";
-            // 
-            // btnAddPlantilla
-            // 
-            this.btnAddPlantilla.Caption = "Agregar plantilla";
-            this.btnAddPlantilla.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAddPlantilla.Glyph")));
-            this.btnAddPlantilla.Id = 3;
-            this.btnAddPlantilla.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAddPlantilla.LargeGlyph")));
-            this.btnAddPlantilla.Name = "btnAddPlantilla";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Imprimir";
-            this.barButtonItem1.Glyph = global::WinFormsApp.Properties.Resources.Action_Printing_Print;
-            this.barButtonItem1.Id = 84;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.tpObservacion.Controls.Add(this.iObservacion);
+            this.tpObservacion.Name = "tpObservacion";
+            this.tpObservacion.Size = new System.Drawing.Size(542, 344);
+            this.tpObservacion.Text = "Observación";
             // 
             // iObservacion
             // 
-            this.iObservacion.Location = new System.Drawing.Point(105, 310);
+            this.iObservacion.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.iObservacion.Location = new System.Drawing.Point(0, 0);
             this.iObservacion.MenuManager = this.bmMantenimiento;
             this.iObservacion.Name = "iObservacion";
-            this.iObservacion.Size = new System.Drawing.Size(422, 235);
-            this.iObservacion.TabIndex = 43;
+            this.iObservacion.Size = new System.Drawing.Size(542, 344);
+            this.iObservacion.TabIndex = 44;
             // 
-            // labelControl5
+            // tpCamposOcultos
             // 
-            this.labelControl5.Location = new System.Drawing.Point(16, 312);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(60, 13);
-            this.labelControl5.TabIndex = 44;
-            this.labelControl5.Text = "Observación";
+            this.tpCamposOcultos.Controls.Add(this.rSeriehistoria);
+            this.tpCamposOcultos.Name = "tpCamposOcultos";
+            this.tpCamposOcultos.Size = new System.Drawing.Size(542, 344);
+            this.tpCamposOcultos.Text = "Campo Ocultos";
             // 
-            // iIdpersonaconyugue
+            // rSeriehistoria
             // 
-            this.iIdpersonaconyugue.Location = new System.Drawing.Point(235, 562);
-            this.iIdpersonaconyugue.Name = "iIdpersonaconyugue";
-            this.iIdpersonaconyugue.Properties.AllowFocused = false;
-            this.iIdpersonaconyugue.Properties.Appearance.Options.UseTextOptions = true;
-            this.iIdpersonaconyugue.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.iIdpersonaconyugue.Properties.ReadOnly = true;
-            this.iIdpersonaconyugue.Size = new System.Drawing.Size(56, 20);
-            this.iIdpersonaconyugue.TabIndex = 198;
-            this.iIdpersonaconyugue.TabStop = false;
-            this.iIdpersonaconyugue.Visible = false;
-            this.iIdpersonaconyugue.EditValueChanged += new System.EventHandler(this.iIdpersonaconyugue_EditValueChanged);
+            this.rSeriehistoria.EditValue = "0";
+            this.rSeriehistoria.Location = new System.Drawing.Point(11, 3);
+            this.rSeriehistoria.MenuManager = this.bmMantenimiento;
+            this.rSeriehistoria.Name = "rSeriehistoria";
+            this.rSeriehistoria.Properties.Appearance.Options.UseTextOptions = true;
+            this.rSeriehistoria.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.rSeriehistoria.Properties.Mask.EditMask = "d4";
+            this.rSeriehistoria.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.rSeriehistoria.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.rSeriehistoria.Properties.ReadOnly = true;
+            this.rSeriehistoria.Size = new System.Drawing.Size(41, 20);
+            this.rSeriehistoria.TabIndex = 4;
+            this.rSeriehistoria.TabStop = false;
             // 
             // HistoriaMntFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1189, 652);
+            this.ClientSize = new System.Drawing.Size(548, 403);
             this.Controls.Add(this.tcHistoria);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -1544,19 +1047,7 @@
             this.tcHistoria.ResumeLayout(false);
             this.tpDatos.ResumeLayout(false);
             this.tpDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tcItems)).EndInit();
-            this.tcItems.ResumeLayout(false);
-            this.tpItems.ResumeLayout(false);
-            this.tpItems.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcDetalle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvDetalle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.riMemoValor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tcDetalleCitas)).EndInit();
-            this.tcDetalleCitas.ResumeLayout(false);
-            this.tpCitas.ResumeLayout(false);
-            this.tpCitas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gcCitas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvCitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iIdpersonaconyugue.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFechanacimiento.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFechanacimiento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rEmailcliente.Properties)).EndInit();
@@ -1580,14 +1071,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.iFecharegistro.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iFecharegistro.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rNumerohistoria.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rSeriehistoria.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iIdtipocp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pkIdEntidad.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmItemsCita)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bmItemHistoria)).EndInit();
+            this.tpObservacion.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iObservacion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iIdpersonaconyugue.Properties)).EndInit();
+            this.tpCamposOcultos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rSeriehistoria.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1613,19 +1103,9 @@
         private DevExpress.XtraTab.XtraTabPage tpDatos;
         private DevExpress.XtraEditors.TextEdit pkIdEntidad;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraBars.BarDockControl barDockControl3;
-        private DevExpress.XtraBars.BarDockControl barDockControl4;
-        private DevExpress.XtraBars.BarDockControl barDockControl2;
-        private DevExpress.XtraBars.BarDockControl barDockControl1;
-        private DevExpress.XtraBars.BarManager bmItemsCita;
-        private DevExpress.XtraBars.Bar barItems;
-        private DevExpress.XtraBars.BarButtonItem btnAddItem;
-        private DevExpress.XtraBars.BarButtonItem btnEditItem;
-        private DevExpress.XtraBars.BarButtonItem btnDelItem;
         private DevExpress.XtraEditors.TextEdit rNumerohistoria;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.TextEdit rSeriehistoria;
         private DevExpress.XtraEditors.SearchLookUpEdit iIdtipocp;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
@@ -1674,49 +1154,12 @@
         private DevExpress.XtraEditors.TextEdit rEmailcliente;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.DateEdit iFechanacimiento;
-        private DevExpress.XtraTab.XtraTabControl tcDetalleCitas;
-        private DevExpress.XtraTab.XtraTabPage tpCitas;
-        private DevExpress.XtraGrid.GridControl gcCitas;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvCitas;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraBars.BarDockControl barDockControl5;
-        private DevExpress.XtraBars.BarDockControl barDockControl6;
-        private DevExpress.XtraBars.BarDockControl barDockControl7;
-        private DevExpress.XtraBars.BarDockControl barDockControl8;
-        private DevExpress.XtraTab.XtraTabControl tcItems;
-        private DevExpress.XtraTab.XtraTabPage tpItems;
-        private DevExpress.XtraBars.BarDockControl barDockControl9;
-        private DevExpress.XtraBars.BarDockControl barDockControl10;
-        private DevExpress.XtraBars.BarDockControl barDockControl11;
-        private DevExpress.XtraBars.BarDockControl barDockControl12;
-        private DevExpress.XtraBars.BarDockControl barDockControl13;
-        private DevExpress.XtraBars.BarDockControl barDockControl14;
-        private DevExpress.XtraBars.BarDockControl barDockControl15;
-        private DevExpress.XtraBars.BarDockControl barDockControl16;
-        private DevExpress.XtraBars.BarDockControl barDockControl19;
-        private DevExpress.XtraBars.BarDockControl barDockControl20;
-        private DevExpress.XtraBars.BarDockControl barDockControl18;
-        private DevExpress.XtraBars.BarDockControl barDockControl17;
-        private DevExpress.XtraBars.BarManager bmItemHistoria;
-        private DevExpress.XtraBars.Bar bar1;
-        private DevExpress.XtraGrid.GridControl gcDetalle;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvDetalle;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraBars.BarButtonItem btnAddItemHistoria;
-        private DevExpress.XtraBars.BarButtonItem btnEditItemHistoria;
-        private DevExpress.XtraBars.BarButtonItem btnDelItemHistoria;
-        private DevExpress.XtraBars.BarButtonItem btnAddPlantilla;
-        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit riMemoValor;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.MemoEdit iObservacion;
         private DevExpress.XtraEditors.TextEdit iIdpersonaconyugue;
+        private DevExpress.XtraTab.XtraTabPage tpObservacion;
+        private DevExpress.XtraEditors.MemoEdit iObservacion;
+        private DevExpress.XtraTab.XtraTabPage tpCamposOcultos;
+        private DevExpress.XtraEditors.TextEdit rSeriehistoria;
 
     }
 }

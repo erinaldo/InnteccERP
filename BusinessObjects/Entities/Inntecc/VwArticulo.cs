@@ -21,6 +21,8 @@ namespace BusinessObjects.Entities
 		public  int?  Idarticuloclasificacion{ get; set; }
 		public  string Codigoclasificacion{ get; set; }
 		public  string Nombreclasificacion{ get; set; }
+        public  string Codigoclasificacionpadre{ get; set; }
+		public  string Nombreclasificacionpadre{ get; set; }               
         public string Nombreclasificaciondetalle { get; set; }
 		public  int?  Idmarca{ get; set; }
 		public  string Nombremarca{ get; set; }

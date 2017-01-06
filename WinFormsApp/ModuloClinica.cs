@@ -945,6 +945,13 @@ namespace WinFormsApp
                     diaferiadoFrm.Show();
 
                     break;
+                case "iTablas":
+                    SuSaludTablasFrm suSaludTablasFrm = new SuSaludTablasFrm();
+                    suSaludTablasFrm.MdiParent = this;
+                    suSaludTablasFrm.Show();
+
+                    break;
+                    
             }
 
         }

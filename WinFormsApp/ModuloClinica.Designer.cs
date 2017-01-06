@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModuloClinica));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.XtraBars.Alerter.AlertButton alertButton1 = new DevExpress.XtraBars.Alerter.AlertButton();
-            DevExpress.XtraBars.Alerter.AlertButton alertButton2 = new DevExpress.XtraBars.Alerter.AlertButton();
-            DevExpress.XtraBars.Alerter.AlertButton alertButton3 = new DevExpress.XtraBars.Alerter.AlertButton();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.XtraBars.Alerter.AlertButton alertButton4 = new DevExpress.XtraBars.Alerter.AlertButton();
+            DevExpress.XtraBars.Alerter.AlertButton alertButton5 = new DevExpress.XtraBars.Alerter.AlertButton();
+            DevExpress.XtraBars.Alerter.AlertButton alertButton6 = new DevExpress.XtraBars.Alerter.AlertButton();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
             this.iPeriodoFrm = new DevExpress.XtraBars.BarButtonItem();
@@ -213,6 +213,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtMessage = new DevExpress.XtraEditors.TextEdit();
             this.AlertControlCita = new DevExpress.XtraBars.Alerter.AlertControl(this.components);
+            this.iTablas = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
@@ -358,10 +359,11 @@
             this.iPlanFrm,
             this.iTipoFrm,
             this.iTipotopeFrm,
-            this.iDiaferiadoFrm});
+            this.iDiaferiadoFrm,
+            this.iTablas});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 73;
+            this.ribbonControl.MaxItemId = 74;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageHeaderItemLinks.Add(this.iCambiarPasswordFrm);
             this.ribbonControl.PageHeaderItemLinks.Add(this.barMdiChildrenList);
@@ -934,9 +936,9 @@
             this.iCambiarPasswordFrm.Glyph = global::WinFormsApp.Properties.Resources.Action_Security_ChangePassword;
             this.iCambiarPasswordFrm.Id = 3;
             this.iCambiarPasswordFrm.Name = "iCambiarPasswordFrm";
-            toolTipTitleItem1.Text = "Cambiar contraseña";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.iCambiarPasswordFrm.SuperTip = superToolTip1;
+            toolTipTitleItem2.Text = "Cambiar contraseña";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.iCambiarPasswordFrm.SuperTip = superToolTip2;
             // 
             // iCpcostoshistorialFrm
             // 
@@ -1850,6 +1852,7 @@
             // 
             this.HistoriasRpg.ItemLinks.Add(this.iPlantillahistoriaFrm);
             this.HistoriasRpg.ItemLinks.Add(this.iHistoriaFrm);
+            this.HistoriasRpg.ItemLinks.Add(this.iTablas);
             this.HistoriasRpg.Name = "HistoriasRpg";
             this.HistoriasRpg.Text = "Historias";
             // 
@@ -1907,10 +1910,10 @@
             // 
             // alertControl
             // 
-            alertButton1.Name = "btnVerReq";
-            alertButton2.Name = "btnStockMinimo";
-            this.alertControl.Buttons.Add(alertButton1);
-            this.alertControl.Buttons.Add(alertButton2);
+            alertButton4.Name = "btnVerReq";
+            alertButton5.Name = "btnStockMinimo";
+            this.alertControl.Buttons.Add(alertButton4);
+            this.alertControl.Buttons.Add(alertButton5);
             this.alertControl.ButtonClick += new DevExpress.XtraBars.Alerter.AlertButtonClickEventHandler(this.alertControl_ButtonClick);
             // 
             // timerReqAlerta
@@ -1967,11 +1970,19 @@
             // AlertControlCita
             // 
             this.AlertControlCita.AutoHeight = true;
-            alertButton3.Image = ((System.Drawing.Image)(resources.GetObject("alertButton3.Image")));
-            alertButton3.Name = "btnCita";
-            this.AlertControlCita.Buttons.Add(alertButton3);
+            alertButton6.Image = ((System.Drawing.Image)(resources.GetObject("alertButton6.Image")));
+            alertButton6.Name = "btnCita";
+            this.AlertControlCita.Buttons.Add(alertButton6);
             this.AlertControlCita.ShowPinButton = false;
             this.AlertControlCita.ButtonClick += new DevExpress.XtraBars.Alerter.AlertButtonClickEventHandler(this.AlertControlCita_ButtonClick);
+            // 
+            // iTablas
+            // 
+            this.iTablas.Caption = "Tablas SuSalud";
+            this.iTablas.Glyph = ((System.Drawing.Image)(resources.GetObject("iTablas.Glyph")));
+            this.iTablas.Id = 73;
+            this.iTablas.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("iTablas.LargeGlyph")));
+            this.iTablas.Name = "iTablas";
             // 
             // ModuloClinica
             // 
@@ -2190,6 +2201,7 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage AccesosModuloClinicaesRp;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup accesosRpg;
         private DevExpress.XtraBars.BarButtonItem iDiaferiadoFrm;
+        private DevExpress.XtraBars.BarButtonItem iTablas;
 
     }
 }

@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             this.gcArticulo = new DevExpress.XtraGrid.GridControl();
             this.gvArticulo = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -54,11 +54,13 @@
             this.txtCodigo = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.reCaracteristicas = new DevExpress.XtraEditors.MemoEdit();
+            this.riMemoEdit = new DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit();
             ((System.ComponentModel.ISupportInitialize)(this.gcArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvArticulo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDatoABuscar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reCaracteristicas.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).BeginInit();
             this.SuspendLayout();
             // 
             // gcArticulo
@@ -66,6 +68,8 @@
             this.gcArticulo.Location = new System.Drawing.Point(13, 36);
             this.gcArticulo.MainView = this.gvArticulo;
             this.gcArticulo.Name = "gcArticulo";
+            this.gcArticulo.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.riMemoEdit});
             this.gcArticulo.Size = new System.Drawing.Size(835, 328);
             this.gcArticulo.TabIndex = 2;
             this.gcArticulo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -88,6 +92,7 @@
             this.gvArticulo.Name = "gvArticulo";
             this.gvArticulo.OptionsBehavior.ReadOnly = true;
             this.gvArticulo.OptionsView.ColumnAutoWidth = false;
+            this.gvArticulo.OptionsView.RowAutoHeight = true;
             this.gvArticulo.OptionsView.ShowGroupPanel = false;
             this.gvArticulo.OptionsView.ShowViewCaption = true;
             this.gvArticulo.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Always;
@@ -124,6 +129,7 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "Nombre Articulo";
+            this.gridColumn4.ColumnEdit = this.riMemoEdit;
             this.gridColumn4.FieldName = "Nombrearticulo";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -182,9 +188,9 @@
             this.btnSeleccionar.Location = new System.Drawing.Point(673, 465);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(84, 23);
-            toolTipTitleItem5.Text = "Seleccionar registro";
-            superToolTip5.Items.Add(toolTipTitleItem5);
-            this.btnSeleccionar.SuperTip = superToolTip5;
+            toolTipTitleItem1.Text = "Seleccionar registro";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.btnSeleccionar.SuperTip = superToolTip1;
             this.btnSeleccionar.TabIndex = 3;
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.Click += new System.EventHandler(this.btnSeleccionar_Click);
@@ -195,9 +201,9 @@
             this.txtDatoABuscar.Name = "txtDatoABuscar";
             this.txtDatoABuscar.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDatoABuscar.Size = new System.Drawing.Size(653, 20);
-            toolTipTitleItem6.Text = "Digite parte del nombre del articulo a buscar.";
-            superToolTip6.Items.Add(toolTipTitleItem6);
-            this.txtDatoABuscar.SuperTip = superToolTip6;
+            toolTipTitleItem2.Text = "Digite parte del nombre del articulo a buscar.";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.txtDatoABuscar.SuperTip = superToolTip2;
             this.txtDatoABuscar.TabIndex = 1;
             this.txtDatoABuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDatoABuscar_KeyPress);
             // 
@@ -215,9 +221,9 @@
             this.btnNuevoRegistro.Location = new System.Drawing.Point(12, 465);
             this.btnNuevoRegistro.Name = "btnNuevoRegistro";
             this.btnNuevoRegistro.Size = new System.Drawing.Size(99, 23);
-            toolTipTitleItem2.Text = "Crear nuevo registro";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.btnNuevoRegistro.SuperTip = superToolTip2;
+            toolTipTitleItem3.Text = "Crear nuevo registro";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.btnNuevoRegistro.SuperTip = superToolTip3;
             this.btnNuevoRegistro.TabIndex = 5;
             this.btnNuevoRegistro.Text = "Nuevo registro";
             this.btnNuevoRegistro.Click += new System.EventHandler(this.btnNuevoRegistro_Click);
@@ -228,9 +234,9 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCodigo.Size = new System.Drawing.Size(102, 20);
-            toolTipTitleItem7.Text = "Digite parte del código a buscar";
-            superToolTip7.Items.Add(toolTipTitleItem7);
-            this.txtCodigo.SuperTip = superToolTip7;
+            toolTipTitleItem4.Text = "Digite parte del código a buscar";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            this.txtCodigo.SuperTip = superToolTip4;
             this.txtCodigo.TabIndex = 6;
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
@@ -250,6 +256,10 @@
             this.reCaracteristicas.Size = new System.Drawing.Size(835, 70);
             this.reCaracteristicas.TabIndex = 9;
             this.reCaracteristicas.TabStop = false;
+            // 
+            // riMemoEdit
+            // 
+            this.riMemoEdit.Name = "riMemoEdit";
             // 
             // BuscadorArticuloInventarioFrm
             // 
@@ -277,6 +287,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtDatoABuscar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reCaracteristicas.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.riMemoEdit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,5 +313,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.MemoEdit reCaracteristicas;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
+        private DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit riMemoEdit;
     }
 }

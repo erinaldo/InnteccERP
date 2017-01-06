@@ -453,7 +453,7 @@
             this.gridColumn9.FieldName = "Totalcierrecaja";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Totalingreso", "{0}")});
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Totalcierrecaja", "{0}")});
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 4;
             // 
@@ -489,6 +489,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gvConsulta)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.riNumerico2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

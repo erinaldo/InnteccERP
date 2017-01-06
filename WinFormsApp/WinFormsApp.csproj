@@ -169,6 +169,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buscadores\BuscadorArticuloUnidadFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buscadores\BuscadorArticuloUnidadFrm.designer.cs">
+      <DependentUpon>BuscadorArticuloUnidadFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Almacen\InventarioDetSerieMntFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,12 @@
     </Compile>
     <Compile Include="Forms\Clinica\HistoriaFrm.designer.cs">
       <DependentUpon>HistoriaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clinica\HistoriaMntFrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clinica\HistoriaMntFrmBackup.designer.cs">
+      <DependentUpon>HistoriaMntFrmBackup.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clinica\HistoriaMntFrm.cs">
       <SubType>Form</SubType>
@@ -324,6 +336,12 @@
     </Compile>
     <Compile Include="Forms\Clinica\ProgramacionItemDuplicarFrm.designer.cs">
       <DependentUpon>ProgramacionItemDuplicarFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Clinica\SuSaludTablasFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clinica\SuSaludTablasFrm.Designer.cs">
+      <DependentUpon>SuSaludTablasFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Clinica\TipoarchivoFrm.cs">
       <SubType>Form</SubType>
@@ -2413,6 +2431,9 @@
     <EmbeddedResource Include="Buscadores\BuscadorArticuloFrm.resx">
       <DependentUpon>BuscadorArticuloFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Buscadores\BuscadorArticuloUnidadFrm.resx">
+      <DependentUpon>BuscadorArticuloUnidadFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buscadores\BuscadorArticuloInventarioFrm.resx">
       <DependentUpon>BuscadorArticuloInventarioFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -2593,6 +2614,9 @@
     <EmbeddedResource Include="Forms\Clinica\HistoriaFrm.resx">
       <DependentUpon>HistoriaFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clinica\HistoriaMntFrmBackup.resx">
+      <DependentUpon>HistoriaMntFrmBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clinica\HistoriaMntFrm.resx">
       <DependentUpon>HistoriaMntFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -2652,6 +2676,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clinica\ProgramacionItemDuplicarFrm.resx">
       <DependentUpon>ProgramacionItemDuplicarFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Clinica\SuSaludTablasFrm.resx">
+      <DependentUpon>SuSaludTablasFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Clinica\TipoarchivoFrm.resx">
       <DependentUpon>TipoarchivoFrm.cs</DependentUpon>

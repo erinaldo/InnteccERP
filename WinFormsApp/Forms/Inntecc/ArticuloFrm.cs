@@ -69,13 +69,13 @@ namespace WinFormsApp
         public void CargarDatosConsulta()
         {
             Cursor = Cursors.WaitCursor;
-            gcConsulta.BeginUpdate();
+            //gcConsulta.BeginUpdate();
 
             string condicionEmpresa = string.Format("idempresa = {0}", SessionApp.EmpresaSel.Idempresa);
             gcConsulta.DataSource = Service.GetAllVwArticulo(condicionEmpresa, "nombrearticulo,nombremarca");
 
-            gvConsulta.BestFitColumns(); 
-            gcConsulta.EndUpdate();
+            gvConsulta.BestFitColumns(true); 
+            //gcConsulta.EndUpdate();
 
             int rowCount = gvConsulta.RowCount;
 
@@ -250,14 +250,14 @@ namespace WinFormsApp
             {
                 if (gvConsulta.RowCount > 0)
                 {
-                    gcConsulta.BeginUpdate();
+                    //gcConsulta.BeginUpdate();
                     var rowHandle = gvConsulta.LocateByValue(NombreIdEntidadMnt, IdEntidadMnt);
                     if (rowHandle == DevExpress.XtraGrid.GridControl.InvalidRowHandle)
                     {
-                        gcConsulta.EndUpdate();
+                        //gcConsulta.EndUpdate();
                         return;
                     }
-                    gcConsulta.EndUpdate();
+                    //gcConsulta.EndUpdate();
                     gvConsulta.FocusedRowHandle = rowHandle;
                 }
 

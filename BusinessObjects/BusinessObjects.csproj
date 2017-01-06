@@ -146,6 +146,16 @@
     <Compile Include="Entities\Clinica\Programacioncita.cs" />
     <Compile Include="Entities\Clinica\Programacioncitadet.cs" />
     <Compile Include="Entities\Clinica\Programacioncitadethistorial.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Cie.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Cpt.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Grupoedad.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Servicioespecialidad.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipocirugia.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipocolegioprofesional.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipocomplicacionparto.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipodiagnostico.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipoevento.cs" />
+    <Compile Include="Entities\Clinica\SuSalud\Tipoparto.cs" />
     <Compile Include="Entities\Clinica\Tipoanalisis.cs" />
     <Compile Include="Entities\Clinica\Tipoarchivo.cs" />
     <Compile Include="Entities\Clinica\Tipociclomenstrual.cs" />

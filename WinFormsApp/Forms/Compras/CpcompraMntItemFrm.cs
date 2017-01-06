@@ -425,14 +425,16 @@ namespace WinFormsApp
 
         private void BuscarArticulo()
         {
-            var buscadorArticuloFrm = new BuscadorArticuloFrmBase();
+            //var buscadorArticuloFrm = new BuscadorArticuloFrmBase();
+            var buscadorArticuloFrm = new BuscadorArticuloUnidadFrm();
             buscadorArticuloFrm.ShowDialog();
 
             if (buscadorArticuloFrm.DialogResult == DialogResult.OK &&
-                buscadorArticuloFrm.VwArticuloSel != null)
+                buscadorArticuloFrm.VwArticulounidad != null)
             {
                 //Asignar al edit value del campo id foraneo
-                iIdarticulo.EditValue = buscadorArticuloFrm.VwArticuloSel.Idarticulo;
+                iIdarticulo.EditValue = buscadorArticuloFrm.VwArticulounidad.Idarticulo;
+                iIdunidadmedida.EditValue = buscadorArticuloFrm.VwArticulounidad.Idunidadinventario;
 
             }
         }
