@@ -324,9 +324,9 @@
             // 
             this.labelControl2.Location = new System.Drawing.Point(11, 120);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(121, 13);
+            this.labelControl2.Size = new System.Drawing.Size(29, 13);
             this.labelControl2.TabIndex = 105;
-            this.labelControl2.Text = "Clasificación predecesora";
+            this.labelControl2.Text = "Grupo";
             // 
             // gridView1
             // 

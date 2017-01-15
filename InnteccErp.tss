@@ -2,18 +2,40 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaMntFrmBackup.cs</string>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\clinica\programacioncitamntitemvisorfrm.cs</string>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\clinica\programacioncitamntitemvisorfrm.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaMntFrm.cs</string>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaMntFrm.cs</string>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaMntFrm.designer.cs</string>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\clinica\programacioncitamntitemfrm.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaclinicaMntFrm.cs</string>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\clinica\programacioncitamntfrm.cs</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\HistoriaItemPlantillaFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\ProgramacioncitaVisorFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Clinica\ProgramacioncitaVisorFrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\clinica\historiamntfrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\inntecc\articuloclasificacionfrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\inntecc\articuloclasificacionmntfrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\inntecc\articulofrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>e:\empresa\años\2016\innteccerp\winformsapp\forms\inntecc\articulomntfrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CpventaMntFrm.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CotizacionclienteMntFrm.cs</string>
+      <string>E:\Empresa\Años\2016\InnteccERP\WinFormsApp\Forms\Ventas\CotizacionclienteMntFrm.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>

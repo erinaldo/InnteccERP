@@ -806,7 +806,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.add, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert)), serializableAppearanceObject6, "", null, superToolTip8, true),
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, global::WinFormsApp.Properties.Resources.Action_Edit_12x12, new DevExpress.Utils.KeyShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)), serializableAppearanceObject7, "", null, superToolTip9, true)});
             this.beClienteTitular.Properties.ReadOnly = true;
-            this.beClienteTitular.Size = new System.Drawing.Size(400, 22);
+            this.beClienteTitular.Size = new System.Drawing.Size(422, 22);
             this.beClienteTitular.TabIndex = 16;
             this.beClienteTitular.Tag = "Seleccione el paciente";
             this.beClienteTitular.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.beClienteTitular_ButtonClick);

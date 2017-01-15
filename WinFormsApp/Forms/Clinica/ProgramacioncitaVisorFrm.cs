@@ -35,6 +35,7 @@ namespace WinFormsApp
             PrincipalFrm = principalFrm;
             SaveLayoutGridControl = false;
             SetGridFont(gvCitas, new Font(SessionApp.EmpleadoSel.Nombrefuente, (float) SessionApp.EmpleadoSel.Fuentetamanio));
+            btnEliminarProgramacion.Enabled = SessionApp.UsuarioSel.Nombreusuario.Equals("NMELO");
         }
 
         public static ProgramacioncitaVisorFrm GetInstance(ModuloClinica principalFrm)
@@ -99,7 +100,9 @@ namespace WinFormsApp
             iCalendarioCita.EditValue = SessionApp.DateServer;            
             CargarReferencias();
             iCalendarioCita.CellStyleProvider = new CustomCellStyleProvider();
-            RestoreLayoutFromRegistry();            
+            RestoreLayoutFromRegistry();
+
+            
         }
 
 
@@ -632,6 +635,47 @@ namespace WinFormsApp
         {
             foreach (AppearanceObject ap in view.Appearance)
                 ap.Font = font;
+        }
+
+        private void btnEliminarProgramacion_Click(object sender, EventArgs e)
+        {
+            if (gvCitas.RowCount == 0)
+            {
+                return;
+            }
+            gvCitas.Focus();
+
+            VwProgramacioncitadet vwProgramacioncitadetVerificar = (VwProgramacioncitadet)gvCitas.GetFocusedRow();
+            Programacioncitadet programacioncitadetVerificar = Service.GetProgramacioncitadet(x => x.Idprogramacioncitadet == vwProgramacioncitadetVerificar.Idprogramacioncitadet && x.Idpersona != null);
+
+            if (programacioncitadetVerificar != null)
+            {
+                WinFormUtils.ErrorMessage("No se puede eliminar la programación ya esta registrado un paciente para esa fecha y hora");
+                return;
+            }
+
+            if (DialogResult.Yes == XtraMessageBox.Show("¿Desea eliminar el item seleccionado?",
+                "Eliminar Item", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button1))
+            {
+
+                VwProgramacioncitadet vwProgramacioncitadet = (VwProgramacioncitadet)gvCitas.GetFocusedRow();
+                if (vwProgramacioncitadet != null && vwProgramacioncitadet.Idprogramacioncitadet > 0)
+                {
+                    Service.DeleteProgramacioncitadet(vwProgramacioncitadet.Idprogramacioncitadet);
+                    vwProgramacioncitadet.DataEntityState = DataEntityState.Deleted;
+
+                    //VwProgramacioncitadet vwProgramacioncitadetNext = VwProgramacioncitadetList.FirstOrDefault(x => x.id > vwProgramacioncitadet.Horaprogramacion);
+
+                    CargarCitas();
+
+                    //if (!gvCitas.IsFirstRow)
+                    //{
+                    //    gvCitas.MovePrev();
+                    //}
+                }
+            }
+
         }
     }
 }

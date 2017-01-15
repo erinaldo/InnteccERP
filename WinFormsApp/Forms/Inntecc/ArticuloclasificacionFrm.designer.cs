@@ -69,8 +69,8 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.bmConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcConsulta)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvConsulta)).BeginInit();
@@ -402,18 +402,18 @@
             this.gridColumn2.VisibleIndex = 2;
             this.gridColumn2.Width = 166;
             // 
-            // repositoryItemTextEdit1
-            // 
-            this.repositoryItemTextEdit1.AutoHeight = false;
-            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
-            // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Clasificación Predecesora";
+            this.gridColumn4.Caption = "Grupo";
             this.gridColumn4.FieldName = "Nombreclasificacionpadre";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
             // 
             // ArticuloclasificacionFrm
             // 

@@ -90,6 +90,8 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.btnAnularCita = new DevExpress.XtraBars.BarButtonItem();
+            this.btnEliminarProgramacion = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.sccPrincipal)).BeginInit();
             this.sccPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sccPrincipalDerecho)).BeginInit();
@@ -125,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sccEventosPrincipal)).BeginInit();
             this.sccEventosPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bmCitas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // sccPrincipal
@@ -197,6 +200,7 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.btnEliminarProgramacion);
             this.layoutControl1.Controls.Add(this.btnActualizar);
             this.layoutControl1.Controls.Add(this.btnVerPagos);
             this.layoutControl1.Controls.Add(this.btnCpVenta);
@@ -360,7 +364,8 @@
             this.VerModificarCitaLay,
             this.VerHistorialLay,
             this.ComprobanteVentaLay,
-            this.ActualizarLay});
+            this.ActualizarLay,
+            this.layoutControlItem3});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(252, 278);
@@ -390,9 +395,9 @@
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 184);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 210);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(232, 74);
+            this.emptySpaceItem1.Size = new System.Drawing.Size(232, 48);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // VerModificarCitaLay
@@ -765,6 +770,28 @@
             this.btnAnularCita.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAnularCita.LargeGlyph")));
             this.btnAnularCita.Name = "btnAnularCita";
             // 
+            // btnEliminarProgramacion
+            // 
+            this.btnEliminarProgramacion.Appearance.Options.UseTextOptions = true;
+            this.btnEliminarProgramacion.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.btnEliminarProgramacion.Image = global::WinFormsApp.Properties.Resources.Action_Delete_12x12;
+            this.btnEliminarProgramacion.Location = new System.Drawing.Point(12, 196);
+            this.btnEliminarProgramacion.Name = "btnEliminarProgramacion";
+            this.btnEliminarProgramacion.Size = new System.Drawing.Size(228, 22);
+            this.btnEliminarProgramacion.StyleController = this.layoutControl1;
+            this.btnEliminarProgramacion.TabIndex = 11;
+            this.btnEliminarProgramacion.Text = "Eliminar programación";
+            this.btnEliminarProgramacion.Click += new System.EventHandler(this.btnEliminarProgramacion_Click);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.btnEliminarProgramacion;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 184);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(232, 26);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
             // ProgramacioncitaVisorFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -815,6 +842,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sccEventosPrincipal)).EndInit();
             this.sccEventosPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bmCitas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -882,6 +910,8 @@
         private DevExpress.XtraLayout.LayoutControlItem ActualizarLay;
         private DevExpress.XtraGrid.Columns.GridColumn gcImagenestado;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit riPictureEstado;
+        private DevExpress.XtraEditors.SimpleButton btnEliminarProgramacion;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
 
     }
 }

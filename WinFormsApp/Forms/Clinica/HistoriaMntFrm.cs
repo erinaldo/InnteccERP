@@ -561,7 +561,10 @@ namespace WinFormsApp
                     rTelefono.EditValue = vwSocionegocio.Telefono;
                     rEmailcliente.EditValue = vwSocionegocio.Email;
                     iDireccionfiscal.EditValue = vwSocionegocio.Direccionfiscal;
-
+                    if (TipoMnt == TipoMantenimiento.Nuevo)
+                    {
+                        rNumerohistoria.EditValue = rNroDocTitular.EditValue;
+                    }
                 }
             }
         }
