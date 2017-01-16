@@ -467,7 +467,7 @@ namespace WinFormsApp
                     }
                     if (IdEntidadMnt > 0)
                     {
-                        ImpresionFormato.FormatoCierreCajaDetalle((DateTime)iFechacierre.EditValue);
+                        ImpresionFormato.FormatoCierreCajaDetalle((int)iIdempleado.EditValue, (DateTime)iFechacierre.EditValue);
                     }
 
                     break;

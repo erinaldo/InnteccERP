@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip13 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem13 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip17 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem17 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip16 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem16 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip14 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem14 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip15 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem15 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RendicioncajachicaMntFrm));
-            DevExpress.Utils.SuperToolTip superToolTip18 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem18 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip19 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem19 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip20 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem20 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem9 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
             this.bmMantenimiento = new DevExpress.XtraBars.BarManager(this.components);
             this.BarMnt = new DevExpress.XtraBars.Bar();
             this.btnGrabar = new DevExpress.XtraBars.BarButtonItem();
@@ -257,9 +257,9 @@
             this.btnGrabar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G));
             this.btnGrabar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_32x32;
             this.btnGrabar.Name = "btnGrabar";
-            toolTipTitleItem12.Text = "Grabar (Ctrl + G)";
-            superToolTip12.Items.Add(toolTipTitleItem12);
-            this.btnGrabar.SuperTip = superToolTip12;
+            toolTipTitleItem1.Text = "Grabar (Ctrl + G)";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.btnGrabar.SuperTip = superToolTip1;
             // 
             // btnGrabarCerrar
             // 
@@ -270,9 +270,9 @@
             this.btnGrabarCerrar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Enter));
             this.btnGrabarCerrar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_Close_32x32;
             this.btnGrabarCerrar.Name = "btnGrabarCerrar";
-            toolTipTitleItem13.Text = "Grabar y cerrar (Ctrl + Enter)";
-            superToolTip13.Items.Add(toolTipTitleItem13);
-            this.btnGrabarCerrar.SuperTip = superToolTip13;
+            toolTipTitleItem2.Text = "Grabar y cerrar (Ctrl + Enter)";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.btnGrabarCerrar.SuperTip = superToolTip2;
             // 
             // btnImprimir
             // 
@@ -291,9 +291,9 @@
             this.btnActualizar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.btnActualizar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Refresh_32x32;
             this.btnActualizar.Name = "btnActualizar";
-            toolTipTitleItem17.Text = "Actualizar (F5)";
-            superToolTip17.Items.Add(toolTipTitleItem17);
-            this.btnActualizar.SuperTip = superToolTip17;
+            toolTipTitleItem3.Text = "Actualizar (F5)";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.btnActualizar.SuperTip = superToolTip3;
             // 
             // btnCerrar
             // 
@@ -305,9 +305,9 @@
             this.btnCerrar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.btnCerrar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Close_32x32;
             this.btnCerrar.Name = "btnCerrar";
-            toolTipTitleItem16.Text = "Salir de ventana (Ctrl + S)";
-            superToolTip16.Items.Add(toolTipTitleItem16);
-            this.btnCerrar.SuperTip = superToolTip16;
+            toolTipTitleItem4.Text = "Salir de ventana (Ctrl + S)";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            this.btnCerrar.SuperTip = superToolTip4;
             // 
             // barDockControlTop
             // 
@@ -347,9 +347,9 @@
             this.btnNuevo.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_New_32x32;
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.ShortcutKeyDisplayString = "Ctrl +N";
-            toolTipTitleItem11.Text = "Nuevo (Ctrl + N)";
-            superToolTip11.Items.Add(toolTipTitleItem11);
-            this.btnNuevo.SuperTip = superToolTip11;
+            toolTipTitleItem5.Text = "Nuevo (Ctrl + N)";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.btnNuevo.SuperTip = superToolTip5;
             this.btnNuevo.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnGrabarNuevo
@@ -361,9 +361,9 @@
             this.btnGrabarNuevo.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Insert));
             this.btnGrabarNuevo.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Save_New_32x32;
             this.btnGrabarNuevo.Name = "btnGrabarNuevo";
-            toolTipTitleItem14.Text = "Grabar y Nuevo (Ctrl + Ins)";
-            superToolTip14.Items.Add(toolTipTitleItem14);
-            this.btnGrabarNuevo.SuperTip = superToolTip14;
+            toolTipTitleItem6.Text = "Grabar y Nuevo (Ctrl + Ins)";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            this.btnGrabarNuevo.SuperTip = superToolTip6;
             this.btnGrabarNuevo.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnLimpiarCampos
@@ -384,9 +384,9 @@
             this.btnEliminar.LargeGlyph = global::WinFormsApp.Properties.Resources.Action_Delete_32x32;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.ShortcutKeyDisplayString = "Ctrl + E";
-            toolTipTitleItem15.Text = "Eliminar (Ctrl + E)\r\n";
-            superToolTip15.Items.Add(toolTipTitleItem15);
-            this.btnEliminar.SuperTip = superToolTip15;
+            toolTipTitleItem7.Text = "Eliminar (Ctrl + E)\r\n";
+            superToolTip7.Items.Add(toolTipTitleItem7);
+            this.btnEliminar.SuperTip = superToolTip7;
             this.btnEliminar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // barButtonItem1
@@ -1319,9 +1319,9 @@
             this.btnAddItem.Id = 0;
             this.btnAddItem.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A));
             this.btnAddItem.Name = "btnAddItem";
-            toolTipTitleItem18.Text = "Agregar item (Alt + A)";
-            superToolTip18.Items.Add(toolTipTitleItem18);
-            this.btnAddItem.SuperTip = superToolTip18;
+            toolTipTitleItem8.Text = "Agregar item (Alt + A)";
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            this.btnAddItem.SuperTip = superToolTip8;
             // 
             // btnEditDato
             // 
@@ -1330,9 +1330,9 @@
             this.btnEditDato.Id = 1;
             this.btnEditDato.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M));
             this.btnEditDato.Name = "btnEditDato";
-            toolTipTitleItem19.Text = "Modificar item (Alt + M)";
-            superToolTip19.Items.Add(toolTipTitleItem19);
-            this.btnEditDato.SuperTip = superToolTip19;
+            toolTipTitleItem9.Text = "Modificar item (Alt + M)";
+            superToolTip9.Items.Add(toolTipTitleItem9);
+            this.btnEditDato.SuperTip = superToolTip9;
             // 
             // btnDelItem
             // 
@@ -1341,9 +1341,9 @@
             this.btnDelItem.Id = 2;
             this.btnDelItem.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E));
             this.btnDelItem.Name = "btnDelItem";
-            toolTipTitleItem20.Text = "Eliminar item (Alt + E)";
-            superToolTip20.Items.Add(toolTipTitleItem20);
-            this.btnDelItem.SuperTip = superToolTip20;
+            toolTipTitleItem10.Text = "Eliminar item (Alt + E)";
+            superToolTip10.Items.Add(toolTipTitleItem10);
+            this.btnDelItem.SuperTip = superToolTip10;
             // 
             // iIdtipodocimp
             // 

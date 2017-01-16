@@ -218,6 +218,7 @@
             toolTipTitleItem1.Text = "Grabar (Ctrl + G)";
             superToolTip1.Items.Add(toolTipTitleItem1);
             this.btnGrabar.SuperTip = superToolTip1;
+            this.btnGrabar.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
             // 
             // btnGrabarCerrar
             // 

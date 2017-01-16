@@ -828,10 +828,10 @@ namespace WinFormsApp
 
         }
 
-        public void FormatoCierreCajaDetalle(DateTime fechaCierrecaja)
+        public void FormatoCierreCajaDetalle(int idEmpleado, DateTime fechaCierrecaja)
         {
             const string nameRelation = "finanzas.vwreciboingresoegresodet";
-            string whereList = string.Format("fechapago = '{0:yyyy-MM-dd}'", fechaCierrecaja);
+            string whereList = string.Format("idempleado {0} and fechapago = '{1:yyyy-MM-dd}'", idEmpleado, fechaCierrecaja);
             const string ordersList = "fechapago";
             const string fieldsList = "*";
 
