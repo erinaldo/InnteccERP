@@ -201,7 +201,7 @@ namespace WinFormsApp
                     }
                     if (IdEntidadMnt > 0)
                     {
-                        
+                        //REporte
                     }
                     break;
             }
